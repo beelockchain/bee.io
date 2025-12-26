@@ -96,15 +96,22 @@ Guide users through our services with structured, scannable responses that feel 
 `;
 
 export async function POST(req: Request) {
+  if (!process.env.OPENAI_API_KEY) {
+    return NextResponse.json(
+      { reply: "OPENAI_API_KEY is missing. Check your Amplify env vars." },
+      { status: 500 }
+    );
+  }
+
   const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY!,
+    apiKey: process.env.OPENAI_API_KEY,
   });
-  
+
   try {
     const { message } = await req.json();
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-4.1-mini",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
         { role: "user", content: message },
@@ -115,6 +122,7 @@ export async function POST(req: Request) {
       reply: completion.choices[0].message.content,
     });
   } catch (error) {
+    console.error("OpenAI request failed:", error);
     return NextResponse.json(
       { reply: "Sorry, something went wrong. Please try again." },
       { status: 500 }

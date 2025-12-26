@@ -1,5 +1,6 @@
 // /app/api/chat/route.ts
 export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
 
@@ -21,6 +22,14 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { service, answers } = body;
+
+    // Safety: Validate inputs
+    if (!service || !answers) {
+      return NextResponse.json(
+        { error: "Missing required fields: service or answers" },
+        { status: 400 }
+      );
+    }
 
     const prompt = `You are a senior blockchain solution architect.
 
@@ -65,6 +74,7 @@ Rules:
 Service: ${service}
 Answers(JSON): ${JSON.stringify(answers)}`;
 
+    // Send request to OpenAI
     const response = await client.chat.completions.create({
       model: "gpt-4.1-mini",
       messages: [{ role: "user", content: prompt }],
@@ -72,13 +82,23 @@ Answers(JSON): ${JSON.stringify(answers)}`;
       temperature: 0.4,
     });
 
+    // Make sure the response exists
+    const messageContent = response.choices?.[0]?.message?.content;
+    if (!messageContent) {
+      return NextResponse.json(
+        { error: "OpenAI returned an empty response" },
+        { status: 500 }
+      );
+    }
+
+    // Parse JSON safely
     let json;
     try {
-      json = JSON.parse(response.choices[0].message.content!);
+      json = JSON.parse(messageContent);
     } catch (e) {
-      console.error("Failed parsing OpenAI response:", e);
+      console.error("Failed parsing OpenAI response:", e, messageContent);
       return NextResponse.json(
-        { error: "Invalid response from OpenAI" },
+        { error: "Invalid JSON response from OpenAI" },
         { status: 500 }
       );
     }
