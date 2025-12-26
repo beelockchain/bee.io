@@ -1,11 +1,23 @@
-export const runtime="nodejs";
+// /app/api/chat/route.ts
+export const runtime = "nodejs";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
 
 export async function POST(req: Request) {
+  // DEBUG: Check if the environment variable exists
+  console.log("OPENAI_API_KEY exists:", !!process.env.OPENAI_API_KEY);
+
+  if (!process.env.OPENAI_API_KEY) {
+    return NextResponse.json(
+      { error: "OPENAI_API_KEY is missing. Check your Amplify env vars." },
+      { status: 500 }
+    );
+  }
+
   const client = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
   });
+
   try {
     const body = await req.json();
     const { service, answers } = body;
@@ -60,11 +72,21 @@ Answers(JSON): ${JSON.stringify(answers)}`;
       temperature: 0.4,
     });
 
-    const json = JSON.parse(response.choices[0].message.content!);
+    let json;
+    try {
+      json = JSON.parse(response.choices[0].message.content!);
+    } catch (e) {
+      console.error("Failed parsing OpenAI response:", e);
+      return NextResponse.json(
+        { error: "Invalid response from OpenAI" },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json(json);
 
   } catch (error) {
-    console.error(error);
+    console.error("OpenAI request failed:", error);
     return NextResponse.json(
       { error: "Failed to generate blueprint" },
       { status: 500 }
