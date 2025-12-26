@@ -1,9 +1,6 @@
 export const runtime="nodejs";
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY!,
-});
 
 const SYSTEM_PROMPT = `
 You are Beelockchain's official AI assistant - a professional consultant helping clients discover the perfect solution.
@@ -99,6 +96,10 @@ Guide users through our services with structured, scannable responses that feel 
 `;
 
 export async function POST(req: Request) {
+  const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY!,
+  });
+  
   try {
     const { message } = await req.json();
 
