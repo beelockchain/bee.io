@@ -1,0 +1,13 @@
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 20
+        - nvm use 20
+        - echo "Using Node $(node -v)"
+        - echo "Using NPM $(npm -v)"
+        - npm ci --cache .npm --prefer-offline
+        - export OPENAI_API_KEY=$OPENAI_API_KEY
+    build:
+      commands:
+        - npm run build
