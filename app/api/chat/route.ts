@@ -1,6 +1,6 @@
 export const runtime="nodejs";
 import OpenAI from "openai";
-import { NextResponse } from "next/server";
+import { NextResponse,NextRequest } from "next/server";
 
 const SYSTEM_PROMPT = `
 You are Beelockchain's official AI assistant - a professional consultant helping clients discover the perfect solution.
@@ -95,7 +95,7 @@ Guide users through our services with structured, scannable responses that feel 
 - End with a clear next step or question
 `;
 
-export async function POST(req: Request) {
+export async function POST(request: NextRequest) {
   if (!process.env.OPENAI_API_KEY) {
     return NextResponse.json(
       { reply: "OPENAI_API_KEY is missing. Check your Amplify env vars." },
@@ -108,7 +108,7 @@ export async function POST(req: Request) {
   });
 
   try {
-    const { message } = await req.json();
+    const { message } = await request.json();
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
