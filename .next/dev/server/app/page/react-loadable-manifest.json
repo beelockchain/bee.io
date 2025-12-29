@@ -1,1 +1,121 @@
-{}
+{
+  "[project]/Documents/GitHub/bee.io/app/components/footer.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/footer.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_next_7d46d956._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_footer_tsx_c298bc9c._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_footer_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/faq.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/faq.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_components_0a46cd74._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_faq_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Shortidea.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Shortidea.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_components_Shortidea_tsx_7fb68687._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Shortidea_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/AIProjectFinderSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/AIProjectFinderSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_44161f7e._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_AIProjectFinderSection_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/TechnologiesUsed.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/TechnologiesUsed.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_e80b3ec6._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_TechnologiesUsed_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/ProcessSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/ProcessSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_components_9827c578._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_ProcessSection_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/sections/Whatweprovide.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/sections/Whatweprovide.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_6edbd434._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_sections_Whatweprovide_tsx_b8b7ddfd._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_sections_Whatweprovide_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/sections/HowItWorksCards.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/sections/HowItWorksCards.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_next_357583a5._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_sections_HowItWorksCards_tsx_c57fcc15._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_sections_HowItWorksCards_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Aiblueprint.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Aiblueprint.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_2bf35733._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_a15b361a._.js",
+      "static/chunks/7d925_8ba0b85f._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Aiblueprint_tsx_13d79aa5._.js",
+      "static/chunks/7d925_html2canvas_dist_html2canvas_dead9712.js",
+      "static/chunks/7d925_html2canvas_dist_html2canvas_b99bb2e4.js",
+      "static/chunks/7d925_dompurify_dist_purify_es_mjs_1f7ccbad._.js",
+      "static/chunks/7d925_dompurify_dist_purify_es_mjs_b99bb2e4._.js",
+      "static/chunks/7d925_deae4e38._.js",
+      "static/chunks/7d925_canvg_lib_index_es_b99bb2e4.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Aisolution.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Aisolution.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_components_Aisolution_tsx_5282e8db._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Aisolution_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Marquee.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Marquee.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_49ce2b37._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Marquee_tsx_f22b1828._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Marquee_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/whychooseus.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/whychooseus.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_next_357583a5._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_3e7112cc._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_whychooseus_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Teams.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Teams.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_components_Teams_tsx_afca096b._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Teams_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Statictis.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Statictis.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/Documents_GitHub_bee_io_app_components_18531a46._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Statictis_tsx_13d79aa5._.js"
+    ]
+  },
+  "[project]/Documents/GitHub/bee.io/app/components/Hero.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/Documents/GitHub/bee.io/app/components/Hero.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/7d925_next_357583a5._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_1489d328._.js",
+      "static/chunks/Documents_GitHub_bee_io_app_components_Hero_tsx_13d79aa5._.js"
+    ]
+  }
+}

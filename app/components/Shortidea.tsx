@@ -1,15 +1,15 @@
 const Shortidea = () => {
     return (
-        <div className="w-full min-h-screen flex justify-center items-center bg-[#00020F] bg-cover bg-center sm:mt-10 md:mt-10 lg:mt-30" 
+        <div className="w-full min-h-screen flex justify-center items-center bg-[#00020F] bg-cover bg-center " 
             style={{ backgroundImage: "url('/Section.svg')" }}>
 
             {/* MOBILE LAYOUT */}
             <div className="md:hidden w-full min-h-screen flex flex-col justify-center items-center px-6 py-12 space-y-8">
 
                 {/* Title */}
-                <h1 className="text-xl text-white text-center leading-tight font-manrope">
+                <h2 className="text-xl text-white text-center leading-tight font-manrope">
                     Enter a short <span className="bg-gradient-to-r font-manrope from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent">idea</span> such as:
-                </h1>
+                </h2>
 
                 {/* Arrow and Cards Container */}
                 <div className="w-full relative flex justify-end items-start min-h-[300px]">
@@ -46,7 +46,7 @@ const Shortidea = () => {
                         </div>
 
                         {/* OR Text */}
-                        <h1 className="text-xl text-white font-light self-center">or</h1>
+                        <h2 className="text-xl text-white font-light self-center">or</h2>
 
                         {/* Card 2 - Positioned at end of arrow */}
                         <div className="w-[180px] h-20 p-[2px] rounded-lg bg-gradient-to-r from-[#1BFFE1] to-black ml-2">
@@ -61,7 +61,7 @@ const Shortidea = () => {
 
                 {/* 3D Image */}
                 <div className="w-full flex justify-center my-8">
-                    <img src="/assets/images/div.tabs-steps-content.svg" className="w-[280px] max-w-full" alt="3D visualization" />
+                    <img src="/assets/images/div.tabs-steps-content.svg" className="w-[180px] max-w-full h-60" alt="3D visualization" />
                 </div>
 
                 {/* Bottom Text Section */}
@@ -69,9 +69,9 @@ const Shortidea = () => {
                     <p className="text-[14px] font-bold text-white leading-relaxed font-poppins">
                         EVO AI analyzes your input and delivers a full project insight
                     </p>
-                    <h1 className=" font-poppins text-xl font-bold bg-gradient-to-b from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent leading-tight">
+                    <h2 className=" font-poppins text-xl font-bold bg-gradient-to-b from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent leading-tight">
                         From one sentence → to complete project clarity.
-                    </h1>
+                    </h2>
                     <p className="font-poppins text-[12px] font-bold text-white leading-relaxed">
                         Perfect for founders, enterprises, and teams validating their next big Web3 idea
                     </p>
@@ -85,9 +85,9 @@ const Shortidea = () => {
                 <div className="w-[70%] h-full flex flex-col justify-center items-start pr-12 space-y-10">
 
                     {/* Title */}
-                    <h1 className="text-6xl text-white leading-tight">
+                    <h2 className="text-5xl text-white leading-tight">
                         Enter a short <span className="bg-gradient-to-r from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent">idea</span> such as:
-                    </h1>
+                    </h2>
 
                     {/* Arrow and Cards Section */}
                     <div className="w-full space-y-8">
@@ -110,7 +110,7 @@ const Shortidea = () => {
                             </div>
 
                             {/* OR Text */}
-                            <h1 className="text-2xl text-white font-light flex-shrink-0">OR</h1>
+                            <h2 className="text-2xl text-white font-light flex-shrink-0">OR</h2>
 
                             {/* Card 2 */}
                             <div className="w-60 h-20 p-[2px] rounded-lg bg-gradient-to-r from-[#1BFFE1] to-black flex-shrink-0">
@@ -128,9 +128,9 @@ const Shortidea = () => {
                         <p className="text-md font-bold text-white">
                             EVO AI analyzes your input and delivers a full project insight
                         </p>
-                        <h1 className="text-3xl font-bold bg-gradient-to-b from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent leading-tight">
+                        <h2 className="text-3xl font-bold bg-gradient-to-b from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent leading-tight">
                             From one sentence → to complete project clarity.
-                        </h1>
+                        </h2>
                         <p className="text-lg font-bold text-white">
                             Perfect for founders, enterprises, and teams validating their next big Web3 idea
                         </p>
@@ -139,7 +139,7 @@ const Shortidea = () => {
 
                 {/* Right Section - 30% */}
                 <div className="w-[30%] h-full flex flex-col justify-center items-center">
-                    <img src="/assets/images/div.tabs-steps-content.svg" className="max-w-full" alt="3D visualization" />
+                    <img src="/assets/images/div.tabs-steps-content.svg" className="w-80" alt="3D visualization" />
                 </div>
             </div>
         </div>

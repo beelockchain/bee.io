@@ -2,7 +2,7 @@ import NavLabel from "./NavLable";
 
 const ProcessSection = () => {
   return (
-    <section className="w-full bg-black py-24 flex justify-center">
+    <section className="w-full bg-black flex justify-center">
       <div
         className="relative w-[90%] max-w-7xl rounded-3xl
         bg-gradient-to-b from-[#0b0f1a] via-[#000000] to-[#085967]
@@ -38,7 +38,7 @@ const ProcessSection = () => {
         </div>
 
         {/* TAGS */}
-        <div className="flex flex-wrap gap-3 justify-start mb-14">
+        <div className="flex flex-wrap gap-3 justify-start">
           {[
             "WEB3",
             "IT Services",

@@ -15,7 +15,7 @@ export default function TechnologiesSection() {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   return (
-    <section className="w-full bg-[#05060f] py-14">
+    <section className="w-full bg-[#05060f] h-auto md:h-auto lg:h-auto">
       <div className="max-w-[1400px] mx-auto px-6">
 
         {/* TITLE */}
@@ -35,7 +35,7 @@ export default function TechnologiesSection() {
         </div>
 
         {/* ================= DESKTOP GRID ================= */}
-        <div className="hidden lg:block relative h-[300px]">
+        <div className="hidden lg:block relative h-[500px]">
           {technologies.map((tech, index) => {
             const isCategoryActive = activeCategory === null || tech.category === activeCategory;
             const isIconActive = tech.id === activeId;
