@@ -3,32 +3,56 @@ import Topnav from "./Topnav";
 
 const Hero = () => {
     return (
-        <div className="w-full xl:h-screen lg:h-screen md:h-full sm:h-screen  flex flex-col items-center" style={{
-            backgroundImage: "url('/assets/images/Desktop - 4 (1).svg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-        }}>
-            <Topnav />
-            <div className="w-full h-[70%] md:h-full flex flex-col justify-center items-center mt-10">
-                <img src="/assets/images/Group 2.svg" className="xl:w-[350px] lg:w-[350px] md:w-[390px] w-[250px]" />
-                <div className="w-[80%] xl:p-0 lg:p-0 md:p-5 h-full flex flex-col justify-center items-center text-center space-y-6 z-10">
-                    <div className="space-y-4 flex flex-col justify-center items-center w-full">
-                        <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold text-white md:w-[650px] w-full">World’s First AI-Centric Blockchain Development Company</h1>
-                        
-                        <p className="xl:text-md lg:text-lg md:text-md sm:text-sm text-[10px] text-white md:w-[850px] w-full">Beelockchain empowers businesses with intelligent, scalable, next-generation blockchain ecosystems. By fusing advanced Artificial Intelligence with future-ready Web3 Solutions, we deliver frictionless, secure, and high-performance blockchain solutions built for real-world impact.</p>
-                    </div>
-                    <div className="xl:w-[45%] lg:w-[45%] md:w-[100%] sm:w-[100%] w-[100%]  w-full flex justify-around items-center">
-                        <GradientGlowButton className="xl:text-sm lg:text-sm md:text-sm sm:text-[10px] text-[1px]">
-                            Build Your Project
-                        </GradientGlowButton>
-                        <GradientGlowButton>
-                            Explore the Techverse
-                        </GradientGlowButton>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <div
+  className="w-full min-h-screen flex flex-col items-center bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: "url('/assets/images/Desktop - 4 (1).svg')",
+  }}
+>
+  <Topnav />
+
+  <div className="w-full flex-1 flex flex-col justify-center items-center px-4 sm:px-6 md:px-10">
+    
+    {/* Logo */}
+    <img
+      src="/assets/images/Group 2.svg"
+      alt="Beelockchain Logo"
+      className="w-36 sm:w-40 md:w-52 lg:w-60 mb-6"
+      loading="lazy"
+      fetchPriority="high" 
+    />
+
+    {/* Content */}
+    <div className="max-w-3xl text-center space-y-3 z-10">
+      
+      <h1 className="text-white font-semibold
+        text-xl sm:text-2xl md:text-4xl">
+        World’s First AI-Centric Blockchain Development Company
+      </h1>
+
+      <p className="text-white opacity-90
+        text-xs sm:text-sm md:text-base leading-relaxed">
+        Beelockchain empowers businesses with intelligent, scalable,
+        next-generation blockchain ecosystems. By fusing advanced Artificial
+        Intelligence with future-ready Web3 Solutions, we deliver frictionless,
+        secure, and high-performance blockchain solutions built for real-world
+        impact.
+      </p>
+
+      {/* Buttons */}
+      <div className="flex justify-center items-center gap-4 pt-4">
+        <GradientGlowButton className="text-xs sm:text-sm">
+          Build Your Project
+        </GradientGlowButton>
+
+        <GradientGlowButton className="text-xs sm:text-sm">
+          Explore the Techverse
+        </GradientGlowButton>
+      </div>
+    </div>
+  </div>
+</div>
+
     );
 }
 

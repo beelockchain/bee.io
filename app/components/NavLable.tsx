@@ -41,9 +41,9 @@ const NavLabel = ({
             overflow-hidden
           "
         >
-          <p className="text-white whitespace-nowrap font-manrope">
+          <h2 className="text-white whitespace-nowrap font-manrope">
             {label}
-          </p>
+          </h2>
 
           {/* RIGHT FADE */}
           <div

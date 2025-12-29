@@ -51,7 +51,7 @@ const faqs = [
 
           <div className="flex flex-col items-start gap-2 font-poppins">
             <GradientGlowButton>
-              Try For Free
+              Get started
             </GradientGlowButton>
             <p className="text-sm text-white/40 ml-4 font-pooppins">
               No card required.

@@ -11,7 +11,7 @@ const TechTrendsMarquee = () => {
           <div key={i} className="flex items-center gap-10 mx-10 overflow-hidden">
             {/* <StarIcon /> */}
 
-            <h1 className="text-2xl  sm:text-2xl  md:text-2xl
+            <h2 className="text-2xl  sm:text-2xl  md:text-2xl
                 lg:text-6xl font-extrabold tracking-widest
                 text-transparent
                 bg-clip-text
@@ -21,7 +21,7 @@ const TechTrendsMarquee = () => {
                 animate-gradient-move"
             >
               GENERATIVE AI
-            </h1>
+            </h2>
             <Image src="/assets/images/marqueeimg.png" alt="Plus Icon" height={200} width={144}  className=" w-16 h-16
             sm:w-16 sm:h-16
             md:w-18 md:h-18
@@ -31,7 +31,7 @@ const TechTrendsMarquee = () => {
             {/* 
             <StarIcon /> */}
 
-             <h1 className="text-2xl  sm:text-6xl  md:text-6xl
+             <h2 className="text-2xl  sm:text-6xl  md:text-6xl
                 lg:text-6xl font-extrabold tracking-widest
                 text-transparent
                 bg-clip-text
@@ -41,7 +41,7 @@ const TechTrendsMarquee = () => {
                 animate-gradient-move"
             >
               TECH TRENDS
-            </h1>
+            </h2>
             <Image src="/assets/images/marqueeimg.png" alt="Plus Icon" height={200} width={204} className=" w-16 h-16
     sm:w-16 sm:h-16
     md:w-18 md:h-18

@@ -1,6 +1,6 @@
 const Teams = () => {
   return (
-    <section className="w-full h-[600px] bg-[#00020F] flex flex-col items-center justify-center relative overflow-hidden" style={{
+    <section className="w-full h-full bg-[#00020F] flex flex-col items-center justify-center overflow-hidden" style={{
             backgroundImage: "url('/assets/images/Frame 1561446121 (1).svg')",
             backgroundSize: "cover",
             backgroundPosition: "center",

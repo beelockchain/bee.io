@@ -317,7 +317,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
   {/* DESCRIPTION */}
   <div className="relative z-10 mt-6 text-start text-[12px] leading-relaxed">
     <p className="text-[#1BFFE1]  font-poppins font-medium">
-      Beelockchain – World’s First AI-Centered Blockchain Development Company
+      Beelockchain – World’s First AI-Centric Blockchain Development Company
     </p>
     <p className="text-white/70  font-poppins mt-2">
       Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered automation all under one roof.

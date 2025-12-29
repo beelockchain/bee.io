@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Send, MessageSquare } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 interface Message {
   id: number;
@@ -10,11 +10,6 @@ interface Message {
   timestamp: Date;
 }
 
-interface Chat {
-  id: number;
-  title: string;
-  timestamp: Date;
-}
 const TypingLoader = () => (
   <div className="flex gap-5 justify-start">
     <div className="max-w-3xl px-6 py-4 rounded-3xl bg-black/90 border border-white/10 text-gray-200 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
@@ -35,8 +30,6 @@ const TypingLoader = () => (
 const BlockchainChatbot = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState<string>('');
-  const [chatHistory, setChatHistory] = useState<Chat[]>([]);
-  const [activeChat, setActiveChat] = useState<number | null>(null);
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
 
   const handleSubmit = async (): Promise<void> => {
@@ -55,7 +48,6 @@ const BlockchainChatbot = () => {
     setInput('');
     setIsGenerating(true);
 
-    // Track when we started generating
     const startTime = Date.now();
 
     try {
@@ -69,11 +61,9 @@ const BlockchainChatbot = () => {
 
       const data = await res.json();
 
-      // Calculate how long the request took
       const elapsedTime = Date.now() - startTime;
       const remainingTime = Math.max(0, 2000 - elapsedTime);
 
-      // Wait for remaining time to ensure minimum 2 seconds
       await new Promise(resolve => setTimeout(resolve, remainingTime));
 
       const aiMessage: Message = {
@@ -85,11 +75,9 @@ const BlockchainChatbot = () => {
 
       setMessages(prev => [...prev, aiMessage]);
     } catch (error) {
-      // Calculate how long the request took
       const elapsedTime = Date.now() - startTime;
       const remainingTime = Math.max(0, 2000 - elapsedTime);
 
-      // Wait for remaining time to ensure minimum 2 seconds
       await new Promise(resolve => setTimeout(resolve, remainingTime));
 
       setMessages(prev => [
@@ -106,24 +94,15 @@ const BlockchainChatbot = () => {
     }
   };
 
-  const generateBlockchainResponse = (question: string): string => {
-    return "I'm an AI assistant here to help you shape your idea.";
-  };
-
-  const loadChat = (chatId: number): void => {
-    setActiveChat(chatId);
-    setMessages([]);
-  };
-
   return (
-    <div className="w-full h-screen bg-[#00020F]">
+    <div className="w-full bg-[#00020F] h-[100vh] md:flex md:flex-col md:justify-center">
 
       {/* 🔥 HERO SECTION */}
-      <div className="text-center pt-16 md:pt-24 pb-10 md:pb-16 px-4 md:px-6">
-        <h1 className="text-lg md:text-3xl text-white font-bold mb-2 font-manrope">
+      <div className="text-center h-[20vh]">
+        <h2 className="text-lg md:text-3xl text-white font-bold mb-2 font-manrope">
           AI PROJECT FINDER
-        </h1>
-        <p className="text-3xl md:text-5xl text-[#82888d] font-bold mb-3 font-manrope">
+        </h2>
+        <p className="text-2xl md:text-4xl text-[#82888d] font-bold mb-3 font-manrope">
           Powered by EVO AI
         </p>
         <p className="text-sm md:text-base text-white font-bold font-manrope">
@@ -132,15 +111,15 @@ const BlockchainChatbot = () => {
       </div>
 
       {/* 💬 CHAT CONTAINER */}
-      <div className="w-full flex justify-center px-3 md:px-6">
+      <div className="w-full flex justify-center px-3 md:px-6 h-[80vh]">
         <div
           className="
             flex bg-black/40 backdrop-blur-xl
             w-full max-w-6xl
-            h-[75vh] md:h-[520px]
+            h-[80vh]
             rounded-2xl md:rounded-3xl
             overflow-hidden
-            shadow-[0_0_0px_-10px_rgba(58,220,255,0.6),0_0_100px_-30px_rgba(58,220,255,0.4)]
+            shadow-[0_0_60px_-10px_rgba(58,220,255,0.6),0_0_100px_-30px_rgba(58,220,255,0.4)]
           "
         >
           {/* MAIN AREA */}
@@ -257,4 +236,5 @@ const BlockchainChatbot = () => {
     </div>
   );
 }
+
 export default BlockchainChatbot;
