@@ -51,7 +51,7 @@ const Whychooseus = () => {
               <div className="relative xl:h-72 lg:h-72 md:h-unset">
               
 
-            <div className="xl:w-64 xl:h-80 lg:w-64 lg:h-80 md:w-34 md:h-30 xl:right-6 lg:right-6 md:right-1 bottom-2 relative overflow-hidden bg-transparent">
+            <div className="xl:w-64 xl:h-80 lg:w-64 lg:h-80 md:w-40 md:h-52  xl:right-6 lg:right-6 md:right-1 bottom-2 relative overflow-hidden bg-transparent">
                 <Image
                   src="/assets/images/floting-text.png"
                   alt="Idea Light"
@@ -66,7 +66,7 @@ const Whychooseus = () => {
 
           {/* CENTER HUB (HEIGHT MASTER) */}
           <div className="col-span-6 flex justify-center">
-            <div className="relative xl:w-[520px] lg:w-[520px] md:w-[350px] xl:w-[520px]  aspect-square">
+            <div className="relative lg:w-[520px] md:w-[350px] xl:w-[520px]  aspect-square">
               <Image
                 src="/assets/images/whychoose-center-img.png"
                 alt="AI Core"
@@ -74,7 +74,7 @@ const Whychooseus = () => {
                 priority
                 className="object-contain"
               />
-              <div className="absolute inset-0 top-35 flex items-center justify-center z-10">
+              <div className="absolute inset-0 top-28 md:top-24 lg:top-35 flex items-center justify-center z-10">
                 <GradientGlowButton className="md:text-[10px] md:px-0">
                   Know More
                 </GradientGlowButton>
