@@ -11,7 +11,7 @@ const TechTrendsMarquee = () => {
           <div key={i} className="flex items-center gap-10 mx-10 overflow-hidden">
             {/* <StarIcon /> */}
 
-            <h2 className="text-2xl  sm:text-2xl  md:text-2xl
+            <h2 className="text-2xl  sm:text-6xl  md:text-6xl
                 lg:text-6xl font-extrabold tracking-widest
                 text-transparent
                 bg-clip-text

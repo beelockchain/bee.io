@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins, Manrope } from "next/font/google";
+import type { Metadata } from "next";
+import Script from "next/script";
 
 /* Fonts */
 const poppins = Poppins({
@@ -17,109 +18,116 @@ const manrope = Manrope({
   display: "swap",
 });
 
-/* ✅ METADATA */
+
+/* ✅ META DATA */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.beelockchain.io"),
-
-  title:
-    "AI-Powered Custom Blockchain & Game Development Company | Beelockchain",
-
-  description:
-    "Beelockchain is an AI-powered blockchain and game development company delivering secure, scalable blockchain solutions, game art design service, and prediction market software for startups and enterprises.",
-
-  alternates: {
-    canonical: "https://www.beelockchain.io/",
-    languages: {
-      "en-US": "https://www.beelockchain.io/",
-      "en-GB": "https://www.beelockchain.io/",
-      "en-AE": "https://www.beelockchain.io/",
-      "en-IN": "https://www.beelockchain.io/",
-    },
+  title: "Blockchain Development Company & Game Development Company",
+   icons: {
+    icon: [
+      { url: "/assets/images/favicon.png" },
+      // { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      // { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
-
+   description:"Beelockchain.io is a full-cycle AI Centric Blockchain & Game Development Company offering custom blockchain, crypto & game development services for startups and enterprises globally",
+    keywords: [
+    "game development company",
+    "blockchain development",
+    "game development agency",
+    "video game development company",
+    "blockchain development services",
+    "blockchain development company USA",
+    "Blockchain Game Development Company",
+    "game development services",
+    "web3 development company",
+    "blockchain development companies in usa",
+    "blockchain software development company",
+    "dapp development services",
+    "enterprise blockchain development company",
+    "blockchain smart contract development",
+    "game design company",
+  ],
+   alternates: {
+    canonical: "https://www.beelockchain.io/",
+  },
+    other: {
+    robots:
+      "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+  },
   openGraph: {
-    type: "website", // og:type
-    siteName: "Beelockchain", // og:site_name
-    url: "https://www.beelockchain.io/", // og:url
+    type: "website",
+    siteName: "Beelockchain",
+    url: "https://www.beelockchain.io/",
     title:
       "AI-Powered Custom Blockchain & Game Development Company | Beelockchain",
     description:
       "Beelockchain is an AI-powered blockchain and game development company delivering secure, scalable blockchain solutions, game art design service, and prediction market software for startups and enterprises.",
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_AE", "en_IN"],
     images: [
       {
-        url: "https://www.beelockchain.io/og/beelockchain-og.webp",
+        url: "https://ik.imagekit.io/racjwdojq/ogimg.webp", 
         width: 1200,
         height: 630,
         alt:
           "Beelockchain – AI-Centric Custom Blockchain & Game Development Solution",
-        type: "image/webp", // og:image:type
+        type: "image/webp",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     site: "@beelockchain_io",
     title:
       "AI-Powered Custom Blockchain & Game Development Company | Beelockchain",
     description:
-      "Build secure blockchain platforms, Web3 games, crypto solutions, and prediction market software powered by AI.",
-    images: ["https://www.beelockchain.io/og/beelockchain-og.webp"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  icons: {
-    icon: "/assets/images/favicon.png",
+      "Build secure blockchain platforms, Web3 games, crypto solutions, and prediction market software powered by AI. Explore Beelockchain.io.",
+    images: [
+      "https://ik.imagekit.io/racjwdojq/ogimg.webp", 
+    ],
   },
 };
+export default function RootLayout({ children}: { children: React.ReactNode;}) {
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    name: "Beelockchain - AI Centric Blockchain & Game Development Company",
-    image: "https://www.beelockchain.io/og/beelockchain-og.webp",
-    description:
-      "Top AI-centric Custom Blockchain & Game Development Company developed DApps, crypto platforms, game art design, and prediction market software.",
-    brand: {
-      "@type": "Brand",
-      name: "Beelockchain.io",
-    },
-    offers: {
-      "@type": "AggregateOffer",
-      url: "https://www.beelockchain.io/",
-      priceCurrency: "USD",
-      lowPrice: "5000",
-      highPrice: "10000",
-      offerCount: "10",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.7",
-      ratingCount: "1587",
-    },
-  };
-
+  
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${manrope.variable} antialiased`}>
-        {/* ✅ JSON-LD SCHEMA */}
-        <script
+        {children}
+          {/* Product Schema */}
+        <Script
+          id="product-schema"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(productSchema),
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              name: "Beelockchain - AI Centric Blockchain & Game Development Company",
+              image: "https://ik.imagekit.io/racjwdojq/ogimg.webp",
+              description:
+                "Top AI-centric Custom Blockchain & Game Development Company developed DApps, crypto platforms, game art design, and prediction market software.",
+              brand: {
+                "@type": "Brand",
+                name: "Beelockchain.io",
+              },
+              offers: {
+                "@type": "AggregateOffer",
+                url: "https://www.beelockchain.io/",
+                priceCurrency: "USD",
+                lowPrice: "5000",
+                highPrice: "10000",
+                offerCount: "10",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.7",
+                ratingCount: "1587",
+              },
+            }),
           }}
         />
-        {children}
       </body>
     </html>
   );

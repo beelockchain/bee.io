@@ -147,7 +147,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
     <div className="absolute left-1/2 -translate-x-1/2 top-[260px] sm:top-[300px] lg:top-[350px] w-[95%] sm:w-[90%] lg:w-[80%] px-6 text-start">
       <p className="text-[15px] sm:text-[16px] md:text-[18px] font-poppins font-semibold leading-relaxed">
         <span className="text-[#1BFFE1]">
-          Beelockchain –World’s First AI-Centered Blockchain Development Company
+          Beelockchain –World’s First AI-Centric Blockchain Development Company
         </span>
         <br />
         <span className="text-white/80">
