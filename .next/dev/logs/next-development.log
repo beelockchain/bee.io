@@ -1,18 +1,316 @@
-[00:00:36.500] Server  LOG      ✓ Ready in 26.8s
-[00:01:04.374] Server  LOG      ○ Compiling / ...
-[00:01:23.023] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:06.218] Server  LOG      ✓ Compiled in 168ms
-[00:03:08.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:31.201] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:54.014] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:46.912] Server  LOG      ✓ Compiled in 859ms
-[00:06:50.592] Server  LOG      ✓ Compiled in 950ms
-[00:07:00.157] Server  LOG      ✓ Compiled in 440ms
-[00:07:04.529] Server  LOG      ✓ Compiled in 342ms
-[00:08:00.179] Server  LOG      ✓ Compiled in 413ms
-[00:08:17.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:03.969] Server  LOG      ✓ Compiled in 438ms
-[00:09:25.262] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:39.109] Server  LOG      ✓ Compiled in 168ms
-[00:11:42.223] Server  LOG      ✓ Compiled in 353ms
-[00:11:46.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.358] Server  LOG      ✓ Ready in 1504ms
+[00:00:06.248] Server  LOG      ○ Compiling / ...
+[00:00:10.275] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:57.454] Server  LOG      ✓ Compiled in 220ms
+[00:04:00.424] Server  LOG      ✓ Compiled in 111ms
+[00:15:19.584] Server  LOG      ✓ Compiled in 317ms
+[00:15:21.107] Browser ERROR   uncaughtError: Error: Element type is invalid. Received a promise that resolves to: [object Object]. Lazy element type must resolve to a class or function.
+[00:15:21.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:21.590] Server  LOG      ✓ Compiled in 542ms
+[00:15:23.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:23.913] Server  LOG      ✓ Compiled in 191ms
+[00:22:59.034] Server  LOG      ✓ Compiled in 173ms
+[00:25:19.791] Server  LOG      ✓ Compiled in 155ms
+[00:25:20.131] Browser ERROR   ./app/components/GlobalMap.tsx:112:13
+Parsing ecmascript source code failed
+  110 |     phone: "+1 987 654 3210",
+  111 |     email: "info@beetech.com",
+> 112 |     top: 37%;
+      |             ^
+  113 |     left: 24%;
+  114 |   }, {
+  115 |     id: 4,
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:22.049] Browser ERROR   ./app/components/GlobalMap.tsx:112:13
+Parsing ecmascript source code failed
+  110 |     phone: "+1 987 654 3210",
+  111 |     email: "info@beetech.com",
+> 112 |     top: 37%,
+      |             ^
+  113 |     left: 24%;
+  114 |   }, {
+  115 |     id: 4,
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:24.045] Browser ERROR   ./app/components/GlobalMap.tsx:112:13
+Parsing ecmascript source code failed
+  110 |     phone: "+1 987 654 3210",
+  111 |     email: "info@beetech.com",
+> 112 |     top: 37%,
+      |             ^
+  113 |     left: 24
+  114 |   }, {
+  115 |     id: 4,
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:26.051] Browser ERROR   ./app/components/GlobalMap.tsx:112:13
+Parsing ecmascript source code failed
+  110 |     phone: "+1 987 654 3210",
+  111 |     email: "info@beetech.com",
+> 112 |     top: 37%,
+      |             ^
+  113 |     left: 24%,
+  114 |   }, {
+  115 |     id: 4,
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:52.283] Server  LOG      ✓ Compiled in 147ms
+[00:26:25.671] Server  LOG      ✓ Compiled in 142ms
+[00:26:26.042] Browser ERROR   ./app/components/GlobalMap.tsx:120:16
+Parsing ecmascript source code failed
+  118 |     phone: "+49 897 957654",
+  119 |     email: "info@beetech.com",
+> 120 |        top: 32%;
+      |                ^
+  121 |     left: 49%
+  122 |   },
+  123 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:28:31.524] Server  LOG      ✓ Compiled in 170ms
+[00:28:32.041] Browser ERROR   ./app/components/GlobalMap.tsx:102:16
+Parsing ecmascript source code failed
+  100 |     phone: "+971 987 654 321",
+  101 |     email: "info@beetech.com",
+> 102 |        top: 53%;
+      |                ^
+  103 |     left: 57%;
+  104 |   },
+  105 |  
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:28:34.053] Browser ERROR   ./app/components/GlobalMap.tsx:103:14
+Parsing ecmascript source code failed
+  101 |     email: "info@beetech.com",
+  102 |        top: "53%",
+> 103 |     left: 57%;
+      |              ^
+  104 |   },
+  105 |  
+  106 |   {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:28:34.978] Server  LOG      ✓ Compiled in 102ms
+[00:34:25.404] Server  LOG      ✓ Compiled in 176ms
+[00:41:43.308] Server  LOG      ✓ Compiled in 164ms
+[00:41:50.154] Server  LOG      ✓ Compiled in 324ms
+[00:41:51.054] Browser ERROR   ./app/components/GlobalMap.tsx:259:1
+Parsing ecmascript source code failed
+  257 |     </section>
+  258 |   );
+> 259 | };
+      | ^
+  260 |
+  261 | export default GlobalMap;
+  262 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:56.046] Browser ERROR   ./app/components/GlobalMap.tsx:259:1
+Parsing ecmascript source code failed
+  257 |     </section>
+  258 |   );
+> 259 | };
+      | ^
+  260 |
+  261 | export default GlobalMap;
+  262 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:08.981] Server  LOG      ✓ Compiled in 278ms
+[00:42:10.043] Browser ERROR   ./app/components/GlobalMap.tsx:159:10
+Parsing ecmascript source code failed
+  157 |         {active === loc.id && (
+  158 |           /* Tooltip code here */
+> 159 |         )}
+      |          ^
+  160 |       </div>
+  161 |     ))}
+  162 |   </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:11.371] Server  LOG      ✓ Compiled in 133ms
+[00:42:12.053] Browser ERROR   ./app/components/GlobalMap.tsx:259:1
+Parsing ecmascript source code failed
+  257 |     </section>
+  258 |   );
+> 259 | };
+      | ^
+  260 |
+  261 | export default GlobalMap;
+  262 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:48.591] Server  LOG      ✓ Compiled in 129ms
+[00:42:49.047] Browser ERROR   ./app/components/GlobalMap.tsx:160:11
+Parsing ecmascript source code failed
+  158 |
+  159 |             {/* Tooltip */}
+> 160 |           {active === loc.id && (
+      |           ^
+  161 |   <div className="absolute left-1/2 -translate-x-1/2 top-6 z-20">
+  162 |     {/* Tooltip box */}
+  163 |     <div className="relative bg-[#0b1220] text-sm rounded-xl px-4 py-3 w-56 shadow-xl border border-blue-500">
+
+Expected '</', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:53.013] Server  LOG      ✓ Compiled in 112ms
+[00:42:54.044] Browser ERROR   ./app/components/GlobalMap.tsx:258:1
+Parsing ecmascript source code failed
+  256 |     </section>
+  257 |   );
+> 258 | };
+      | ^
+  259 |
+  260 | export default GlobalMap;
+  261 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/GlobalMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/GlobalMap.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:04.721] Server  LOG      ✓ Compiled in 229ms
+[00:44:23.928] Server  LOG      ✓ Compiled in 215ms
+[00:44:29.713] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:22.044] Server  LOG      ✓ Compiled in 105ms
+[00:45:47.059] Server  LOG      ✓ Compiled in 133ms
+[00:45:50.276] Server  LOG      ✓ Compiled in 90ms

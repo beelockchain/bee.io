@@ -33,6 +33,9 @@ const Whatweprovide = dynamic(() => import("./sections/Whatweprovide"), {
 const ProcessSection = dynamic(() => import("./components/ProcessSection"), {
   loading: () => <p className="text-white text-center py-10">Loading Process...</p>,
 });
+const ClientsReview = dynamic(() => import("./components/ClientsReview"), {
+  loading: () => <p className="text-white text-center py-10">Loading Clients Review...</p>,
+});
 const TechnologiesSection = dynamic(() => import("./components/TechnologiesUsed"), {
   loading: () => <p className="text-white text-center py-10">Loading Technologies...</p>,
 });
@@ -41,6 +44,9 @@ const AIProjectFinderSection = dynamic(() => import("./components/AIProjectFinde
 });
 const Shortidea = dynamic(() => import("./components/Shortidea"), {
   loading: () => <p className="text-white text-center py-10">Loading Short Ideas...</p>,
+});
+const GlobalMap = dynamic(() => import("./components/GlobalMap"), {
+  loading: () => <p className="text-white text-center py-10">Loading Global Map...</p>,
 });
 const FAQSection = dynamic(() => import("./components/faq"), {
   loading: () => <p className="text-white text-center py-10">Loading FAQ...</p>,
@@ -62,9 +68,11 @@ export default function Home() {
       <HowItWorksCards />
       <Whatweprovide />
       <ProcessSection />
+      <ClientsReview/>
       <TechnologiesSection />
       <AIProjectFinderSection />
       <Shortidea />
+      <GlobalMap />
       <FAQSection />
       <Footer />
     </div>

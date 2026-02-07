@@ -14,6 +14,13 @@
       "static/chunks/app_components_faq_tsx_c13b58fe._.js"
     ]
   },
+  "[project]/app/components/GlobalMap.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/app/components/GlobalMap.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/app_components_GlobalMap_tsx_846f50d3._.js",
+      "static/chunks/app_components_GlobalMap_tsx_c13b58fe._.js"
+    ]
+  },
   "[project]/app/components/Shortidea.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/app/components/Shortidea.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
@@ -33,6 +40,14 @@
     "files": [
       "static/chunks/app_e0c0aebc._.js",
       "static/chunks/app_components_TechnologiesUsed_tsx_c13b58fe._.js"
+    ]
+  },
+  "[project]/app/components/ClientsReview.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/app/components/ClientsReview.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_next_71e330a9._.js",
+      "static/chunks/app_components_cc73a549._.js",
+      "static/chunks/app_components_ClientsReview_tsx_c13b58fe._.js"
     ]
   },
   "[project]/app/components/ProcessSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
