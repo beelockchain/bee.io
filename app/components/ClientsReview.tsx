@@ -189,8 +189,8 @@ const TestimonialCard = ({
   return (
     <div
       className={`
-        w-[90vw] md:w-[500px] lg:w-[706px]
-        h-auto md:h-[240px] lg:h-[280px]
+        w-[90vw] md:w-[550px] lg:w-[706px]
+        h-auto md:h-[270px] lg:h-[280px]
         shrink-0
         flex items-center justify-center
         transition-all duration-700
@@ -264,18 +264,36 @@ const TestimonialCard = ({
 
 /* ================= MAIN COMPONENT ================= */
 const ClientsReview = () => {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   const [cardWidth, setCardWidth] = useState(706);
+  const [cardGap, setCardGap] = useState(40);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
 
-  // Update card width on resize
+  // Create extended array for infinite loop
+  const extendedTestimonials = [
+    ...testimonials,
+    ...testimonials,
+    ...testimonials,
+  ];
+
+  // Check if component is mounted
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Update card width and gap on resize
   useEffect(() => {
     const updateCardWidth = () => {
       if (window.innerWidth < 768) {
-        setCardWidth(0); // Not used for mobile
+        setCardWidth(0);
+        setCardGap(0);
       } else if (window.innerWidth < 1024) {
-        setCardWidth(520); // Tablet
+        setCardWidth(550);
+        setCardGap(32);
       } else {
-        setCardWidth(806); // Desktop
+        setCardWidth(706);
+        setCardGap(40);
       }
     };
 
@@ -284,56 +302,168 @@ const ClientsReview = () => {
     return () => window.removeEventListener("resize", updateCardWidth);
   }, []);
 
+  // Start at the middle set
+  useEffect(() => {
+    setIndex(testimonials.length);
+  }, []);
+
+  // Handle infinite loop reset
+  useEffect(() => {
+    if (index >= testimonials.length * 2) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setIndex(testimonials.length);
+        setTimeout(() => setIsTransitioning(true), 50);
+      }, 700);
+    } else if (index < testimonials.length) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setIndex(testimonials.length);
+        setTimeout(() => setIsTransitioning(true), 50);
+      }, 700);
+    }
+  }, [index]);
+
   const prev = () => {
-    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setIndex((prev) => prev - 1);
   };
 
   const next = () => {
-    setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    setIndex((prev) => prev + 1);
   };
 
+  // Calculate actual index for mobile
+  const actualMobileIndex = index % testimonials.length;
+
   return (
-    <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
-      {/* Label */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
-        <NavLabel label="Clients Review" />
-      </div>
+    <div className="bg-[#191B26]">
+      <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+        {/* Label */}
+        <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+          <NavLabel label="Clients Review" />
+        </div>
 
-      {/* Heading */}
-      <h2
-        className="
-          absolute left-1/2 -translate-x-1/2
-          text-center text-white font-semibold font-manrope
-          px-4
-          top-[110px] text-[20px] leading-[1.3]
-          sm:top-[130px] sm:text-[24px]
-          md:top-[158px] md:text-[28px]
-          lg:text-[48px]
-        "
-      >
-        What Our Clients Say About Beelockchain
-      </h2>
+        {/* Heading */}
+        <h2
+          className="
+            absolute left-1/2 -translate-x-1/2
+            text-center text-white font-semibold font-manrope px-4
+            top-[110px] text-[14px] 
+            sm:top-[130px] sm:text-[24px]
+            md:top-[158px] md:text-[28px]
+            lg:text-[48px] text-nowrap
+          "
+        >
+          What Our Clients Say About Beelockchain
+        </h2>
 
-      {/* ================= MOBILE CAROUSEL ================= */}
-      <div className="md:hidden absolute top-[200px] sm:top-[220px] w-full">
-        <div className="relative overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-out"
-            style={{
-              transform: `translateX(-${index * 100}%)`,
-            }}
-          >
-            {testimonials.map((item, i) => (
-              <MobileTestimonialCard key={i} {...item} active={i === index} />
-            ))}
+        {/* ================= MOBILE CAROUSEL ================= */}
+        <div className="md:hidden absolute top-[200px] sm:top-[220px] w-full">
+          <div className="relative overflow-hidden">
+            <div
+              className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-out' : ''}`}
+              style={{
+                transform: `translateX(-${actualMobileIndex * 100}%)`,
+              }}
+            >
+              {testimonials.map((item, i) => (
+                <MobileTestimonialCard key={i} {...item} active={i === actualMobileIndex} />
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="flex justify-end gap-4 sm:gap-6 mt-6 sm:mt-8 px-4">
+            <button
+              onClick={prev}
+              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+              aria-label="Previous testimonial"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4 sm:w-5 sm:h-5"
+              >
+                <path
+                  d="M3.77344 8.61974L11.3162 1.07696L12.3938 2.1545L5.92852 8.61974L12.3938 15.085L11.3162 16.1625L3.77344 8.61974Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={next}
+              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+              aria-label="Next testimonial"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4 sm:w-5 sm:h-5"
+              >
+                <path
+                  d="M13.4719 8.61974L5.9291 1.07696L4.85156 2.1545L11.3168 8.61974L4.85156 15.085L5.9291 16.1625L13.4719 8.61974Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        <div className="flex justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 px-4">
+        {/* ================= TABLET/DESKTOP CAROUSEL ================= */}
+        {isMounted && (
+          <div
+            className="
+              absolute
+              left-1/2 -translate-x-1/2
+              w-full pointer-events-none
+              hidden md:block
+              top-[260px]
+              md:top-[300px]
+              lg:top-[350px]
+            "
+          >
+            <div
+              className={`relative flex gap-6 md:gap-8 lg:gap-10 ${isTransitioning ? 'transition-transform duration-700 ease-out' : ''}`}
+              style={{
+                transform: `translateX(calc(50% - ${index * (cardWidth + cardGap)}px - ${cardWidth / 2}px))`,
+              }}
+            >
+              {extendedTestimonials.map((item, i) => {
+                const position = i === index ? "center" : i < index ? "left" : "right";
+                
+                return (
+                  <TestimonialCard
+                    key={i}
+                    active={i === index}
+                    position={position}
+                    {...item}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Desktop/Tablet Navigation Buttons */}
+        <div className="hidden md:block">
           <button
             onClick={prev}
-            className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+            className="
+              absolute
+              left-[20px] md:left-[40px] lg:left-[120px] xl:left-[181px]
+              top-[440px] md:top-[460px] lg:top-[480px]
+              w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16
+              rounded-full bg-cyan-400
+              flex items-center justify-center
+              hover:bg-cyan-300 hover:scale-105
+              transition-all active:scale-95
+            "
             aria-label="Previous testimonial"
           >
             <svg
@@ -342,7 +472,7 @@ const ClientsReview = () => {
               viewBox="0 0 18 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 sm:w-5 sm:h-5"
+              className="w-4 h-4 md:w-5 md:h-5"
             >
               <path
                 d="M3.77344 8.61974L11.3162 1.07696L12.3938 2.1545L5.92852 8.61974L12.3938 15.085L11.3162 16.1625L3.77344 8.61974Z"
@@ -350,9 +480,19 @@ const ClientsReview = () => {
               />
             </svg>
           </button>
+
           <button
             onClick={next}
-            className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+            className="
+              absolute
+              right-[20px] md:right-[40px] lg:right-[120px] xl:right-[181px]
+              top-[440px] md:top-[460px] lg:top-[480px]
+              w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16
+              rounded-full bg-cyan-400
+              flex items-center justify-center
+              hover:bg-cyan-300 hover:scale-105
+              transition-all active:scale-95
+            "
             aria-label="Next testimonial"
           >
             <svg
@@ -361,7 +501,7 @@ const ClientsReview = () => {
               viewBox="0 0 18 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 sm:w-5 sm:h-5"
+              className="w-4 h-4 md:w-5 md:h-5"
             >
               <path
                 d="M13.4719 8.61974L5.9291 1.07696L4.85156 2.1545L11.3168 8.61974L4.85156 15.085L5.9291 16.1625L13.4719 8.61974Z"
@@ -370,106 +510,14 @@ const ClientsReview = () => {
             </svg>
           </button>
         </div>
-      </div>
 
-      {/* ================= TABLET/DESKTOP CAROUSEL ================= */}
-      <div
-        className="
-          absolute
-          left-1/2 -translate-x-1/2
-          w-full pointer-events-none
-          hidden md:block
-          top-[260px]
-          md:top-[300px]
-          lg:top-[270px]
-        "
-      >
-        <div
-          className="relative flex gap-6 md:gap-8 lg:gap-10 transition-transform duration-700 ease-out"
-          style={{
-            transform: `translateX(calc(50% - ${
-              index * cardWidth + cardWidth / 2
-            }px))`,
-          }}
-        >
-          {testimonials.map((item, i) => (
-            <TestimonialCard
-              key={i}
-              active={i === index}
-              position={i === index ? "center" : i < index ? "left" : "right"}
-              {...item}
-            />
-          ))}
+        {/* Edge Fade Gradient */}
+        <div className="pointer-events-none absolute inset-0 hidden md:block">
+          <div className="absolute left-0 top-0 h-full w-32 md:w-40 lg:w-48 bg-gradient-to-r from-[#191B26] to-transparent" />
+          <div className="absolute right-0 top-0 h-full w-32 md:w-40 lg:w-48 bg-gradient-to-l from-[#191B26] to-transparent" />
         </div>
-      </div>
-
-      {/* Desktop/Tablet Navigation Buttons */}
-      <div className="hidden md:block">
-        <button
-          onClick={prev}
-          className="
-            absolute
-            left-[20px] md:left-[40px] lg:left-[120px] xl:left-[181px]
-            top-[440px] md:top-[460px] lg:top-[480px]
-            w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16
-            rounded-full bg-cyan-400
-            flex items-center justify-center
-            hover:bg-cyan-300 hover:scale-105
-            transition-all active:scale-95
-          "
-          aria-label="Previous testimonial"
-        >
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4 md:w-5 md:h-5"
-          >
-            <path
-              d="M3.77344 8.61974L11.3162 1.07696L12.3938 2.1545L5.92852 8.61974L12.3938 15.085L11.3162 16.1625L3.77344 8.61974Z"
-              fill="black"
-            />
-          </svg>
-        </button>
-
-        <button
-          onClick={next}
-          className="
-            absolute
-            right-[20px] md:right-[40px] lg:right-[120px] xl:right-[181px]
-            top-[440px] md:top-[460px] lg:top-[480px]
-            w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16
-            rounded-full bg-cyan-400
-            flex items-center justify-center
-            hover:bg-cyan-300 hover:scale-105
-            transition-all active:scale-95
-          "
-          aria-label="Next testimonial"
-        >
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4 md:w-5 md:h-5"
-          >
-            <path
-              d="M13.4719 8.61974L5.9291 1.07696L4.85156 2.1545L11.3168 8.61974L4.85156 15.085L5.9291 16.1625L13.4719 8.61974Z"
-              fill="black"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Edge Fade Gradient */}
-      <div className="pointer-events-none absolute inset-0 hidden md:block">
-        <div className="absolute left-0 top-0 h-full w-32 md:w-40 lg:w-48 bg-gradient-to-r from-[#191B26] to-transparent" />
-        <div className="absolute right-0 top-0 h-full w-32 md:w-40 lg:w-48 bg-gradient-to-l from-[#191B26] to-transparent" />
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

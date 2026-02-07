@@ -129,7 +129,7 @@ const GlobalMap: React.FC = () => {
 
   return (
     <section className="bg-[#05070f] py-8 text-white">
-      <h2 className="text-center text-3xl font-semibold font-manrope">
+      <h2 className="text-center text-[30px] md:text-[36px] lg:text-[40px]  font-semibold font-manrope">
         Global Presence
       </h2>
 
@@ -159,7 +159,8 @@ const GlobalMap: React.FC = () => {
           {active === loc.id && (
   <div className="absolute left-1/2 -translate-x-1/2 top-6 z-20">
     {/* Tooltip box */}
-    <div className="relative bg-[#0b1220] text-sm rounded-xl px-4 py-3 w-56 shadow-xl border border-blue-500">
+    <div className="relative bg-[#65737e] text-[10px] sm:text-[10px] md:text-[12px] lg:text-[12px] 
+    rounded-xl px-4 py-3 w-36 shadow-xl border border-blue-500">
       {/* Arrow */}
       <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 
         border-l-8 border-r-8 border-b-8 
@@ -169,7 +170,7 @@ const GlobalMap: React.FC = () => {
       {/* Inner arrow to match background */}
       <div className="absolute -top-[6px] left-1/2 -translate-x-1/2 w-0 h-0 
         border-l-6 border-r-6 border-b-6 
-        border-l-transparent border-r-transparent border-b-[#0b1220]">
+        border-l-transparent border-r-transparent border-b-[#65737e]">
       </div>
 
       <div className="space-y-1">
@@ -178,12 +179,12 @@ const GlobalMap: React.FC = () => {
           <span>{loc.country}</span>
         </div>
 
-        <div className="flex items-center gap-2 text-xs text-white/70">
+        <div className="flex items-center gap-2 text-[10px]  text-cyan-400 underline">
           <PhoneIcon />
           <span>{loc.phone}</span>
         </div>
 
-        <div className="flex items-center gap-2 text-xs text-white/70">
+        <div className="flex items-center gap-2 text-[10px]  text-cyan-400 underline">
           <EmailIcon />
           <span>{loc.email}</span>
         </div>
@@ -197,7 +198,7 @@ const GlobalMap: React.FC = () => {
         </div>
 
        {/* 🖥 Desktop cards OVER the map */}
-<div className="hidden md:block absolute bottom-20 left-4 right-4 z-10">
+<div className="hidden md:block absolute  md:bottom-1 lg:bottom-20 left-4 right-4 z-10">
   <div className="grid grid-cols-4 gap-4">
     {locations.map((loc) => (
       <div

@@ -314,3 +314,476 @@ Import traces:
 [00:45:22.044] Server  LOG      ✓ Compiled in 105ms
 [00:45:47.059] Server  LOG      ✓ Compiled in 133ms
 [00:45:50.276] Server  LOG      ✓ Compiled in 90ms
+[00:51:57.547] Server  LOG      ✓ Compiled in 497ms
+[00:52:04.443] Server  LOG      ✓ Compiled in 841ms
+[00:52:17.351] Server  LOG      ✓ Compiled in 659ms
+[00:52:23.468] Server  LOG      ✓ Compiled in 287ms
+[00:52:32.684] Server  LOG      ✓ Compiled in 232ms
+[00:52:35.958] Server  LOG      ✓ Compiled in 187ms
+[00:52:39.052] Server  LOG      ✓ Compiled in 209ms
+[00:52:42.981] Server  LOG      ✓ Compiled in 220ms
+[00:52:48.724] Server  LOG      ✓ Compiled in 120ms
+[00:52:52.540] Server  LOG      ✓ Compiled in 163ms
+[00:52:54.508] Server  LOG      ✓ Compiled in 206ms
+[00:52:57.328] Server  LOG      ✓ Compiled in 257ms
+[00:54:18.254] Server  LOG      ✓ Compiled in 526ms
+[00:54:22.807] Server  LOG      ✓ Compiled in 1090ms
+[00:54:25.753] Server  LOG      ✓ Compiled in 190ms
+[00:54:29.710] Server  LOG      ✓ Compiled in 1731ms
+[00:57:24.904] Server  LOG      ✓ Compiled in 206ms
+[00:57:27.778] Server  LOG      ✓ Compiled in 250ms
+[00:57:32.484] Server  LOG      ✓ Compiled in 1385ms
+[00:57:35.857] Server  LOG      ✓ Compiled in 2.5s
+[00:57:36.770] Server  LOG      ✓ Compiled in 826ms
+[00:59:56.796] Server  LOG      ✓ Compiled in 285ms
+[00:59:59.440] Server  LOG      ✓ Compiled in 611ms
+[01:00:28.752] Server  LOG      ✓ Compiled in 536ms
+[01:01:54.729] Server  LOG      ✓ Compiled in 877ms
+[01:01:55.553] Server  LOG      ✓ Compiled in 421ms
+[01:03:12.804] Server  LOG      ✓ Compiled in 738ms
+[01:03:24.983] Server  LOG      ✓ Compiled in 3.8s
+[01:03:28.169] Server  LOG      ✓ Compiled in 709ms
+[01:03:34.797] Server  LOG      ✓ Compiled in 1373ms
+[01:03:37.780] Server  LOG      ✓ Compiled in 231ms
+[01:03:41.364] Server  LOG      ✓ Compiled in 242ms
+[01:04:10.627] Server  LOG      ✓ Compiled in 550ms
+[01:04:14.295] Server  LOG      ✓ Compiled in 1258ms
+[01:04:24.452] Server  LOG      ✓ Compiled in 1206ms
+[01:04:28.825] Server  LOG      ✓ Compiled in 237ms
+[01:05:42.299] Server  LOG      ✓ Compiled in 641ms
+[01:05:57.203] Server  LOG      ✓ Compiled in 537ms
+[01:06:51.046] Server  LOG      ✓ Compiled in 1320ms
+[01:07:36.975] Server  LOG      ✓ Compiled in 3.3s
+[01:07:39.498] Server  LOG      ✓ Compiled in 1043ms
+[01:07:43.418] Server  LOG      ✓ Compiled in 280ms
+[01:07:46.747] Server  LOG      ✓ Compiled in 657ms
+[01:07:55.482] Server  LOG      ✓ Compiled in 372ms
+[01:08:04.422] Server  LOG      ✓ Compiled in 174ms
+[01:08:11.720] Server  LOG      ✓ Compiled in 1207ms
+[01:08:15.098] Server  LOG      ✓ Compiled in 2.2s
+[01:08:20.309] Server  LOG      ✓ Compiled in 1455ms
+[01:08:22.225] Server  LOG      ✓ Compiled in 1571ms
+[01:08:25.941] Server  LOG      ✓ Compiled in 139ms
+[01:08:30.758] Server  LOG      ✓ Compiled in 153ms
+[01:08:38.029] Server  LOG      ✓ Compiled in 115ms
+[01:09:00.050] Server  LOG      ✓ Compiled in 1392ms
+[01:09:04.137] Server  LOG      ✓ Compiled in 2.9s
+[01:10:12.543] Server  LOG      ✓ Compiled in 336ms
+[01:10:38.713] Server  LOG      ✓ Compiled in 1050ms
+[01:15:23.396] Server  LOG      ✓ Compiled in 3.2s
+[01:15:36.385] Server  LOG      ✓ Compiled in 1922ms
+[01:17:41.180] Server  LOG      ✓ Compiled in 1586ms
+[01:18:05.068] Server  LOG      ✓ Compiled in 1097ms
+[01:18:32.187] Server  LOG      ✓ Compiled in 1109ms
+[01:18:33.329] Server  LOG      ✓ Compiled in 687ms
+[01:18:36.312] Server  LOG      ✓ Compiled in 682ms
+[01:18:39.675] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:44.658] Server  LOG      ✓ Compiled in 510ms
+[01:19:13.406] Server  LOG      ✓ Compiled in 1519ms
+[01:19:16.354] Server  LOG      ✓ Compiled in 260ms
+[01:19:20.340] Server  LOG      ✓ Compiled in 469ms
+[01:19:23.618] Server  LOG      ✓ Compiled in 512ms
+[01:20:23.460] Server  LOG      ✓ Compiled in 1120ms
+[01:20:24.794] Server  LOG      ✓ Compiled in 132ms
+[01:20:31.840] Server  LOG      ✓ Compiled in 666ms
+[01:20:37.433] Server  LOG      ✓ Compiled in 1271ms
+[01:20:43.455] Server  LOG      ✓ Compiled in 1129ms
+[01:20:45.218] Server  LOG      ✓ Compiled in 593ms
+[01:20:49.907] Server  LOG      ✓ Compiled in 1971ms
+[01:21:32.212] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:52.414] Server  LOG      ✓ Compiled in 2.3s
+[01:21:55.775] Server  LOG      ✓ Compiled in 1697ms
+[01:22:01.122] Server  LOG      ✓ Compiled in 1997ms
+[01:22:04.815] Server  LOG      ✓ Compiled in 2.6s
+[01:22:09.967] Server  LOG      ✓ Compiled in 465ms
+[01:22:19.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:24.853] Server  LOG      ✓ Compiled in 882ms
+[01:22:29.193] Server  LOG      ✓ Compiled in 281ms
+[01:22:32.678] Server  LOG      ✓ Compiled in 140ms
+[01:22:38.156] Server  LOG      ✓ Compiled in 670ms
+[01:23:43.530] Server  LOG      ✓ Compiled in 1867ms
+[01:23:44.178] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:23:49.046] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div cla></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:23:50.383] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div class></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:23:52.055] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div className=""></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:06.051] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div className="bg-[#191B26]"></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:08.048] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div className=""></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:09.045] Browser ERROR   ./app/components/ClientsReview.tsx:297:14
+Parsing ecmascript source code failed
+  295 |   return (
+  296 |     <div className="bg-[#191B26]"></div>
+> 297 |     <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      |              ^^^^^^^^^
+  298 |       {/* Label */}
+  299 |       <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
+  300 |         <NavLabel label="Clients Review" />
+
+Expected ',', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:12.834] Server  LOG      ✓ Compiled in 1914ms
+[01:24:13.066] Browser ERROR   ./app/components/ClientsReview.tsx:475:1
+Parsing ecmascript source code failed
+  473 |     </section>
+  474 |   );
+> 475 | };
+      | ^
+  476 |
+  477 | export default ClientsReview;
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:15.805] Server  LOG      ✓ Compiled in 755ms
+[01:24:16.094] Browser ERROR   ./app/components/ClientsReview.tsx:475:3
+Parsing ecmascript source code failed
+  473 |     </section>
+  474 |     </
+> 475 |   );
+      |   ^
+  476 | };
+  477 |
+  478 | export default ClientsReview;
+
+Unexpected token `)`. Expected jsx identifier
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:17.200] Server  LOG      ✓ Compiled in 813ms
+[01:25:51.762] Server  LOG      ✓ Compiled in 1486ms
+[01:25:56.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:18.520] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:34.093] Server  LOG      ✓ Compiled in 631ms
+[01:26:39.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:50.817] Server  LOG      ✓ Compiled in 477ms
+[01:27:09.281] Server  LOG      ✓ Compiled in 755ms
+[01:27:13.176] Server  LOG      ✓ Compiled in 222ms
+[01:27:16.573] Server  LOG      ✓ Compiled in 1675ms
+[01:27:27.145] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:40.930] Server  LOG      ✓ Compiled in 1515ms
+[01:27:45.853] Server  LOG      ✓ Compiled in 2.5s
+[01:27:53.176] Server  LOG      ✓ Compiled in 1977ms
+[01:27:58.438] Server  LOG      ✓ Compiled in 849ms
+[01:28:07.486] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:15.509] Server  LOG      ✓ Compiled in 968ms
+[01:28:23.887] Server  LOG      ✓ Compiled in 88ms
+[01:28:28.846] Server  LOG      ✓ Compiled in 443ms
+[01:28:38.499] Server  LOG      ✓ Compiled in 1309ms
+[01:28:44.848] Server  LOG      ✓ Compiled in 732ms
+[01:28:48.991] Server  LOG      ✓ Compiled in 89ms
+[01:28:51.787] Server  LOG      ✓ Compiled in 406ms
+[01:28:59.902] Server  LOG      ✓ Compiled in 601ms
+[01:29:04.649] Server  LOG      ✓ Compiled in 102ms
+[01:29:22.408] Server  LOG      ✓ Compiled in 1131ms
+[01:29:27.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:38.905] Server  LOG      ✓ Compiled in 545ms
+[01:29:46.814] Server  LOG      ✓ Compiled in 959ms
+[01:30:26.632] Server  LOG      ✓ Compiled in 429ms
+[01:30:31.967] Server  LOG      ✓ Compiled in 425ms
+[01:30:34.046] Server  LOG      ✓ Compiled in 811ms
+[01:30:38.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:57.764] Server  LOG      ✓ Compiled in 3.2s
+[01:30:58.280] Browser ERROR   ./app/components/ClientsReview.tsx:393:13
+Parsing ecmascript source code failed
+  391 |             transform: `translateX(calc(50% - ${
+  392 |               index * cardWidth + cardWidth / 
+> 393 |             }px))`,
+      |             ^
+  394 |           }}
+  395 |         >
+  396 |           {testimonials.map((item, i) => (
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:30:59.418] Server  LOG      ✓ Compiled in 1480ms
+[01:34:05.426] Server  LOG      ✓ Compiled in 1033ms
+[01:34:07.150] Server  LOG      ✓ Compiled in 1640ms
+[01:34:09.603] Browser ERROR   ./app/components/ClientsReview.tsx:393:13
+Parsing ecmascript source code failed
+  391 |             transform: `translateX(calc(50% - ${
+  392 |               index * cardWidth + cardWidth / 
+> 393 |             }px))`,
+      |             ^
+  394 |           }}
+  395 |         >
+  396 |           {testimonials.map((item, i) => (
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:34:23.713] Server  LOG      ✓ Compiled in 164ms
+[01:34:28.058] Server  LOG      ✓ Compiled in 1051ms
+[01:35:22.392] Server  LOG      ✓ Compiled in 160ms
+[01:35:28.493] Server  LOG      ✓ Compiled in 1032ms
+[01:35:34.659] Server  LOG      ✓ Compiled in 1825ms
+[01:35:38.407] Server  LOG      ✓ Compiled in 926ms
+[01:35:46.886] Server  LOG      ✓ Compiled in 408ms
+[01:35:55.361] Server  LOG      ✓ Compiled in 4.2s
+[01:36:41.130] Server  LOG      ✓ Compiled in 1612ms
+[01:36:46.565] Server  LOG      ✓ Compiled in 3.5s
+[01:36:48.377] Server  LOG      ✓ Compiled in 930ms
+[01:39:32.729] Server  LOG      ✓ Compiled in 3.3s
+[01:41:50.170] Server  LOG      ✓ Compiled in 1905ms
+[01:42:33.004] Server  LOG      ✓ Compiled in 315ms
+[01:43:33.251] Server  LOG      ✓ Compiled in 249ms
+[01:45:12.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:46:24.853] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:05.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:59:48.856] Browser WARN    Image with src "http://localhost:3000/assets/images/photo-7-2.jpg.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:59:48.856] Browser WARN    Image with src "http://localhost:3000/assets/images/howworks3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:59:49.359] Browser WARN    Image with src "http://localhost:3000/assets/images/howworks5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:59:49.359] Browser WARN    Image with src "http://localhost:3000/assets/images/photo-9-1.jpg.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:59:49.359] Browser WARN    Image with src "http://localhost:3000/assets/images/photo-5-1.jpg.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:00:43.836] Server  LOG      ✓ Compiled in 2.5s
+[02:00:48.109] Server  LOG      ✓ Compiled in 2.4s
+[02:01:21.666] Server  LOG      ✓ Compiled in 1539ms
+[02:01:22.044] Browser ERROR   ./app/components/ClientsReview.tsx:297:1
+Ecmascript file had an error
+  295 | export default ClientsReview;
+  296 |
+> 297 | export default ClientsReview;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+the name `default` is exported multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:01:26.790] Server  LOG      ✓ Compiled in 830ms
+[02:01:27.054] Browser ERROR   ./app/components/ClientsReview.tsx:296:1
+Ecmascript file had an error
+  294 | export default ClientsReview;
+  295 |
+> 296 | export default ClientsReview;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+the name `default` is exported multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/components/ClientsReview.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/ClientsReview.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:01:30.938] Server  LOG      ✓ Compiled in 393ms
+[02:01:56.552] Server  LOG      ✓ Compiled in 273ms
+[02:03:00.193] Server  LOG      ✓ Compiled in 239ms
+[02:03:04.977] Server  LOG      ✓ Compiled in 809ms
+[02:03:28.506] Server  LOG      ✓ Compiled in 1357ms
+[02:03:40.339] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:03:59.887] Server  LOG      ✓ Compiled in 345ms
+[02:05:08.025] Server  LOG      ✓ Compiled in 1265ms
+[02:05:20.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:05:34.935] Server  LOG      ✓ Compiled in 689ms
+[02:05:48.938] Server  LOG      ✓ Compiled in 1905ms
+[02:05:55.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:06:17.841] Server  LOG      ✓ Compiled in 668ms
+[02:06:23.072] Server  LOG      ✓ Compiled in 620ms
+[02:06:28.569] Server  LOG      ✓ Compiled in 500ms
+[02:06:32.779] Server  LOG      ✓ Compiled in 110ms
+[02:06:36.087] Server  LOG      ✓ Compiled in 186ms
+[02:06:38.429] Server  LOG      ✓ Compiled in 403ms
+[02:06:43.011] Server  LOG      ✓ Compiled in 150ms
+[02:06:45.886] Server  LOG      ✓ Compiled in 1077ms
+[02:06:50.143] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:07:00.048] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:07:12.325] Server  LOG      ✓ Compiled in 176ms
+[02:19:23.921] Server  ERROR   C:\Users\Kalis\Documents\beesio\bee.io\.next\dev\server\chunks\ssr\app_components_291b6897._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[02:19:23.949] Server  ERROR    ⨯ ReferenceError: window is not defined
+[02:19:24.036] Server  LOG      ✓ Compiled in 4.8s
+[02:19:27.426] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:19:28.610] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+window is not defined
+[02:20:21.673] Server  ERROR   C:\Users\Kalis\Documents\beesio\bee.io\.next\dev\server\chunks\ssr\app_components_291b6897._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[02:20:21.676] Server  ERROR    ⨯ ReferenceError: window is not defined
+[02:20:24.086] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:20:30.951] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+window is not defined
+[02:22:44.445] Server  LOG      ✓ Compiled in 1980ms
+[02:22:49.644] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:24:42.251] Server  LOG      ✓ Compiled in 2.9s
+[02:24:49.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

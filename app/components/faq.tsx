@@ -35,7 +35,7 @@ const faqs = [
 
 
   return (
-    <section className="w-full bg-[#00020f] md:py-20 py-0">
+    <section className="w-full bg-[#00020f] md:py-6 py-0">
       <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 md:gap-[120px] text-white">
 
         {/* MOBILE TITLE */}
@@ -49,14 +49,14 @@ const faqs = [
             Frequently <br /> Asked <br /> Questions
           </h2>
 
-          <div className="flex flex-col items-start gap-2 font-poppins">
+          {/* <div className="flex flex-col items-start gap-2 font-poppins">
             <GradientGlowButton>
               Get started
             </GradientGlowButton>
             <p className="text-sm text-white/40 ml-4 font-pooppins">
               No card required.
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* RIGHT SIDE — FAQ */}

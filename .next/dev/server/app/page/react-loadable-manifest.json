@@ -10,7 +10,7 @@
   "[project]/app/components/faq.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/app/components/faq.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/app_components_2eb40b55._.js",
+      "static/chunks/app_components_faq_tsx_abb0f946._.js",
       "static/chunks/app_components_faq_tsx_c13b58fe._.js"
     ]
   },
