@@ -1,6 +1,12 @@
 "use client";
 
+import Topnav from "./components/Topnav";
 import dynamic from "next/dynamic";
+import IndustriesSection from "./components/IndustriesSection";
+import BlockchainNetworks from "./components/BlockchainNetworks";
+import Spotlights from "./components/Spotlights"
+import RewardsSection from "./components/RewardsSection"
+import ContactSection from "./components/ContactSection"
 
 // Lazy-load components with fallback placeholders
 const Hero = dynamic(() => import("./components/Hero"), {
@@ -58,6 +64,7 @@ const Footer = dynamic(() => import("./components/footer"), {
 export default function Home() {
   return (
     <div className="bg-[#00020F] h-auto space-y-10">
+       <Topnav/>
       <Hero />
       <Statictis />
       <Teams />
@@ -67,13 +74,18 @@ export default function Home() {
       <Aiblueprint />
       <HowItWorksCards />
       <Whatweprovide />
+      <IndustriesSection/>
+      <BlockchainNetworks/>
       <ProcessSection />
       <ClientsReview/>
-      <TechnologiesSection />
+      {/* <TechnologiesSection /> */}
       <AIProjectFinderSection />
+      <RewardsSection/>
       <Shortidea />
+      <Spotlights/>
       <GlobalMap />
       <FAQSection />
+      <ContactSection/>
       <Footer />
     </div>
   );
