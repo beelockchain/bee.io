@@ -1,273 +1,256 @@
-[00:00:02.127] Server  LOG      ✓ Ready in 1607ms
-[00:00:05.245] Server  LOG      ○ Compiling / ...
-[00:00:10.413] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:58.407] Server  LOG      ✓ Compiled in 170ms
-[00:00:58.684] Browser ERROR   uncaughtError: ReferenceError: Topnav is not defined
-[00:00:58.685] Browser ERROR   uncaughtError: ReferenceError: Topnav is not defined
-[00:01:07.014] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:07.017] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:07.048] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:07.067] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:08.996] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:08.997] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:08.998] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:08.998] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:09.003] Server  LOG      ✓ Compiled in 336ms
-[00:01:09.064] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:09.065] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:10.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:11.695] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:11.700] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:45.138] Server  LOG      ✓ Compiled in 380ms
-[00:01:56.051] Server  LOG      ✓ Compiled in 144ms
-[00:02:20.491] Server  LOG      ✓ Compiled in 230ms
-[00:02:23.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:23.897] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:24.729] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:11.694] Server  LOG      ✓ Compiled in 437ms
-[00:03:25.589] Server  LOG      ✓ Compiled in 151ms
-[00:03:39.306] Server  LOG      ✓ Compiled in 173ms
-[00:03:41.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:42.706] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:42.707] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:33.147] Server  LOG      ✓ Compiled in 287ms
-[00:05:21.910] Server  LOG      ✓ Compiled in 389ms
-[00:05:25.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:25.688] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:26.776] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:26.776] Browser WARN    Image with src "http://localhost:3001/assets/images/bee-article1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:05:26.776] Browser WARN    Image with src "http://localhost:3001/assets/images/bee-article2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:05:26.776] Browser WARN    Image with src "http://localhost:3001/assets/images/bee-article3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:06:03.882] Server  LOG      ✓ Compiled in 364ms
-[00:06:25.311] Server  LOG      ✓ Compiled in 214ms
-[00:06:36.924] Server  LOG      ✓ Compiled in 264ms
-[00:06:41.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:41.686] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:06:41.692] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:07:06.605] Server  LOG      ✓ Compiled in 325ms
-[00:07:18.656] Server  LOG      ✓ Compiled in 171ms
-[00:07:30.600] Server  LOG      ✓ Compiled in 187ms
-[00:07:33.702] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:34.775] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:07:34.775] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:11:46.343] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:11:50.084] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:46.221] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:16:49.962] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:19:21.048] Server  LOG      ✓ Compiled in 193ms
-[00:19:22.957] Server  LOG      ✓ Compiled in 142ms
-[00:20:47.802] Server  LOG      ✓ Compiled in 226ms
-[00:20:48.695] Browser ERROR   ./app/components/BlockchainNetworks.tsx:135:5
-Parsing ecmascript source code failed
-  133 |     ]
-  134 |   }
-> 135 |     {
-      |     ^
-  136 |     id: 'substrate',
-  137 |     name: 'Substrate',
-  138 |     logo: '/assets/images/network-subtrate.png',
-
-Expected ',', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./app/components/BlockchainNetworks.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/components/BlockchainNetworks.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:20:48.696] Browser ERROR   ./app/components/BlockchainNetworks.tsx:135:5
-Parsing ecmascript source code failed
-  133 |     ]
-  134 |   }
-> 135 |     {
-      |     ^
-  136 |     id: 'substrate',
-  137 |     name: 'Substrate',
-  138 |     logo: '/assets/images/network-subtrate.png',
-
-Expected ',', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./app/components/BlockchainNetworks.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/components/BlockchainNetworks.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:20:51.720] Server  LOG      ✓ Compiled in 218ms
-[00:20:52.705] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. substrate
-[00:20:52.705] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. substrate
-[00:20:52.748] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. substrate
-[00:20:52.748] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. substrate
-[00:24:55.491] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:56.263] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. substrate
-[00:24:56.487] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:25:32.252] Server  LOG      ✓ Compiled in 260ms
-[00:25:37.624] Server  LOG      ✓ Compiled in 199ms
-[00:25:41.945] Server  LOG      ✓ Compiled in 219ms
-[00:26:27.215] Server  LOG      ✓ Compiled in 219ms
-[00:26:31.717] Server  LOG      ✓ Compiled in 222ms
-[00:32:59.161] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:33:59.398] Server  LOG      ✓ Compiled in 603ms
-[01:24:08.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:09.262] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:26:26.124] Server  LOG      ✓ Compiled in 609ms
-[01:26:33.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:26:33.877] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:27:34.179] Server  LOG      ✓ Compiled in 171ms
-[01:28:17.387] Server  LOG      ✓ Compiled in 567ms
-[01:28:46.366] Server  LOG      ✓ Compiled in 206ms
-[01:28:47.677] Server  LOG      ✓ Compiled in 477ms
-[01:29:02.924] Server  LOG      ✓ Compiled in 157ms
-[01:29:14.926] Server  LOG      ✓ Compiled in 118ms
-[01:33:52.237] Server  LOG      ✓ Compiled in 427ms
-[01:36:34.673] Server  LOG      ✓ Compiled in 320ms
-[01:37:00.908] Server  LOG      ✓ Compiled in 439ms
-[01:37:50.632] Server  LOG      ✓ Compiled in 274ms
-[01:42:06.314] Server  LOG      ✓ Compiled in 186ms
-[01:42:09.128] Server  LOG      ✓ Compiled in 182ms
-[01:42:12.598] Server  LOG      ✓ Compiled in 266ms
-[01:42:26.338] Server  LOG      ✓ Compiled in 163ms
-[01:42:32.044] Server  LOG      ✓ Compiled in 197ms
-[01:42:38.005] Server  LOG      ✓ Compiled in 178ms
-[01:43:04.483] Server  LOG      ✓ Compiled in 173ms
-[01:43:07.079] Server  LOG      ✓ Compiled in 180ms
-[01:43:26.311] Server  LOG      ✓ Compiled in 239ms
-[01:43:29.767] Server  LOG      ✓ Compiled in 186ms
-[01:44:08.861] Server  LOG      ✓ Compiled in 196ms
-[01:44:57.119] Server  LOG      ✓ Compiled in 210ms
-[01:45:03.991] Server  LOG      ✓ Compiled in 243ms
-[01:45:05.072] Server  LOG      ✓ Compiled in 164ms
-[01:45:06.972] Server  LOG      ✓ Compiled in 151ms
-[01:45:12.643] Server  LOG      ✓ Compiled in 504ms
-[01:45:24.487] Server  LOG      ✓ Compiled in 206ms
-[01:45:26.909] Server  LOG      ✓ Compiled in 160ms
-[01:45:31.349] Server  LOG      ✓ Compiled in 224ms
-[01:45:39.587] Server  LOG      ✓ Compiled in 148ms
-[01:45:56.303] Server  LOG      ✓ Compiled in 290ms
-[01:46:03.607] Server  LOG      ✓ Compiled in 177ms
-[01:46:45.905] Server  LOG      ✓ Compiled in 149ms
-[01:46:54.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:55.856] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:48:40.896] Server  LOG      ✓ Compiled in 272ms
-[02:04:46.255] Server  LOG      ✓ Compiled in 155ms
-[02:10:26.009] Server  LOG      ✓ Compiled in 330ms
-[02:11:08.145] Server  LOG      ✓ Compiled in 181ms
-[02:13:54.768] Server  LOG      ✓ Compiled in 137ms
-[02:14:02.679] Server  LOG      ✓ Compiled in 127ms
-[02:14:11.926] Server  LOG      ✓ Compiled in 131ms
-[02:14:23.670] Server  LOG      ✓ Compiled in 151ms
-[02:14:25.726] Server  LOG      ✓ Compiled in 166ms
-[02:14:37.812] Server  LOG      ✓ Compiled in 122ms
-[02:14:39.643] Server  LOG      ✓ Compiled in 142ms
-[02:14:40.914] Server  LOG      ✓ Compiled in 136ms
-[02:15:17.900] Server  LOG      ✓ Compiled in 104ms
-[02:16:11.650] Server  LOG      ✓ Compiled in 126ms
-[02:16:13.688] Server  LOG      ✓ Compiled in 132ms
-[02:19:09.807] Server  LOG      ✓ Compiled in 125ms
-[02:19:15.726] Server  LOG      ✓ Compiled in 132ms
-[02:19:18.187] Server  LOG      ✓ Compiled in 96ms
-[02:19:23.642] Server  LOG      ✓ Compiled in 135ms
-[02:19:41.031] Server  LOG      ✓ Compiled in 304ms
-[02:23:07.449] Server  LOG      ✓ Compiled in 169ms
-[02:25:48.100] Server  LOG      ✓ Compiled in 129ms
-[02:25:52.721] Server  LOG      ✓ Compiled in 116ms
-[02:26:02.353] Server  LOG      ✓ Compiled in 124ms
-[02:26:05.337] Server  LOG      ✓ Compiled in 116ms
-[02:26:13.807] Server  LOG      ✓ Compiled in 138ms
-[02:26:15.703] Server  LOG      ✓ Compiled in 132ms
-[02:26:31.405] Server  LOG      ✓ Compiled in 118ms
-[02:26:34.090] Server  LOG      ✓ Compiled in 104ms
-[02:26:53.204] Server  LOG      ✓ Compiled in 121ms
-[02:26:55.429] Server  LOG      ✓ Compiled in 129ms
-[02:27:01.146] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:27:04.152] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:28:10.871] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:11.143] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:28:13.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:13.961] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:28:19.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:20.036] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:28:32.644] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:32.894] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:30:11.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:30:11.775] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:32:07.497] Server  LOG      ✓ Compiled in 382ms
-[02:32:11.516] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:32:11.751] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:41:58.271] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:41:58.842] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:48:29.734] Server  LOG      ✓ Compiled in 224ms
-[02:48:37.667] Server  LOG      ✓ Compiled in 160ms
-[02:48:40.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:49:06.871] Server  LOG      ✓ Compiled in 433ms
-[02:49:14.596] Server  LOG      ✓ Compiled in 281ms
-[02:49:15.954] Server  LOG      ✓ Compiled in 173ms
-[02:49:18.581] Server  LOG      ✓ Compiled in 149ms
-[02:49:31.670] Server  LOG      ✓ Compiled in 257ms
-[02:49:33.274] Server  LOG      ✓ Compiled in 324ms
-[02:51:15.948] Server  LOG      ✓ Compiled in 162ms
-[02:51:23.632] Server  LOG      ✓ Compiled in 127ms
-[02:51:25.720] Server  LOG      ✓ Compiled in 133ms
-[02:51:27.994] Server  LOG      ✓ Compiled in 122ms
-[02:51:31.957] Server  LOG      ✓ Compiled in 122ms
-[02:51:37.738] Server  LOG      ✓ Compiled in 136ms
-[02:51:42.572] Server  LOG      ✓ Compiled in 122ms
-[02:51:46.039] Server  LOG      ✓ Compiled in 132ms
-[02:51:47.073] Server  LOG      ✓ Compiled in 120ms
-[02:52:35.875] Server  LOG      ✓ Compiled in 247ms
-[02:52:44.130] Server  LOG      ✓ Compiled in 119ms
-[02:52:46.167] Server  LOG      ✓ Compiled in 145ms
-[02:52:48.158] Server  LOG      ✓ Compiled in 120ms
-[02:52:51.715] Server  LOG      ✓ Compiled in 142ms
-[02:52:52.861] Server  LOG      ✓ Compiled in 143ms
-[02:52:55.053] Server  LOG      ✓ Compiled in 120ms
-[02:52:57.714] Server  LOG      ✓ Compiled in 116ms
-[02:53:00.629] Server  LOG      ✓ Compiled in 107ms
-[02:53:38.376] Server  LOG      ✓ Compiled in 222ms
-[02:53:49.238] Server  LOG      ✓ Compiled in 111ms
-[02:53:51.761] Server  LOG      ✓ Compiled in 139ms
-[02:53:55.300] Server  LOG      ✓ Compiled in 100ms
-[02:54:00.994] Server  LOG      ✓ Compiled in 109ms
-[02:54:04.237] Server  LOG      ✓ Compiled in 127ms
-[02:54:05.634] Server  LOG      ✓ Compiled in 131ms
-[02:54:22.726] Server  LOG      ✓ Compiled in 123ms
-[02:56:46.090] Server  LOG      ✓ Compiled in 145ms
-[02:56:50.120] Server  LOG      ✓ Compiled in 263ms
-[02:56:59.240] Server  LOG      ✓ Compiled in 125ms
-[02:57:15.200] Server  LOG      ✓ Compiled in 98ms
-[02:57:19.594] Server  LOG      ✓ Compiled in 108ms
-[02:57:29.532] Server  LOG      ✓ Compiled in 148ms
-[02:57:33.109] Server  LOG      ✓ Compiled in 109ms
-[02:57:41.279] Server  LOG      ✓ Compiled in 118ms
-[02:57:44.357] Server  LOG      ✓ Compiled in 105ms
-[02:58:25.235] Server  LOG      ✓ Compiled in 113ms
-[02:58:40.159] Server  LOG      ✓ Compiled in 116ms
-[02:58:46.400] Server  LOG      ✓ Compiled in 125ms
-[02:58:49.351] Server  LOG      ✓ Compiled in 121ms
-[02:58:58.727] Server  LOG      ✓ Compiled in 118ms
-[02:59:01.777] Server  LOG      ✓ Compiled in 126ms
-[03:00:00.874] Server  LOG      ✓ Compiled in 142ms
-[03:00:09.582] Server  LOG      ✓ Compiled in 225ms
-[03:00:22.581] Server  LOG      ✓ Compiled in 119ms
-[03:00:28.908] Server  LOG      ✓ Compiled in 270ms
-[03:01:54.326] Server  LOG      ✓ Compiled in 135ms
-[03:02:02.302] Server  LOG      ✓ Compiled in 113ms
-[03:02:11.451] Server  LOG      ✓ Compiled in 105ms
-[03:02:20.981] Server  LOG      ✓ Compiled in 118ms
-[03:02:30.619] Server  LOG      ✓ Compiled in 130ms
-[03:02:36.236] Server  LOG      ✓ Compiled in 116ms
-[03:10:42.092] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:32:52.863] Server  LOG      ✓ Compiled in 235ms
-[03:43:57.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:43:59.183] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.463] Server  LOG      ✓ Ready in 1858ms
+[00:00:07.783] Server  LOG      ○ Compiling / ...
+[00:00:15.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:34.828] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:31.392] Server  LOG      ✓ Compiled in 545ms
+[00:10:56.661] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:56.928] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:10.424] Server  LOG      ✓ Compiled in 452ms
+[00:13:53.222] Server  LOG      ✓ Compiled in 764ms
+[00:14:00.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:03.104] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:11.615] Server  LOG      ✓ Compiled in 395ms
+[00:14:30.859] Server  LOG      ✓ Compiled in 196ms
+[00:14:35.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:35.685] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:56.004] Server  LOG      ✓ Compiled in 195ms
+[00:14:56.101] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:14:58.194] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:14:58.495] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:58.682] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:12.842] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:12.915] Server  LOG      ✓ Compiled in 331ms
+[00:15:12.961] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:15:15.169] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:15.749] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:16.129] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:16.629] Server  LOG      ✓ Compiled in 223ms
+[00:15:16.916] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:17.119] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:18.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:18.729] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:40.955] Server  LOG      ✓ Compiled in 188ms
+[00:15:43.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:53.092] Server  LOG      ✓ Compiled in 233ms
+[00:17:58.492] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:20:06.188] Server  LOG      ✓ Compiled in 322ms
+[00:20:26.046] Server  LOG      ✓ Compiled in 260ms
+[00:20:31.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:32.202] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:20:43.712] Server  LOG      ✓ Compiled in 188ms
+[00:20:45.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:46.668] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:00.691] Server  LOG      ✓ Compiled in 255ms
+[00:21:43.162] Server  LOG      ✓ Compiled in 203ms
+[00:21:50.388] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:57.951] Server  LOG      ✓ Compiled in 347ms
+[00:22:09.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:12.733] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:48.165] Server  LOG      ✓ Compiled in 270ms
+[00:25:28.201] Server  LOG      ✓ Compiled in 354ms
+[00:25:57.835] Server  LOG      ✓ Compiled in 229ms
+[00:26:02.462] Server  LOG      ✓ Compiled in 628ms
+[00:26:06.182] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:09.589] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:12.091] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:12.274] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:35.268] Server  LOG      ✓ Compiled in 348ms
+[00:26:38.025] Server  LOG      ✓ Compiled in 573ms
+[00:26:41.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:43.363] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:59.471] Server  LOG      ✓ Compiled in 2s
+[00:57:03.083] Server  LOG      ○ Compiling /_not-found/page ...
+[00:57:11.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:11.532] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:20.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:44.247] Server  LOG      ✓ Compiled in 362ms
+[00:59:31.196] Server  LOG      ✓ Compiled in 490ms
+[00:59:31.341] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:59:31.745] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:59:35.940] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:36.269] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:01:03.823] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:01:03.840] Server  LOG      ✓ Compiled in 323ms
+[01:01:06.046] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:06.841] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:01:08.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:22.119] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:02:27.231] Server  LOG      ✓ Compiled in 698ms
+[01:02:27.336] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:02:27.745] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:02:31.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:32.030] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:03:59.885] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:03:59.898] Server  LOG      ✓ Compiled in 501ms
+[01:04:02.330] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:02.793] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:04:03.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:04.559] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:05:01.321] Server  LOG      ✓ Compiled in 305ms
+[01:05:57.561] Server  LOG      ✓ Compiled in 543ms
+[01:06:04.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:05.463] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:19.312] Server  LOG      ✓ Compiled in 425ms
+[01:06:23.317] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:23.654] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:19:49.979] Server  LOG      ✓ Compiled in 802ms
+[01:19:53.975] Server  LOG      ✓ Compiled in 213ms
+[01:19:56.882] Server  LOG      ✓ Compiled in 396ms
+[01:23:05.002] Server  LOG      ✓ Compiled in 555ms
+[01:23:06.785] Server  LOG      ✓ Compiled in 369ms
+[01:23:08.064] Server  LOG      ✓ Compiled in 247ms
+[01:23:09.189] Server  LOG      ✓ Compiled in 239ms
+[01:23:11.330] Server  LOG      ✓ Compiled in 266ms
+[01:23:17.497] Server  LOG      ✓ Compiled in 378ms
+[01:23:19.549] Server  LOG      ✓ Compiled in 303ms
+[01:23:21.878] Server  LOG      ✓ Compiled in 243ms
+[01:23:23.137] Server  LOG      ✓ Compiled in 337ms
+[01:23:24.766] Server  LOG      ✓ Compiled in 400ms
+[01:23:50.925] Server  LOG      ✓ Compiled in 240ms
+[01:23:53.577] Server  LOG      ✓ Compiled in 348ms
+[01:23:58.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:04.995] Server  LOG      ✓ Compiled in 310ms
+[01:24:11.314] Server  LOG      ✓ Compiled in 232ms
+[01:24:13.160] Server  LOG      ✓ Compiled in 207ms
+[01:24:34.618] Server  LOG      ✓ Compiled in 202ms
+[01:25:09.309] Server  LOG      ✓ Compiled in 478ms
+[01:25:21.642] Server  LOG      ✓ Compiled in 399ms
+[01:25:23.308] Server  LOG      ✓ Compiled in 149ms
+[01:25:30.853] Server  LOG      ✓ Compiled in 377ms
+[01:25:32.940] Server  LOG      ✓ Compiled in 196ms
+[01:25:38.149] Server  LOG      ✓ Compiled in 354ms
+[01:25:39.207] Server  LOG      ✓ Compiled in 174ms
+[01:25:51.518] Server  LOG      ✓ Compiled in 256ms
+[01:26:19.744] Server  LOG      ✓ Compiled in 621ms
+[01:26:24.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:03.182] Server  LOG      ✓ Compiled in 349ms
+[01:27:07.418] Server  LOG      ✓ Compiled in 285ms
+[01:27:12.084] Server  LOG      ✓ Compiled in 147ms
+[01:27:15.556] Server  LOG      ✓ Compiled in 200ms
+[01:27:19.077] Server  LOG      ✓ Compiled in 187ms
+[01:27:19.594] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:27:21.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:22.371] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:27:47.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:48.039] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:28:45.558] Server  LOG      ✓ Compiled in 354ms
+[01:28:47.314] Server  LOG      ✓ Compiled in 262ms
+[01:28:48.805] Server  LOG      ✓ Compiled in 469ms
+[01:28:54.387] Server  LOG      ✓ Compiled in 189ms
+[01:28:59.728] Server  LOG      ✓ Compiled in 244ms
+[01:29:06.551] Server  LOG      ✓ Compiled in 206ms
+[01:29:12.172] Server  LOG      ✓ Compiled in 186ms
+[01:29:33.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:33.986] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:30:30.219] Server  LOG      ✓ Compiled in 367ms
+[01:30:30.742] Browser ERROR   uncaughtError: ReferenceError: GradientGlowButton is not defined
+[01:30:30.757] Browser ERROR   uncaughtError: ReferenceError: GradientGlowButton is not defined
+[01:30:31.196] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:31.197] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:31.447] Server  LOG      ✓ Compiled in 184ms
+[01:30:32.522] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:33.014] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:33.769] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:30:33.773] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:30:36.547] Server  LOG      ✓ Compiled in 197ms
+[01:30:36.762] Browser ERROR   uncaughtError: ReferenceError: GradientGlowButton is not defined
+[01:30:36.774] Browser ERROR   uncaughtError: ReferenceError: GradientGlowButton is not defined
+[01:30:39.011] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:39.012] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:39.512] Server  ERROR   C:\Users\BeeyoondGaming\Desktop\bee.io\bee.io\.next\dev\server\chunks\ssr\[root-of-the-server]__6c015ae9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:30:39.523] Server  ERROR    ⨯ ReferenceError: GradientGlowButton is not defined
+[01:30:39.559] Server  LOG      ✓ Compiled in 280ms
+[01:30:39.652] Server  ERROR   C:\Users\BeeyoondGaming\Desktop\bee.io\bee.io\.next\dev\server\chunks\ssr\[root-of-the-server]__6c015ae9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:30:39.653] Server  ERROR    ⨯ ReferenceError: GradientGlowButton is not defined
+[01:30:40.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:40.148] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:40.756] Browser ERROR   uncaughtError: ReferenceError: GradientGlowButton is not defined
+[01:30:40.758] Browser ERROR   uncaughtError: ReferenceError: GradientGlowButton is not defined
+[01:30:42.336] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:42.340] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:43.252] Server  LOG      ✓ Compiled in 839ms
+[01:30:44.301] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:44.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:44.791] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:30:45.805] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:30:48.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:48.813] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:31:08.565] Server  LOG      ✓ Compiled in 225ms
+[01:31:15.719] Server  LOG      ✓ Compiled in 206ms
+[01:31:59.395] Server  LOG      ✓ Compiled in 319ms
+[01:32:07.068] Server  LOG      ✓ Compiled in 381ms
+[01:32:14.131] Server  LOG      ✓ Compiled in 166ms
+[01:32:23.512] Server  LOG      ✓ Compiled in 199ms
+[01:32:34.954] Server  LOG      ✓ Compiled in 349ms
+[01:34:24.673] Server  LOG      ✓ Compiled in 168ms
+[01:34:34.464] Server  LOG      ✓ Compiled in 200ms
+[01:34:43.783] Server  LOG      ✓ Compiled in 310ms
+[01:35:38.977] Server  LOG      ✓ Compiled in 303ms
+[01:35:40.585] Server  LOG      ✓ Compiled in 192ms
+[01:36:08.162] Server  LOG      ✓ Compiled in 186ms
+[01:36:18.190] Server  LOG      ✓ Compiled in 205ms
+[01:36:26.005] Server  LOG      ✓ Compiled in 173ms
+[01:36:33.755] Server  LOG      ✓ Compiled in 180ms
+[01:36:40.962] Server  LOG      ✓ Compiled in 189ms
+[01:36:47.338] Server  LOG      ✓ Compiled in 225ms
+[01:45:22.548] Server  LOG      ✓ Compiled in 1247ms
+[01:45:22.899] Browser ERROR   uncaughtError: ReferenceError: NavLabel is not defined
+[01:45:23.909] Browser ERROR   uncaughtError: ReferenceError: NavLabel is not defined
+[01:45:35.313] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:35.314] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:35.322] Server  LOG      ✓ Compiled in 277ms
+[01:45:36.612] Server  ERROR   C:\Users\BeeyoondGaming\Desktop\bee.io\bee.io\.next\dev\server\chunks\ssr\[root-of-the-server]__6c015ae9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:45:36.617] Server  ERROR    ⨯ ReferenceError: NavLabel is not defined
+[01:45:36.717] Browser ERROR   uncaughtError: ReferenceError: NavLabel is not defined
+[01:45:36.717] Browser ERROR   uncaughtError: ReferenceError: NavLabel is not defined
+[01:45:37.051] Server  ERROR   C:\Users\BeeyoondGaming\Desktop\bee.io\bee.io\.next\dev\server\chunks\ssr\[root-of-the-server]__6c015ae9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:45:37.052] Server  ERROR    ⨯ ReferenceError: NavLabel is not defined
+[01:45:38.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:38.491] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:38.758] Browser ERROR   uncaughtError: ReferenceError: NavLabel is not defined
+[01:45:39.755] Browser ERROR   uncaughtError: ReferenceError: NavLabel is not defined
+[01:45:40.254] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:40.289] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:42.546] Server  LOG      ✓ Compiled in 1433ms
+[01:45:42.832] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:42.834] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:43.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:44.165] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:45:44.206] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:44.505] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:44.924] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:45:45.845] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:46:05.207] Server  LOG      ✓ Compiled in 894ms
+[01:46:07.825] Server  LOG      ✓ Compiled in 185ms
+[01:46:11.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:46:18.746] Server  LOG      ✓ Compiled in 209ms
+[01:46:23.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:46:58.793] Server  LOG      ✓ Compiled in 499ms
+[01:47:00.685] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:47:09.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:47:09.947] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:49:19.516] Server  LOG      ✓ Compiled in 1075ms
+[01:49:20.122] Server  LOG      ✓ Compiled in 212ms
+[01:50:01.778] Server  LOG      ✓ Compiled in 193ms
+[01:50:08.680] Server  LOG      ✓ Compiled in 231ms
+[01:50:41.452] Server  LOG      ✓ Compiled in 192ms
+[01:50:46.545] Server  LOG      ✓ Compiled in 154ms
+[01:52:07.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:07.875] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:52:22.213] Server  LOG      ✓ Compiled in 347ms
+[01:52:30.448] Server  LOG      ✓ Compiled in 233ms
+[01:52:36.826] Server  LOG      ✓ Compiled in 274ms
+[01:52:47.800] Server  LOG      ✓ Compiled in 236ms
+[01:52:57.969] Server  LOG      ✓ Compiled in 233ms
+[01:53:04.003] Server  LOG      ✓ Compiled in 200ms
+[01:53:05.028] Server  LOG      ✓ Compiled in 176ms
+[01:53:19.707] Server  LOG      ✓ Compiled in 586ms
+[01:53:25.955] Server  LOG      ✓ Compiled in 195ms
+[01:53:32.978] Server  LOG      ✓ Compiled in 518ms
+[01:53:41.861] Server  LOG      ✓ Compiled in 463ms
+[01:53:55.946] Server  LOG      ✓ Compiled in 189ms
+[01:54:05.273] Server  LOG      ✓ Compiled in 222ms
+[01:54:25.304] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -280,30 +263,34 @@ It can also happen if the client has a browser extension installed which messes 
 %s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-+                           className="poppins_3e157e41-module__euozaW__variable manrope_9aefac85-module__Jg6FdG__vari..."
--                           className="dark"
-                          >
-                  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="bg-[#00020...">
+            <Topnav>
+            <LoadableComponent>
+            <LoadableComponent>
+              <Suspense fallback={<loading>}>
+                <Statictis>
+                  <div className="w-full min...">
+                    <div className="md:w-[77%]...">
+                      <div className="inline-fle...">
+                        <NavLabel label="Who we are" className="text-sm md...">
+                          <div className="flex justi...">
+                            <div className={"   relat..."}>
+                              <span>
+                              <div>
+                              <div
++                               className={"   relative flex items-center w-[170px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+-                               className={"   relative flex items-center w-[150px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+                              >
+                      ...
+                    ...
+            ...
+    ...
 
-[03:44:00.989] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[01:54:25.304] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -313,30 +300,166 @@ It can also happen if the client has a browser extension installed which messes 
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-https://react.dev/link/hydration-mismatch
+%s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{lazyData:null, ...}}>
-                    <__next_viewport_boundary__>
-                    <Next.Metadata>
-+                     <div hidden={true}>
--                     {"\n        "}
-                    ...
-                  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="bg-[#00020...">
+            <Topnav>
+            <LoadableComponent>
+            <LoadableComponent>
+            <Demandservice>
+            <LoadableComponent>
+              <Suspense fallback={<loading>}>
+                <Whychooseus>
+                  <section className="w-full bg-...">
+                    <div className={"relative..."}>
+                      <div className="mb-16 flex...">
+                        <NavLabel label="Why Choose Us">
+                          <div className={"flex jus..."}>
+                            <div className={"   relat..."}>
+                              <span>
+                              <div>
+                              <div
++                               className={"   relative flex items-center w-[170px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+-                               className={"   relative flex items-center w-[150px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+                              >
+                      ...
+                    <div className="relative w...">
+                      <div className="mb-12  md:...">
+                        <NavLabel label="Why Choose Us">
+                          <div className={"flex jus..."}>
+                            <div className={"   relat..."}>
+                              <span>
+                              <div>
+                              <div
++                               className={"   relative flex items-center w-[170px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+-                               className={"   relative flex items-center w-[150px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+                              >
+                      ...
+            ...
+    ...
 
-[03:49:12.829] Server  LOG      ✓ Compiled in 504ms
-[03:49:13.616] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:49:13.616] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
-[03:49:13.617] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__a5d693cd._.css
-[03:49:13.617] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__a5d693cd._.css
-[03:49:21.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:49:50.444] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:49:51.444] Browser WARN    Image with src "http://localhost:3001/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:54:25.305] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="bg-[#00020...">
+            <Topnav>
+            <LoadableComponent>
+            <LoadableComponent>
+            <Demandservice>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <IndustriesSection>
+            <BlockchainNetworks>
+            <LoadableComponent>
+              <Suspense fallback={<loading>}>
+                <ProcessSection>
+                  <section className="w-full bg-...">
+                    <div className="relative w...">
+                      <div className="flex justi...">
+                        <NavLabel label="Simple pro...">
+                          <div className={"flex jus..."}>
+                            <div className={"   relat..."}>
+                              <span>
+                              <div>
+                              <div
++                               className={"   relative flex items-center w-[170px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+-                               className={"   relative flex items-center w-[150px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+                              >
+                      ...
+            ...
+    ...
+
+[01:54:25.305] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="bg-[#00020...">
+            <Topnav>
+            <LoadableComponent>
+            <LoadableComponent>
+            <Demandservice>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            <IndustriesSection>
+            <BlockchainNetworks>
+            <LoadableComponent>
+            <LoadableComponent>
+              <Suspense fallback={<loading>}>
+                <ClientsReview>
+                  <div className="bg-[#191B26]">
+                    <section className="relative w...">
+                      <div className="absolute l...">
+                        <NavLabel label="Clients Re...">
+                          <div className={"flex jus..."}>
+                            <div className={"   relat..."}>
+                              <span>
+                              <div>
+                              <div
++                               className={"   relative flex items-center w-[170px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+-                               className={"   relative flex items-center w-[150px]   pl-2 pr-[11px] py-2 rounded-lg ..."}
+                              >
+                      ...
+            ...
+    ...
+
+[01:54:51.588] Server  LOG      ✓ Compiled in 531ms
+[01:55:03.760] Server  LOG      ✓ Compiled in 246ms
+[01:55:07.560] Server  LOG      ✓ Compiled in 194ms
+[01:55:10.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:55:10.761] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:55:27.746] Server  LOG      ✓ Compiled in 289ms
+[01:55:32.703] Server  LOG      ✓ Compiled in 243ms
+[01:55:35.146] Server  LOG      ✓ Compiled in 219ms
+[01:55:38.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:55:39.040] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:55:59.411] Server  LOG      ✓ Compiled in 288ms
+[01:56:40.738] Server  LOG      ✓ Compiled in 325ms
+[01:56:45.511] Server  LOG      ✓ Compiled in 233ms
+[01:57:03.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:04.209] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:57:15.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:15.506] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:57:41.212] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:41.410] Browser WARN    Image with src "http://localhost:3000/assets/images/evo-menu-item.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:59:59.099] Server  LOG      ✓ Compiled in 1585ms
+[02:00:00.498] Server  LOG      ✓ Compiled in 237ms
