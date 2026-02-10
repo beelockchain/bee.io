@@ -132,8 +132,6 @@ const RewardsSection: React.FC = () => {
         )
       `,
     }}
-
-
     >
       {/* Background gradient glow - Desktop only */}
 <div className="hidden md:block absolute inset-0 overflow-hidden">
@@ -156,7 +154,6 @@ const RewardsSection: React.FC = () => {
       filter: "blur(0px)"
     }}
   />
-
   {/* Soft intense glow core */}
   <div
     className="absolute left-1/2 -translate-x-1/2 bottom-[-140px]"
@@ -169,7 +166,6 @@ const RewardsSection: React.FC = () => {
       opacity: 0.7
     }}
   />
-
 </div>
 
 

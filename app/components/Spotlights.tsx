@@ -65,7 +65,7 @@ const Spotlights = () => {
               </div>
               
               {/* Heading - centered on mobile, left-aligned on desktop */}
-             <h2 className="text-[16px] font-manrope md:text-2xl lg:text-xl xl:text-2xl font-bold">
+             <h2 className="text-[16px] font-manrope md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                 <span className="text-white">
                     Shaping The Future,
                 </span>{' '}

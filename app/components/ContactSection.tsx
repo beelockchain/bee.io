@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="w-full bg-[#0a0e1a]  md:py-16 lg:py-20">
+    <section className="w-full bg-[#00020f]  md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto">
         {/* Desktop View - Gradient Box with Rounded Corners */}
         <div className="hidden md:block bg-gradient-to-r  rounded-[15px] px-12 py-10 lg:px-16 lg:py-12 relative overflow-hidden"
@@ -36,14 +36,14 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* Mobile View - Full Gradient with Centered Content */}
-        <div className="md:hidden font-manrope bg-gradient-to-br from-[#2a7b8d] via-[#69DBCC] to-[#7ef0e1] px-15  py-10 text-left tracking-tight">
+        <div className="md:hidden font-manrope bg-gradient-to-br from-[#2a7b8d] via-[#69DBCC] to-[#7ef0e1] px-7  py-10 text-left tracking-tight">
           <h2 className="text-white text-3xl font-bold mb-4 ">
             We'd Love To Hear From You
           </h2>
           <p className="text-white text-[15px] text-left opacity-90 leading-relaxed mb-8 font-manrope">
             Share your requirements with Bealoclchain and connect with our technical experts to explore the best solution for your project.
           </p>
-          <button className="bg-[#0a0e1a] font-manrope text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#151b2b] transition-colors duration-300 w-full max-w-xs mx-auto block">
+          <button className="bg-[#0a0e1a] font-manrope text-white px-8 py-3 rounded-full font-medium text-[13px] hover:bg-[#151b2b] transition-colors duration-300 w-full max-w-xs mx-auto block">
             Get Free Consultation
           </button>
         </div>

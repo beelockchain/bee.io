@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
 
       {/* Arrow + Circle (same place till scroll end) */}
-      <div className="fixed md:right-10 lg:right-20 xl:right-10 md:bottom-0 lg:bottom-10 xl:bottom-0 z-30 hidden lg:flex flex-col items-center gap-6 ">
+      <div className="fixed md:right-10 lg:right-5 xl:right-10 md:bottom-0 lg:bottom-10 xl:bottom-0 z-30 hidden lg:flex flex-col items-center gap-6 ">
 
         <button
           onClick={scrollToTop}

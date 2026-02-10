@@ -172,8 +172,8 @@ export default function BlockchainNetworks() {
 
           {/* TABS */}
           <div className="grid grid-cols-6 gap-4
-                          max-md:grid-cols-5
-                          max-sm:grid-cols-3 p-4 md:p-8 lg:p-8 xl:p-8 bg-[#12141E] md:rounded-t-3xl lg:rounded-t-3xl xl:rounded-t-3xl ">
+                          max-md:grid-cols-5 poin 
+                          max-sm:grid-cols-3 p-5 md:p-8 lg:p-8 xl:p-8 bg-[#12141E] md:rounded-t-3xl lg:rounded-t-3xl xl:rounded-t-3xl ">
 
             {networks.map((network) => {
               const active = activeNetwork === network.id;
@@ -183,7 +183,7 @@ export default function BlockchainNetworks() {
                     key={network.id}
                     onClick={() => setActiveNetwork(network.id)}
                     className={`
-                      flex items-center justify-center
+                      flex items-center justify-center cursor-pointer
                      p-1    xl:p-5
                      h-[25px] md:h-[30px] xl:h-[64px]
                       transition-all duration-200
