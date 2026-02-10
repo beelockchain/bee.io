@@ -32,7 +32,7 @@ const GradientGlowButton = ({
           absolute
           -top-[3px] md:-top-[4px]
           -right-[6px] md:-right-[8px]
-          w-[75%] md:w-[80%]
+          w-fit
           h-full
           rounded-full
           bg-[linear-gradient(255deg,#3ADCFF_0%,rgba(58,220,255,0.35)_30%,transparent_60%)]

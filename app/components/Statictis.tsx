@@ -4,48 +4,56 @@ import NavLabel from "./NavLable";
 const Statictis = () => {
   return (
     <div className="w-full min-h-screen bg-[#00020F] flex flex-col gap-6 px-4 md:px-0 items-center">
-
       {/* ================= TOP TEXT ================= */}
-      <div className="md:w-[77%] md:max-w-6xl w-[90%]">
+      <div className="w-full max-w-[1000px]">
         <div className="inline-flex items-center rounded-xl bg-gradient-to-r from-[#0B0F1C] via-[#111827] to-[#0B0F1C]">
-          <NavLabel label="Who we are" className="text-sm md:text-[15px]" />
+          <NavLabel label="Your Trusted Partner" className="text-sm md:text-[15px]" />
         </div>
 
         {/* DESKTOP + TABLET */}
         <div className="hidden md:flex flex-col mt-6 gap-2">
           <div className="flex items-center flex-wrap gap-2">
-            <h3 className="text-white text-xl lg:text-2xl">
-              We combine deep expertise with
+            <h3 className="text-white text-lg lg:text-xl">
+              Beelockchain is a pioneering{" "}
+              <span className="text-[#1BFFE1] ml-1 mr-1">
+                Blockchain Development Company
+              </span>
+              redefining how decentralized technologies are built, deployed, and
+              scaled for modern businesses. As a trusted Custom Blockchain
+              Development Company, we merge deep blockchain expertise with EVO
+              AI, our proprietary intelligence engine, to design and develop
+              future-ready blockchain solutions.
             </h3>
-            <img src="/assets/images/animation.svg" className="w-14 h-14" />
-            <h3 className="text-white text-xl lg:text-2xl">
-              EVO AI to enhance
+            <h3 className="text-white text-lg lg:text-xl">
+              A unified approach to blockchain apps and enterprise-grade
+              blockchain development solutions provides automation,
+              architectural optimization, system behavior prediction, and faster
+              development cycles.
             </h3>
-          </div>
-
-          <div className="flex items-center flex-wrap gap-2">
-            <h3 className="text-white text-xl lg:text-2xl">
-              the development process, optimization, and
-            </h3>
-            <img src="/assets/images/Butterfly.gif" className="w-16 h-16" />
-            <h3 className="text-white text-xl lg:text-2xl">
-              scaling
-            </h3>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <h3 className="text-white text-xl lg:text-2xl">
-              of decentralized solutions.
-            </h3>
-            <img src="/assets/images/Container (2).svg" className="w-52" />
           </div>
         </div>
 
         {/* MOBILE ONLY */}
         <div className="md:hidden mt-4 text-white text-sm leading-relaxed">
-          Create smart blockchain systems that think. EVO AI enhances the
-          development process, optimization, and scaling of decentralized
-          solutions.
+          <div className="flex items-center flex-wrap gap-2">
+            <h3 className="text-white text-xs lg:text-xl">
+              Beelockchain is a pioneering{" "}
+              <span className="text-[#1BFFE1] ml-1 mr-1">
+                Blockchain Development Company
+              </span>
+              redefining how decentralized technologies are built, deployed, and
+              scaled for modern businesses. As a trusted Custom Blockchain
+              Development Company, we merge deep blockchain expertise with EVO
+              AI, our proprietary intelligence engine, to design and develop
+              future-ready blockchain solutions.
+            </h3>
+            <h3 className="text-white text-xs lg:text-xl">
+              A unified approach to blockchain apps and enterprise-grade
+              blockchain development solutions provides automation,
+              architectural optimization, system behavior prediction, and faster
+              development cycles.
+            </h3>
+          </div>
         </div>
       </div>
 
@@ -58,7 +66,6 @@ const Statictis = () => {
           lg:grid-cols-3 lg:grid-rows-2 lg:gap-6  /* DESKTOP */
         "
       >
-
         {/* PIONEERS */}
         <div
           className="
@@ -72,7 +79,8 @@ const Statictis = () => {
           "
         >
           <h2 className="text-white text-xs lg:text-3xl font-semibold text-center">
-            Pioneers in Blockchain Engineering
+            AI-Driven <br /> Discovery & <br />
+            Planning
           </h2>
         </div>
 
@@ -127,14 +135,13 @@ const Statictis = () => {
             flex flex-col items-center justify-center p-4
           "
         >
-          <h2 className="text-sm lg:text-4xl font-semibold text-center
+          <h2
+            className="text-sm lg:text-4xl font-semibold text-center
             bg-gradient-to-b from-[#00A4AF] to-[#00FF97]
-            bg-clip-text text-transparent">
-            Automated & Optimized
+            bg-clip-text text-transparent"
+          >
+            Custom Blockchain Architecture
           </h2>
-          <p className="text-white text-xs lg:text-lg text-center">
-            Development Workflows
-          </p>
         </div>
 
         {/* PREDICTIVE */}
@@ -151,7 +158,8 @@ const Statictis = () => {
         >
           <img src="/assets/images/Frame 19.svg" className="w-20 lg:w-40" />
           <p className="text-white text-xs lg:text-xl text-center">
-            Predictive & <br /> Adaptive Architecture
+            Intelligent
+            <br /> Development &<br /> Automation
           </p>
         </div>
 
@@ -168,10 +176,11 @@ const Statictis = () => {
           "
         >
           <h2 className="text-white text-xs lg:text-4xl text-center">
-            Accelerated <br /> Time-to-Market
+            Deployment,
+            <br /> Optimization & <br />
+            Growth
           </h2>
         </div>
-
       </div>
     </div>
   );
