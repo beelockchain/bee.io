@@ -4,7 +4,7 @@ const IndustriesSection = () => {
   const industries = [
     { name: 'Education & E-Learning', image: '/assets/images/bee-industry-icon1.png' },
     { name: 'Logistics', image: '/assets/images/bee-industry-icon2.png' },
-    { name: 'Manufacturing & Supply Chain', image: '/assets/images/bee-industry-icon3.png' },
+    { name: 'Supply Chain', image: '/assets/images/bee-industry-icon3.png' },
     { name: 'Healthcare', image: '/assets/images/bee-industry-icon4.png' },
     { name: 'Fitness & Wellness', image: '/assets/images/bee-industry-icon5.png' },
     { name: 'Fintech', image: '/assets/images/bee-industry-icon6.png' },
