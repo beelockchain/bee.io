@@ -64,7 +64,7 @@ const ProcessSection = () => {
         </div>
 
         {/* STEPS */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
               step: "STEP 01",
@@ -83,29 +83,20 @@ const ProcessSection = () => {
             },
             {
               step: "STEP 04",
-              title: "Sprint Plan & Milestones",
-              desc: "AI-generated sprint breakdown (2–4 week sprints), deliverables, and success metrics — ready for approval.",
-            },
-            {
-              step: "STEP 05",
               title: "Design & Prototype",
               desc: " EVO AI seeds wireframes and design variants; team finalizes clickable prototypes for early testing.",
             },
             {
-              step: "STEP 06",
+              step: "STEP 05",
               title: "Development (AI-Assisted)",
               desc: "Engineers build smart contracts, backend & dApp with EVO AI scaffolding, code templates, and CI/CD presets",
             },
             {
-              step: "STEP 07",
+              step: "STEP 06",
               title: "AI-Powered Testing & Security",
               desc: "Automated functional tests, load simulation and EVO AI predictive vulnerability checks; issues prioritized and fixed.",
             },
-            {
-              step: "STEP 08",
-              title: "Staging Beta & Tuning",
-              desc: "Phased testnet rollout, real-user beta feedback, performance tuning guided by EVO AI analytics.",
-            },
+            
           ].map((item) => (
             <div
               key={item.step}
@@ -136,48 +127,7 @@ const ProcessSection = () => {
           ))}
         </div>
 
-        {/* LAST 2 CARDS CENTERED */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-2xl mx-auto">
-          {[
-            {
-              step: "STEP 09",
-              title: "Production Launch & Monitoring",
-              desc: " Mainnet deployment with live monitoring, AI anomaly detection, and auto-tuning recommendations.",
-            },
-            {
-              step: "STEP 10",
-              title: "Continuous Improvement",
-              desc: "Ongoing EVO AI suggestions for upgrades, cost optimization, and scaling - the blueprint stays alive and adaptive.",
-            },
-          ].map((item) => (
-            <div
-              key={item.step}
-              className="relative rounded-2xl xl:p-6 lg:p-6 p-2 overflow-hidden
-     
-              border border-white/10
-              shadow-[0_20px_60px_rgba(0,180,180,0.15)]
-              transition-all duration-300
-              hover:scale-[1.02]
-              hover:shadow-[0_30px_80px_rgba(0,255,255,0.25)]
-              text-white"
-            >
-              {/* STEP BADGE */}
-              <div className="flex items-center mb-4">
-                <span className="px-3 py-1 text-xs rounded-full bg-cyan-400/20 text-cyan-300 font-manrope">
-                  {item.step}
-                </span>
-                <span className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center ml-2">
-                  ↗
-                </span>
-              </div>
-
-              <h3 className="xl:text-lg lg:text-lg md:text-sm font-semibold mb-2">{item.title}</h3>
-              <p className="xl:text-lg lg:text-lg md:text-[9px] text-white/70 leading-relaxed font-poppins">
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
+      
       </div>
     </section>
   );
