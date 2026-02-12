@@ -30,11 +30,11 @@ const IndustriesSection = () => {
         </div>
 
         {/* Industries Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-2 md:gap-3 lg:gap-5 xl:gap-5 sm:gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-2 md:gap-3 lg:gap-5 xl:gap-5 sm:gap-2">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="bg-linear-to-br from-[#3c3d47] to-[#13171f] rounded-2xl p-3 sm:p-8 md:p-3 lg:p-5 xl:p-5 flex flex-col items-center justify-center text-center hover:from-[#1f2535] hover:to-[#161b26] transition-all duration-300 cursor-pointer group"
+              className="bg-linear-to-br from-[#3c3d47] to-[#13171f] rounded-2xl p-3 sm:p-2 md:p-3 lg:p-5 xl:p-5 flex flex-col items-center justify-center text-center hover:from-[#1f2535] hover:to-[#161b26] transition-all duration-300 cursor-pointer group"
             >
               {/* Image Container */}
               <div className="w-16 h-16 xl:w-25 xl:h-25 sm:w-20 sm:h-20 md:w-15 md:h-15 rounded-full bg-gradient-to-br from-[#0f1419] to-[#1a1f2e] flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">

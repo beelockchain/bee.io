@@ -5,7 +5,7 @@ const ContactSection: React.FC = () => {
     <section className="w-full bg-[#00020f]  md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto">
         {/* Desktop View - Gradient Box with Rounded Corners */}
-        <div className="hidden md:block bg-gradient-to-r  rounded-[15px] px-12 py-10 lg:px-16 lg:py-12 relative overflow-hidden"
+        <div className="hidden md:block bg-gradient-to-r  rounded-[15px] px-12 py-10 lg:px-16 lg:py-12 xl:px-10 xl:py-6  relative overflow-hidden"
             style={{
                 background: `
                 linear-gradient(

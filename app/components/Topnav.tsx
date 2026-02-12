@@ -291,7 +291,7 @@ useEffect(() => {
                 key={item.name}
                 onClick={() => handleMenuClick(item.name)}
                 onMouseEnter={() => handleMenuHover(item.name)}
-                className={` cursor-pointer
+                className={` cursor-pointer font-Poppins
                   relative px-5 py-2.5 rounded-full text-sm md:text-sm lg:text-[10px] xl:text-sm font-medium transition-all duration-300
                   ${
                     activeMenu === item.name
@@ -312,7 +312,7 @@ useEffect(() => {
                   <>
                     {item.name}
                     {item.superscript && (
-                      <sup className="text-xs ml-0.5">{item.superscript}</sup>
+                      <sup className="text-xs ml-0.5 font-Poppins">{item.superscript}</sup>
                     )}
                   </>
                 )}
@@ -330,7 +330,7 @@ useEffect(() => {
             <GradientGlowButton className="scale-90 sm:scale-95 md:scale-100 lg:scale-85">
               Get Started
             </GradientGlowButton>
-            <span className="hidden sm:inline text-xl md:text-xl lg:text-[16px] xl:text-xl   font-medium ml-5">Menu</span>
+            <span className="hidden sm:inline text-xl md:text-xl lg:text-[16px] xl:text-xl font-Poppins font-medium ml-5">Menu</span>
             <button
               onClick={() => setSideMenuOpen(!sideMenuOpen)}
               className="flex items-center gap-2 text-white"
@@ -392,7 +392,7 @@ useEffect(() => {
             <div className="p-8">
               {/* Services Header */}
             <div className="mb-6 lg:px-25 xl:px-50">
-              <h3 className="md:text-xl lg:text-xl xl:text-2xl font-semibold text-white mb-1">Services</h3>
+              <h3 className="md:text-xl lg:text-xl font-Poppins xl:text-2xl font-semibold text-white mb-1">Services</h3>
 
               <svg width="100" height="10" viewBox="0 0 120 12" fill="none">
                 <path
@@ -434,7 +434,7 @@ useEffect(() => {
                         />
                         <span
                         className={`
-                          text-[12px] md:text-[13px] lg:text-[13px] xl:text-[15px] font-medium
+                          text-[12px] md:text-[13px] lg:text-[13px] xl:text-[15px] font-medium font-Poppins
                           ${
                             activeServiceCategory === index
                               ? "text-transparent bg-clip-text bg-[linear-gradient(90deg,#00E6C3_0%,#00E6C3_70%,#FFFFFF_70%,#FFFFFF_100%)]"
@@ -478,7 +478,7 @@ useEffect(() => {
                             text-gray-300
                             group-hover:text-transparent group-hover:bg-clip-text
                             group-hover:bg-[linear-gradient(90deg,#00E6C3_0%,#00E6C3_70%,#FFFFFF_80%,#FFFFFF_100%)]
-                            transition-all duration-300
+                            transition-all duration-300 font-Poppins
                           "
                         >
                             {service}
@@ -512,7 +512,7 @@ useEffect(() => {
                 ${
                   activeMenu === item.name
                     ? "bg-[#2a2a2a] text-white"
-                    : "text-gray-400 hover:bg-[#252525] hover:text-white"
+                    : "text-gray-400 hover:bg-[#252525] hover:text-white font-Poppins"
                 }
                 ${index !== menuItems.length - 1 ? "border-b border-white/10" : ""}
               `}
@@ -542,7 +542,7 @@ useEffect(() => {
                   }
                 }}
                 className={`
-                  flex-1 relative rounded-3xl px-2 py-2 text-[10px] sm:text-xs font-medium transition-all duration-300
+                  flex-1 relative rounded-3xl px-2 py-2 text-[10px] sm:text-xs font-medium transition-all duration-300 font-Poppins
                   ${
                     activeMenu === item.name
                       ? "bg-[radial-gradient(circle_at_50%_50%,#4b4c4e_0%,#4b4c4e_55%,rgba(255,255,255,0.10)_75%,rgba(255,255,255,0.04)_110%,#2b2c2e_110%)] text-cyan-300"
@@ -587,7 +587,7 @@ useEffect(() => {
                   <button
                     onClick={() => toggleMobileCategory(category.name + catIndex)}
                     className={`
-                      w-full flex items-center justify-between px-4 py-3
+                      w-full flex items-center justify-between px-4 py-3 font-Poppins
                       text-left bg-[#00020F] hover:bg-[#1a2b3a] transition-all duration-200
                       rounded-lg
                       border-x border-t border-[#444444] 
@@ -603,7 +603,7 @@ useEffect(() => {
 
                       <span
                         className={`
-                          text-sm font-medium transition-all
+                          text-sm font-medium transition-all font-Poppins
                           ${
                             isOpen
                               ? "text-transparent bg-clip-text bg-[linear-gradient(90deg,#00E6C3_0%,#00E6C3_70%,#FFFFFF_70%,#FFFFFF_100%)]"
@@ -642,7 +642,7 @@ useEffect(() => {
                             hover:bg-[#1a2b3a]
                             hover:bg-clip-text
                             hover:bg-[linear-gradient(90deg,#00E6C3_0%,#00E6C3_70%,#FFFFFF_70%,#FFFFFF_100%)]
-                            transition-all duration-200
+                            transition-all duration-200 font-Poppins
                           "
                         >
                           {service}
@@ -720,7 +720,7 @@ useEffect(() => {
                 alt="Return arrow"
                 className="w-6 h-6"
               />
-              <h2 className="lg:text-md xl:text-xl font-semibold text-white">Who We Are</h2>
+              <h2 className="lg:text-md xl:text-xl font-semibold text-white font-Poppins">Who We Are</h2>
             </div>
 
             {/* Menu Items */}
@@ -740,7 +740,7 @@ useEffect(() => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <span className=" font-bold text-[15px] text-gray-200 group-hover:text-cyan-300 transition-colors">
+                    <span className="font-Poppins font-bold text-[15px] text-gray-200 group-hover:text-cyan-300 transition-colors">
                       {item.name}
                     </span>
                   </div>
@@ -752,11 +752,11 @@ useEffect(() => {
 
             {/* Footer Links */}
             <div className="mt-8 text-center">
-              <a href="#privacy" className="text-white font-bold hover:text-cyan-300 transition-colors text-sm">
+              <a href="#privacy" className="text-white font-Poppins font-bold hover:text-cyan-300 transition-colors text-sm">
                 Privacy Policy
               </a>
               <span className="text-white font-bold mx-1">|</span>
-              <a href="#terms" className="text-white font-bold hover:text-cyan-300 transition-colors text-sm">
+              <a href="#terms" className="text-white font-Poppins font-bold hover:text-cyan-300 transition-colors text-sm">
                 Terms & Conditions
               </a>
             </div>
@@ -820,7 +820,7 @@ useEffect(() => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="text-[15px] font-bold text-gray-200 group-hover:text-cyan-300 transition-colors">
+                  <span className="text-[15px] font-Poppins font-bold text-gray-200 group-hover:text-cyan-300 transition-colors">
                     {item.name}
                   </span>
                 </div>
@@ -832,11 +832,11 @@ useEffect(() => {
 
           {/* Footer Links */}
           <div className="mt-6 text-center">
-            <a href="#privacy" className="text-white hover:text-cyan-300 transition-colors text-sm">
+            <a href="#privacy" className="text-white font-Poppins hover:text-cyan-300 transition-colors text-sm">
               Privacy Policy
             </a>
             <span className="text-white mx-2">|</span>
-            <a href="#terms" className="text-white hover:text-cyan-300 transition-colors text-sm">
+            <a href="#terms" className="text-white font-Poppins hover:text-cyan-300 transition-colors text-sm">
               Terms & Conditions
             </a>
           </div>

@@ -27,17 +27,19 @@ const Hero = () => {
   ];
 
   return (
-<div
-  className="
-    w-full h-[100dvh] md:h-dvh lg:h-dvh xl:h-dvh
-    flex flex-col items-center
-    bg-cover bg-center bg-no-repeat relative overflow-hidden
-
-    bg-[url('/assets/images/hero-newbanner-mobile.png')]
-    md:bg-[url('/assets/images/hero-new-banner.png')]
-    lg:bg-[url('/assets/images/hero-new-banner.png')]
-  "
->
+    <section className="">
+          <div
+          className="
+            w-full h-[100dvh] md:h-dvh lg:h-dvh xl:h-dvh
+            flex flex-col items-center
+            bg-cover md:bg-center lg:bg-center xl:bg-center bg-no-repeat relative overflow-hidden
+            xl:pt-0 lg:pt-0 md:pt-0
+            bg-[url('/assets/images/hero-newbanner-mobile.png')]
+            sm:bg-[url('/assets/images/hero-newbanner-mobile.png')]
+            md:bg-[url('/assets/images/hero-new-banner.png')]
+            lg:bg-[url('/assets/images/hero-new-banner.png')]
+          "
+        >
 
      
 
@@ -91,7 +93,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="w-full flex-1 flex flex-col justify-center items-center px-4 mt-[65%] md:mt-[20%] lg:mt-[16%] xl:mt-[11%]  sm:px-6 md:px-10">
+      <div className="w-full flex-1 flex flex-col justify-center items-center px-4 mt-[65%] sm:mt-[75%] md:mt-[20%] lg:mt-[16%] xl:mt-[11%]  sm:px-6 md:px-10">
 
 
       <h1 className="
@@ -118,6 +120,7 @@ const Hero = () => {
         </GradientGlowButton>
       </div>
     </div>
+    </section>
   );
 };
 

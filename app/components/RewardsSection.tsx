@@ -180,7 +180,7 @@ const RewardsSection: React.FC = () => {
           {awards.map((award) => (
             <div
               key={award.id}
-              className="flex-shrink-0 w-24 h-24 lg:w-50 lg:h-28  rounded-2xl  flex items-center justify-center "
+              className="flex-shrink-0 w-24 h-24   lg:w-50 lg:h-28  rounded-2xl  flex items-center justify-center "
             >
               <img
                 src={award.src}
@@ -252,12 +252,12 @@ const RewardsSection: React.FC = () => {
                   {loopAwards.map((award, index) => (
                     <div
                       key={`${award.id}-${index}`}
-                      className="flex-shrink-0 flex items-center justify-center"
+                      className="flex-shrink-0 flex items-center justify-center sm:rounded-2xl"
                       style={{ width: '33.333%' }}
 
                     >
                       <div
-                        className={`w-50 h-20 rounded-2xl p-1 flex items-center justify-center shadow-lg transition-all duration-300 ${
+                        className={`w-50 h-20 sm:w-40 sm:h-40 rounded-2xl sm:rounded-2xl p-1 sm:p-6 flex items-center justify-center shadow-lg transition-all duration-300 ${
                           Math.abs(index - currentIndex) <= 1
                             ? 'scale-100 opacity-100'
                             : 'scale-90 opacity-60'
@@ -266,7 +266,7 @@ const RewardsSection: React.FC = () => {
                         <img
                           src={award.src}
                           alt={award.alt}
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full object-cover rounded-2xl sm:rounded-2xl"
                           draggable="false"
                         />
                       </div>

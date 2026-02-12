@@ -153,7 +153,7 @@ export default function BlockchainNetworks() {
     networks.find(n => n.id === activeNetwork) || networks[1];
 
   return (
-    <section className="relative min-h-screen bg-[#0a0e1a] py-20  md:py-10 md:px-2 lg:py-10 lg:px-2 xl:py-20 xl:px-2">
+    <section className="relative  md:h-unset lg:min-h-screen xl:min-h-screen bg-[#0a0e1a] py-20  md:py-10 md:px-2 lg:py-10 lg:px-2 xl:py-20 xl:px-2">
 
       <div className="max-w-7xl mx-auto">
 
@@ -172,8 +172,9 @@ export default function BlockchainNetworks() {
 
           {/* TABS */}
           <div className="grid grid-cols-6 gap-4
+                           sm:grid-cols-6
                           max-md:grid-cols-5 poin 
-                          max-sm:grid-cols-3 p-5 md:p-8 lg:p-8 xl:p-8 bg-[#12141E] md:rounded-t-3xl lg:rounded-t-3xl xl:rounded-t-3xl ">
+                           p-5 sm:p-5 md:p-8 lg:p-8 xl:p-8 bg-[#12141E] md:rounded-t-3xl lg:rounded-t-3xl xl:rounded-t-3xl ">
 
             {networks.map((network) => {
               const active = activeNetwork === network.id;
@@ -210,7 +211,7 @@ export default function BlockchainNetworks() {
 
                   <img
                     src={network.logo}
-                    className="w-auto md:w-[100%] lg:w-auto xl:w-auto object-cover p-4"
+                    className="w-auto md:w-[100%] lg:w-auto xl:w-auto object-cover sm:p-6"
                   />
                 </button>
               );
