@@ -112,22 +112,27 @@ export default function Home() {
       <Demandservice />
       <Whychooseus />
       <TechTrendsMarquee />
-      <Aisolution />
+      {/* <Aisolution /> */}
       <Aiblueprint />
-      <HowItWorksCards />
+      {/* <HowItWorksCards /> */}
       <Whatweprovide />
       <IndustriesSection />
       <BlockchainNetworks />
       <ProcessSection />
       <ClientsReview />
-      {/* <TechnologiesSection /> */}
-      <AIProjectFinderSection />
       <RewardsSection />
-      <Shortidea />
       <Spotlights />
-      <GlobalMap />
       <FAQSection />
       <ContactSection />
+         <GlobalMap />
+      {/* <TechnologiesSection /> */}
+      {/* <AIProjectFinderSection />
+
+      <Shortidea /> */}
+
+   
+    
+    
       <Footer />
     </div>
   );

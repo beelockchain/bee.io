@@ -61,8 +61,13 @@ const Demandservice = () => {
 
   useEffect(() => {
     const cards = cardsRef.current;
+    const totalCards = cards.length;
+
+    // Clear any existing ScrollTriggers
+    ScrollTrigger.getAll().forEach((st) => st.kill());
 
     cards.forEach((card, index) => {
+      // Pin ALL cards including the last one
       ScrollTrigger.create({
         trigger: card,
         start: "top top",
@@ -126,47 +131,51 @@ const Demandservice = () => {
       {/* Cards Container */}
       <div
         ref={containerRef}
-        className="flex flex-col items-center gap-16 md:gap-32 pb-[10vh] px-4 md:px-0"
+        className="flex flex-col items-center pb-[22vh] md:pb-0 px-4 md:px-0"
       >
-        {cardData.map((card, index) => (
-          <div
-            key={index}
-            ref={(el) => {
-              if (el) cardsRef.current[index] = el;
-            }}
-            className="w-full md:w-[80%] h-auto min-h-[320px] md:h-[600px] rounded-xl shadow-2xl overflow-hidden relative"
-            style={{ zIndex: index + 1 }}
-          >
-            {/* Background Image with Overlay */}
+        {cardData.map((card, index) => {
+          return (
             <div
-              className="absolute inset-0 bg-cover bg-center md:bg-right"
+              key={index}
+              ref={(el) => {
+                if (el) cardsRef.current[index] = el;
+              }}
+              className="w-full md:w-[80%] h-auto min-h-[320px] md:h-[600px] rounded-xl shadow-2xl overflow-hidden relative mb-16 md:mb-32"
               style={{
-                backgroundImage: `url(${card.bgImage})`,
+                zIndex: index + 1,
               }}
             >
-              {/* Gradient Overlay - adjusted for mobile */}
-              <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-teal-900/95 via-teal-800/85 to-teal-900/70 md:from-teal-900/90 md:via-teal-800/70 md:to-transparent" />
-            </div>
+              {/* Background Image with Overlay */}
+              <div
+                className="absolute inset-0 bg-cover bg-center md:bg-right"
+                style={{
+                  backgroundImage: `url(${card.bgImage})`,
+                }}
+              >
+                {/* Gradient Overlay - adjusted for mobile */}
+                <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-teal-900/95 via-teal-800/85 to-teal-900/70 md:from-teal-900/90 md:via-teal-800/70 md:to-transparent" />
+              </div>
 
-            {/* Content */}
-            <div className="relative h-full flex items-center md:items-center">
-              {/* Left Side - Text Content */}
-              <div className="w-full md:w-1/2 px-5 md:px-12 py-8 md:py-0 space-y-4 md:space-y-6 bg-white/5 backdrop-blur-sm h-auto md:h-96 flex flex-col justify-center rounded-lg mx-4 md:mx-0 md:ml-10 my-4 md:my-0">
-                <h2 className="text-xl md:text-4xl font-bold text-white leading-tight">
-                  {card.title}
-                </h2>
+              {/* Content */}
+              <div className="relative h-full flex items-center md:items-center">
+                {/* Left Side - Text Content */}
+                <div className="w-full md:w-1/2 px-5 md:px-12 py-8 md:py-0 space-y-4 md:space-y-6 bg-white/5 backdrop-blur-sm h-auto md:h-96 flex flex-col justify-center rounded-lg mx-4 md:mx-0 md:ml-10 my-4 md:my-0">
+                  <h2 className="text-xl md:text-4xl font-bold text-white leading-tight">
+                    {card.title}
+                  </h2>
 
-                <p className="text-sm md:text-lg text-gray-200 leading-relaxed">
-                  {card.description}
-                </p>
+                  <p className="text-sm md:text-lg text-gray-200 leading-relaxed">
+                    {card.description}
+                  </p>
 
-                <GradientGlowButton className="w-fit text-sm md:text-base">
-                  {card.buttonText}
-                </GradientGlowButton>
+                  <GradientGlowButton className="w-fit text-sm md:text-base">
+                    {card.buttonText}
+                  </GradientGlowButton>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
