@@ -1,20 +1,21 @@
 "use client";
 
+import React from "react";
+
 type GradientGlowButtonProps = {
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void; // ✅ add this
 };
 
 const GradientGlowButton = ({
   children,
   className = "",
+  onClick, // ✅ receive it
 }: GradientGlowButtonProps) => {
   return (
     <div
-      className={`
-        relative inline-flex rounded-full p-[1px] 
-        ${className}
-      `}
+      className={`relative inline-flex rounded-full p-[1px] ${className}`}
     >
       {/* GRADIENT BORDER */}
       <div
@@ -22,7 +23,7 @@ const GradientGlowButton = ({
           absolute inset-0 rounded-full
           bg-[linear-gradient(200deg,#3ADCFF_0%,#050514_70%)]
           [mask:linear-gradient(#000_0_0)_content-box,linear-gradient(#000_0_0)]
-          [mask-composite:exclude] 
+          [mask-composite:exclude]
         "
       />
 
@@ -44,9 +45,10 @@ const GradientGlowButton = ({
 
       {/* BUTTON */}
       <button
+        onClick={onClick}  // ✅ attach here
         className="
           relative z-10
-          px-5 py-2 md:px-8 md:py-3
+          px-5 py-2 md:px-8 md:py-2
           rounded-full
           bg-[#090920]
           border border-white/10

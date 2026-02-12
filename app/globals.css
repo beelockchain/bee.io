@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #00020f;
   --font-poppins: var(--font-poppins);
   --font-manrope: var(--font-manrope);
 }
@@ -22,7 +22,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #00020F;
   color: var(--foreground);
   font-family: var(--font-manrope), sans-serif;
 }
@@ -72,3 +72,18 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #38bdf8 rgba(255, 255, 255, 0.06);
 }
+/* Soft Bounce Animation */
+/* @keyframes softBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bee-bounce {
+  animation: softBounce 2s ease-in-out infinite;
+} */
+
+

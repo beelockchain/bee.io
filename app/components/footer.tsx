@@ -31,6 +31,13 @@ const Footer = () => {
 </svg>
 
   );
+      const PinterestIcon = () => (
+ <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.5V12.5C14 13.3281 13.3281 14 12.5 14H4.825C5.13125 13.4875 5.525 12.75 5.68125 12.1469C5.775 11.7875 6.15938 10.3219 6.15938 10.3219C6.40938 10.8 7.14062 11.2031 7.91875 11.2031C10.2344 11.2031 11.9 9.075 11.9 6.43125C11.9 3.89688 9.83125 2 7.16875 2C3.85625 2 2.1 4.22188 2.1 6.64375C2.1 7.76875 2.7 9.16875 3.65625 9.61563C3.80312 9.68438 3.87812 9.65312 3.9125 9.5125C3.9375 9.40625 4.06875 8.88438 4.125 8.64375C4.14375 8.56563 4.13438 8.5 4.07188 8.425C3.75625 8.04063 3.5 7.33438 3.5 6.675C3.5 4.98125 4.78125 3.34375 6.96562 3.34375C8.85 3.34375 10.1719 4.62812 10.1719 6.46562C10.1719 8.54062 9.125 9.97812 7.75938 9.97812C7.00625 9.97812 6.44375 9.35625 6.62187 8.59062C6.8375 7.67812 7.25625 6.69375 7.25625 6.03438C7.25625 4.37813 4.89687 4.60625 4.89687 6.81563C4.89687 7.49375 5.125 7.95625 5.125 7.95625C4.14375 12.1063 3.99687 12.1594 4.2 13.975L4.26875 14H1.5C0.671875 14 0 13.3281 0 12.5V1.5C0 0.671875 0.671875 0 1.5 0H12.5C13.3281 0 14 0.671875 14 1.5Z" fill="white"/>
+</svg>
+
+
+  );
   const LocationIcon = () => (
     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_517_6869)">
@@ -112,12 +119,39 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
     </g>
   </svg>
 );
+const socials = [
+  {
+    href: "https://www.facebook.com/61585163291942",
+    icon: FacebookIcon,
+    label: "Facebook",
+  },
+  {
+    href: "https://x.com/Beelockchain_io",
+    icon: TwitterIcon,
+    label: "Twitter",
+  },
+  {
+    href: "https://www.linkedin.com/company/beelockchain-io",
+    icon: LinkedInIcon,
+    label: "LinkedIn",
+  },
+  {
+    href: "https://www.instagram.com/beelockchain_io",
+    icon: InstagramIcon,
+    label: "Instagram",
+  },
+  {
+    href: "https://in.pinterest.com/beelockchain_io",
+    icon: PinterestIcon,
+    label: "Pinterest",
+  },
+];
 
   return (
 <footer className="relative w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
 
   {/* ================= DESKTOP / TABLET ================= */}
-  <div className="hidden sm:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] md:min-h-[800px]  lg:min-h-[800px]">
+  <div className="hidden md:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] md:min-h-[800px]  lg:min-h-[800px]">
 
     {/* BACKGROUND TEXT */}
     <img
@@ -171,7 +205,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
       {[
         ["What we do?", "Services"],
         ["Who we are?", "About us"],
-        ["How we deliver", "Contact us"],
+        ["How we deliver", "Pitch Deck"],
         ["What we're good at?", "Our project"],
         ["News?", "News"],
       ].map(([label, value], i) => (
@@ -192,92 +226,63 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
 {/* SOCIAL LINKS */}
 <div className="absolute z-20 left-1/2 -translate-x-1/2 top-[650px] lg:top-[620px] w-full flex text-white">
 
-  {/* FACEBOOK */}
+{socials.map((item, i) => (
   <Link
-    href="https://www.facebook.com/61585163291942/"
+    key={item.label}
+    href={item.href}
     target="_blank"
     rel="noopener noreferrer"
-    className="w-1/4 h-[60px] flex items-center justify-between px-6 border-r border-[#262833] hover:bg-white/5 transition-colors"
+    className={`flex-1 h-[60px] flex items-center justify-between px-6 
+    ${i !== socials.length - 1 ? "border-r border-[#262833]" : ""}
+    hover:bg-white/5 transition-colors`}
   >
     <div className="flex items-center gap-3">
-      <FacebookIcon />
-      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
-        Facebook
+      <item.icon />
+      <span className="uppercase font-poppins text-[14px] md:text-[10px] lg:text-[18px]">
+        {item.label}
       </span>
     </div>
     <ArrowIcon className="pointer-events-none" />
   </Link>
+))}
 
-  {/* TWITTER */}
-  <Link
-    href="https://x.com/Beelockchain_io"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-1/4 h-[60px] flex items-center justify-between px-6 border-r border-[#262833] hover:bg-white/5 transition-colors"
-  >
-    <div className="flex items-center gap-3">
-      <TwitterIcon />
-      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
-        Twitter
-      </span>
-    </div>
-    <ArrowIcon className="pointer-events-none" />
-  </Link>
-
-  {/* LINKEDIN */}
-  <Link
-    href="https://www.linkedin.com/company/beelockchain-io"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-1/4 h-[60px] flex items-center justify-between px-6 border-r border-[#262833] hover:bg-white/5 transition-colors"
-  >
-    <div className="flex items-center gap-3">
-      <LinkedInIcon />
-      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
-        LinkedIn
-      </span>
-    </div>
-    <ArrowIcon className="pointer-events-none" />
-  </Link>
-
-  {/* INSTAGRAM */}
-  <Link
-    href="https://www.instagram.com/beelockchain_io/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-1/4 h-[60px] flex items-center justify-between px-6 hover:bg-white/5 transition-colors"
-  >
-    <div className="flex items-center gap-3">
-      <InstagramIcon />
-      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
-        Instagram
-      </span>
-    </div>
-    <ArrowIcon className="pointer-events-none" />
-  </Link>
 
 </div>
 
 
 
-    {/* BOTTOM BAR */}
-    <div className="absolute text-white top-[710px] lg:top-[680px] w-full border-t border-[#262833]
-     flex justify-between items-center
-     px-10 lg:px-10 h-[70px]">
-      <div className="flex items-center gap-3">
-        <LocationIcon />
-        <p className="text-base lg:text-xl font-poppins">4517 Washington, USA</p>
-      </div>
 
-      <p className="text-[18px] sm:text-[14px] md:text-[14px] lg:text-[20px] font-poppins text-center">
-        © 2025 Beelockchain. All rights reserved.
+{/* BOTTOM BAR */}
+<div className="absolute text-white top-[710px] lg:top-[680px] w-full border-t border-[#262833]">
+  <div className="flex h-[70px]">
+
+    {/* LEFT */}
+    <div className="flex-1 md:flex-1 flex items-center justify-center border-r border-[#262833] hover:bg-white/5 transition-colors cursor-pointer">
+      <p className="text-[14px]  md:text-[10px] lg:text-[18px] font-poppins">
+        Privacy Policy | Terms & Conditions
       </p>
+    </div>
 
+    {/* CENTER */}
+    <div className="flex-1 flex md:flex-[2] items-center justify-center border-r border-[#262833] hover:bg-white/5 transition-colors">
+      <p className="text-[14px] md:text-[10px] lg:text-[18px] font-poppins text-center">
+       Copyright © 2025 beelockchain, All rights reserved.
+      </p>
+    </div>
+
+    {/* RIGHT */}
+    <div className="flex-1 md:flex-1 flex items-center justify-center hover:bg-white/5 transition-colors">
       <div className="flex items-center gap-3">
         <PhoneIcon />
-        <p className="text-base lg:text-xl font-poppins">+(1) 1230 452 8597</p>
+        <p className="text-[14px] md:text-[10px] lg:text-[18px] font-poppins">
+          +(1) 1230 452 8597
+        </p>
       </div>
     </div>
+
+  </div>
+</div>
+
 
     {/* HEIGHT SPACER — THIS IS THE FIX */}
     <div className="absolute bottom-0 h-[200px] w-full" />
@@ -298,7 +303,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
     priority
     className="
       mt-6
-      w-[140%]
+      w-[90%]
       max-w-none
       object-contain
     "
@@ -329,7 +334,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
     {[
       { label: "What we do?", value: "Services" },
       { label: "Who we are?", value: "About Us" },
-      { label: "How we deliver", value: "Contact Us" },
+      { label: "How we deliver", value: "Pitch Deck" },
       { label: "What we're good at?", value: "Our Project" },
     ].map((item, i) => (
       <div key={i}>
@@ -344,47 +349,22 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
   </div>
 
 {/* SOCIAL ICONS – MOBILE */}
-<div className="relative z-10 mt-10 grid grid-cols-2 gap-y-6 gap-x-8 md:hidden">
-  <a
-    href="https://www.facebook.com/61585163291942/"
+<div className="relative z-10 mt-10 grid grid-cols-3 gap-y-6 gap-x-4 md:hidden">
+{socials.map((item) => (
+  <Link
+    key={item.label}
+    href={item.href}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
+    className="flex flex-col items-center justify-center gap-2 text-[12px] uppercase font-poppins hover:opacity-80 transition text-center"
   >
-    <FacebookIcon />
-    <span>Facebook</span>
-  </a>
+    <item.icon />
+    <span>{item.label}</span>
+  </Link>
+))}
 
-  <a
-    href="https://x.com/Beelockchain_io"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
-  >
-    <TwitterIcon />
-    <span>Twitter</span>
-  </a>
-
-  <a
-    href="https://www.linkedin.com/company/beelockchain-io"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
-  >
-    <LinkedInIcon />
-    <span>LinkedIn</span>
-  </a>
-
-  <a
-    href="https://www.instagram.com/beelockchain_io/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
-  >
-    <InstagramIcon />
-    <span>Instagram</span>
-  </a>
 </div>
+
 
 
 
@@ -392,13 +372,15 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
   {/* CONTACT INFO */}
   <div className="relative z-10 mt-8 flex flex-col items-center  font-poppins gap-4 text-sm text-white/80">
     <div className="flex items-center gap-3">
-      <LocationIcon />
-      <span>4517 Washington, USA</span>
-    </div>
-    <div className="flex items-center gap-3">
       <PhoneIcon />
       <span>+(1)1230 452 8597</span>
     </div>
+    <div className="flex items-center gap-3">
+      {/* <LocationIcon /> */}
+      <span className="text-transparent bg-clip-text
+                  bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_15%,#FFFFFF_20%)] ">Privacy Policy | Terms & Conditions</span>
+    </div>
+  
   </div>
 
   {/* COPYRIGHT */}
