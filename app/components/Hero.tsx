@@ -9,6 +9,7 @@ import {
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
 import GradientGlowButton from "./GradientGlowButton";
+import Image from "next/image";
 
 const Hero = () => {
   const scrollToTop = () => {
@@ -25,6 +26,14 @@ const Hero = () => {
     { icon: faInstagram, url: "https://www.instagram.com/beelockchain_io", label: "Instagram" },
     { icon: faPinterest, url: "https://in.pinterest.com/beelockchain_io", label: "Pinterest" },
   ];
+const openChat = () => {
+  if (typeof window !== "undefined") {
+    const tawk = (window as any).Tawk_API;
+    if (tawk && typeof tawk.maximize === "function") {
+      tawk.maximize();
+    }
+  }
+};
 
   return (
 <div
@@ -72,7 +81,7 @@ const Hero = () => {
       </div>
 
       {/* Arrow + Circle (same place till scroll end) */}
-      <div className="fixed md:right-10 lg:right-5 xl:right-10 md:bottom-0 lg:bottom-10 xl:bottom-0 z-30 hidden lg:flex flex-col items-center gap-6 ">
+      <div className="fixed md:right-10 lg:right-5 xl:right-10 md:bottom-0 lg:bottom-10 xl:bottom-4 z-30 hidden lg:flex flex-col items-center gap-6 ">
 
         <button
           onClick={scrollToTop}
@@ -81,12 +90,18 @@ const Hero = () => {
         >
          <img src="/assets/images/down-arrow.png" alt="down-arrow"/>
         </button>
-        <div className="w-16 h-16 rounded-full bg-[#1a2332]/60 backdrop-blur-sm border border-gray-700/30 shadow-2xl flex items-center justify-center overflow-hidden">
-          <img
-            src="/assets/images/bee-hero-chaticon.png"
-            alt="Scroll animation"
-            className="w-20 h-20 object-cover rounded-full"
-          />
+
+        
+        <div className="w-16 h-16 bee-bounce rounded-full bg-[#1a2332]/60 backdrop-blur-sm border border-gray-700/30 shadow-2xl flex items-center justify-center overflow-hidden">
+        
+          <Image
+        src="/assets/images/bee-hero-chaticon.png"
+        alt="Live Chat"
+        width={60}
+        height={60}
+        className="cursor-pointer hover:scale-110 transition-transform"
+        onClick={openChat}
+      />
         </div>
       </div>
 
