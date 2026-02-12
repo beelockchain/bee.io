@@ -136,7 +136,8 @@ Pioneer blockchain Engineering</p>
         </div>
 
         {/* MAIN GRID */}
-        <div className="grid xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 grid-cols-1 xl:gap-6 lg:gap-6 md:gap-6  gap-4 items-stretch">
+        <div className="grid sm:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 grid-cols-1
+         xl:gap-6 lg:gap-6 md:gap-6  gap-4 items-stretch">
 
           {/* LEFT STACK */}
           <div

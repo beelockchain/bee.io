@@ -258,7 +258,7 @@ const socials = [
 
     {/* LEFT */}
     <div className="flex-1 md:flex-1 flex items-center justify-center border-r border-[#262833] hover:bg-white/5 transition-colors cursor-pointer">
-      <p className="text-[14px]  md:text-[10px] lg:text-[22px] font-poppins">
+      <p className="text-[14px]  md:text-[10px] lg:text-[18px] font-poppins">
         Privacy Policy | Terms & Conditions
       </p>
     </div>
@@ -274,7 +274,7 @@ const socials = [
     <div className="flex-1 md:flex-1 flex items-center justify-center hover:bg-white/5 transition-colors">
       <div className="flex items-center gap-3">
         <PhoneIcon />
-        <p className="text-[14px] md:text-[10px] lg:text-[22px] font-poppins">
+        <p className="text-[14px] md:text-[10px] lg:text-[18px] font-poppins">
           +(1) 1230 452 8597
         </p>
       </div>
