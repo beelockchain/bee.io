@@ -50,9 +50,9 @@ const HowItWorksCards = dynamic(() => import("./sections/HowItWorksCards"), {
     <p className="text-white text-center py-10">Loading How It Works...</p>
   ),
 });
-const Whatweprovide = dynamic(() => import("./sections/Whatweprovide"), {
+const CoreSolutionsWeBuild = dynamic(() => import("./sections/CoreSolutionsWeBuild"), {
   loading: () => (
-    <p className="text-white text-center py-10">Loading What We Provide...</p>
+    <p className="text-white text-center py-10">Loading Core Solutions We Build...</p>
   ),
 });
 const ProcessSection = dynamic(() => import("./components/ProcessSection"), {
@@ -115,7 +115,7 @@ export default function Home() {
       {/* <Aisolution /> */}
       <Aiblueprint />
       {/* <HowItWorksCards /> */}
-      <Whatweprovide />
+      <CoreSolutionsWeBuild />
       <IndustriesSection />
       <BlockchainNetworks />
       <ProcessSection />
