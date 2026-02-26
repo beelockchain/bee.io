@@ -337,7 +337,7 @@ const ClientsReview = () => {
 
   return (
     <div className="bg-[#191B26]">
-      <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      <section className="relative w-full max-w-[1920px] mx-auto h-[530px] sm:h-[620px] md:h-[700px] lg:h-[700px] bg-[#191B26] overflow-hidden">
         {/* Label */}
         <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
           <NavLabel label="Clients Review" />
@@ -376,7 +376,7 @@ const ClientsReview = () => {
           <div className="flex justify-end gap-4 sm:gap-6 mt-6 sm:mt-8 px-4">
             <button
               onClick={prev}
-              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95 cursor-pointer"
               aria-label="Previous testimonial"
             >
               <svg
@@ -395,7 +395,7 @@ const ClientsReview = () => {
             </button>
             <button
               onClick={next}
-              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95 cursor-pointer"
               aria-label="Next testimonial"
             >
               <svg
@@ -462,7 +462,7 @@ const ClientsReview = () => {
               rounded-full bg-cyan-400
               flex items-center justify-center
               hover:bg-cyan-300 hover:scale-105
-              transition-all active:scale-95
+              transition-all active:scale-95 cursor-pointer
             "
             aria-label="Previous testimonial"
           >
@@ -491,7 +491,7 @@ const ClientsReview = () => {
               rounded-full bg-cyan-400
               flex items-center justify-center
               hover:bg-cyan-300 hover:scale-105
-              transition-all active:scale-95
+              transition-all active:scale-95 cursor-pointer
             "
             aria-label="Next testimonial"
           >

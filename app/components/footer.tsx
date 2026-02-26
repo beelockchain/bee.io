@@ -151,7 +151,7 @@ const socials = [
 <footer className="relative w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
 
   {/* ================= DESKTOP / TABLET ================= */}
-  <div className="hidden md:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] md:min-h-[800px]  lg:min-h-[800px]">
+  <div className="hidden sm:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] sm:min-h-[700px]  md:min-h-[800px]  lg:min-h-[800px]">
 
     {/* BACKGROUND TEXT */}
     <img
@@ -194,7 +194,7 @@ const socials = [
     {/* NAVIGATION */}
 <div className="
   absolute left-0 w-full
-  top-[420px] sm:top-[460px] md:top-[520px]  lg:top-[500px]
+  top-[420px] sm:top-[460px] md:top-[470px]  lg:top-[500px]
   flex justify-center flex-wrap
   gap-6
   sm:gap-10
@@ -207,7 +207,7 @@ const socials = [
         ["Who we are?", "About us"],
         ["How we deliver", "Pitch Deck"],
         ["What we're good at?", "Our project"],
-        ["News?", "News"],
+        // ["News?", "News"],
       ].map(([label, value], i) => (
         <div key={i} className="text-center">
           <p className="text-xs sm:text-sm md:text-base font-poppins uppercase text-[#b2b3b7]">
@@ -221,10 +221,10 @@ const socials = [
     </div>
 
     {/* SOCIAL DIVIDER */}
-    <div className="absolute top-[650px] lg:top-[620px] w-full border-t border-[#262833]" />
+    <div className="absolute top-[650px]   sm:top-[550px] lg:top-[620px] w-full border-t border-[#262833]" />
 
 {/* SOCIAL LINKS */}
-<div className="absolute z-20 left-1/2 -translate-x-1/2 top-[650px] lg:top-[620px] w-full flex text-white">
+<div className="absolute z-20 left-1/2 -translate-x-1/2  top-[650px] sm:top-[550px] lg:top-[620px] w-full flex text-white">
 
 {socials.map((item, i) => (
   <Link
@@ -232,13 +232,13 @@ const socials = [
     href={item.href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`flex-1 h-[60px] flex items-center justify-between px-6 
+    className={`flex-1 h-[60px] flex items-center justify-between px-6 sm:px-4
     ${i !== socials.length - 1 ? "border-r border-[#262833]" : ""}
     hover:bg-white/5 transition-colors`}
   >
     <div className="flex items-center gap-3">
       <item.icon />
-      <span className="uppercase font-poppins text-[14px] md:text-[10px] lg:text-[18px]">
+      <span className="uppercase font-poppins text-[14px] sm:text-[10px] md:text-[10px] lg:text-[18px]">
         {item.label}
       </span>
     </div>
@@ -253,19 +253,19 @@ const socials = [
 
 
 {/* BOTTOM BAR */}
-<div className="absolute text-white top-[710px] lg:top-[680px] w-full border-t border-[#262833]">
+<div className="absolute text-white sm:top-[610px] top-[710px] lg:top-[680px] w-full border-t border-[#262833]">
   <div className="flex h-[70px]">
 
     {/* LEFT */}
     <div className="flex-1 md:flex-1 flex items-center justify-center border-r border-[#262833] hover:bg-white/5 transition-colors cursor-pointer">
-      <p className="text-[14px]  md:text-[10px] lg:text-[18px] font-poppins">
+      <p className="text-[14px] sm:text-[12px]  md:text-[10px] lg:text-[14px] xl:text-[16px] font-poppins">
         Privacy Policy | Terms & Conditions
       </p>
     </div>
 
     {/* CENTER */}
     <div className="flex-1 flex md:flex-[2] items-center justify-center border-r border-[#262833] hover:bg-white/5 transition-colors">
-      <p className="text-[14px] md:text-[10px] lg:text-[18px] font-poppins text-center">
+      <p className="text-[14px] sm:text-[12px]  md:text-[10px] lg:text-[14px] xl:text-[16px] font-poppins text-center">
        Copyright © 2025 beelockchain, All rights reserved.
       </p>
     </div>
@@ -274,7 +274,7 @@ const socials = [
     <div className="flex-1 md:flex-1 flex items-center justify-center hover:bg-white/5 transition-colors">
       <div className="flex items-center gap-3">
         <PhoneIcon />
-        <p className="text-[14px] md:text-[10px] lg:text-[18px] font-poppins">
+        <p className="text-[14px] sm:text-[12px]  md:text-[10px] lg:text-[14px] xl:text-[16px] font-poppins">
           +(1) 1230 452 8597
         </p>
       </div>
@@ -292,7 +292,7 @@ const socials = [
 
 
 {/* ================= MOBILE FOOTER ================= */}
-<div className="md:hidden relative w-full bg-[#00020f] px-6 py-16 text-white overflow-hidden">
+<div className="sm:hidden relative w-full bg-[#00020f] px-6 py-16 text-white overflow-hidden">
 {/* BACKGROUND TEXT – MOBILE ONLY */}
 <div className="absolute inset-0 flex justify-center items-start pointer-events-none md:hidden">
   <Image
@@ -342,27 +342,33 @@ const socials = [
         <p className="text-lg  font-poppins">{item.value}</p>
       </div>
     ))}
-    <div className="col-span-2">
+    {/* <div className="col-span-2">
       <p className="text-[12px] text-white/50 uppercase mb-1">News?</p>
       <p className="text-lg">News</p>
-    </div>
+    </div> */}
   </div>
 
 {/* SOCIAL ICONS – MOBILE */}
-<div className="relative z-10 mt-10 grid grid-cols-3 gap-y-6 gap-x-4 md:hidden">
-{socials.map((item) => (
-  <Link
-    key={item.label}
-    href={item.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex flex-col items-center justify-center gap-2 text-[12px] uppercase font-poppins hover:opacity-80 transition text-center"
-  >
-    <item.icon />
-    <span>{item.label}</span>
-  </Link>
-))}
+<div className="relative z-10 mt-10 grid grid-cols-2 gap-y-6 gap-x-4 md:hidden">
+  {socials.map((item, index) => {
+    const isLast = index === socials.length - 1;
+    const isOdd = socials.length % 2 !== 0;
 
+    return (
+      <Link
+        key={item.label}
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`flex items-center justify-center gap-2 text-[12px] uppercase font-poppins hover:opacity-80 transition text-center
+          ${isLast && isOdd ? "col-span-2 justify-center" : ""}
+        `}
+      >
+        <item.icon />
+        <span>{item.label}</span>
+      </Link>
+    );
+  })}
 </div>
 
 
@@ -377,8 +383,8 @@ const socials = [
     </div>
     <div className="flex items-center gap-3">
       {/* <LocationIcon /> */}
-      <span className="text-transparent bg-clip-text
-                  bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_15%,#FFFFFF_20%)] ">Privacy Policy | Terms & Conditions</span>
+      <span className="text-transparent bg-clip-text 
+        bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_15%,#FFFFFF_20%)] ">Privacy Policy | Terms & Conditions</span>
     </div>
   
   </div>

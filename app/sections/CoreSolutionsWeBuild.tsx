@@ -296,7 +296,7 @@ useEffect(() => {
               }`}
             />
 
-            <span className="text-white text-[14px] sm:text-base font-medium leading-tight">
+            <span className="text-white text-[18px] sm:text-base font-medium leading-tight">
               {card.title}
             </span>
           </div>
@@ -310,7 +310,7 @@ useEffect(() => {
         >
           <div className="px-6 pb-5">
             {/* SUBCONTENT (only when open) */}
-            <p className="text-xs sm:text-sm text-gray-300 mb-3 leading-relaxed">
+            <p className="text-[15px] sm:text-sm text-gray-300 mb-3 leading-relaxed">
               {card.subcontent}
             </p>
 
@@ -320,7 +320,7 @@ useEffect(() => {
                 <Link
                   key={idx}
                   href={link.href}
-                  className="text-[#1BFFE1] text-[12px] hover:translate-x-1 transition"
+                  className="text-[#1BFFE1] text-[15px] hover:translate-x-1 transition"
                 >
                   • {link.label}
                 </Link>
