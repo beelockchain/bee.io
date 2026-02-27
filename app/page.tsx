@@ -50,7 +50,7 @@ const HowItWorksCards = dynamic(() => import("./sections/HowItWorksCards"), {
     <p className="text-white text-center py-10">Loading How It Works...</p>
   ),
 });
-const Whatweprovide = dynamic(() => import("./sections/Whatweprovide"), {
+const Whatweprovide = dynamic(() => import("./sections/CoreSolutionsWeBuild"), {
   loading: () => (
     <p className="text-white text-center py-10">Loading What We Provide...</p>
   ),

@@ -30,7 +30,7 @@ const ProcessSection = () => {
         {/* VIDEO / IMAGE BLOCK */}
         <div className="relative w-full rounded-t-2xl overflow-hidden mb-10 hidden md:block">
           <img
-            src="/assets/images/Background (2).svg" // replace with your image
+            src="/assets/images/stepwise-bg.png" // replace with your image
             alt="Process visual"
             className="w-full h-[380px] object-cover"
           />

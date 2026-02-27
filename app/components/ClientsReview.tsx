@@ -10,35 +10,21 @@ const testimonials = [
     name: "John Martin",
     role: "Chief Technology Officer",
     content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
+      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn’t have asked for a better blockchain development partner",
     avatar: "/assets/images/testi-img.png",
   },
   {
     name: "Sophia Williams",
     role: "Product Head",
     content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
+      "We approached Beelockchain while planning our gaming software development, and they guided us through the entire process with EVO AI, turning our game concept into reality. The team’s attention to detail and innovative approach made our project a success.",
     avatar: "/assets/images/testi-img.png",
   },
   {
     name: "David Chen",
     role: "Founder & CEO",
     content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
-    avatar: "/assets/images/testi-img.png",
-  },
-  {
-    name: "Emma Rodriguez",
-    role: "VP of Engineering",
-    content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
-    avatar: "/assets/images/testi-img.png",
-  },
-  {
-    name: "Michael Zhang",
-    role: "Innovation Director",
-    content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
+      "After evaluating several development companies, we chose Beelockchain for their AI-centric expertise. Leveraging EVO AI, they successfully took our crypto trading bot from concept to deployment. The team demonstrated professionalism, deep technical knowledge, and responsiveness throughout the project",
     avatar: "/assets/images/testi-img.png",
   },
 ];
@@ -337,7 +323,7 @@ const ClientsReview = () => {
 
   return (
     <div className="bg-[#191B26]">
-      <section className="relative w-full max-w-[1920px] mx-auto h-[580px] sm:h-[620px] md:h-[700px] lg:h-[758px] bg-[#191B26] overflow-hidden">
+      <section className="relative w-full max-w-[1920px] mx-auto h-[530px] sm:h-[620px] md:h-[700px] lg:h-[700px] bg-[#191B26] overflow-hidden">
         {/* Label */}
         <div className="absolute left-1/2 -translate-x-1/2 top-[60px] sm:top-[80px] md:top-[102px]">
           <NavLabel label="Clients Review" />
@@ -376,7 +362,7 @@ const ClientsReview = () => {
           <div className="flex justify-end gap-4 sm:gap-6 mt-6 sm:mt-8 px-4">
             <button
               onClick={prev}
-              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95 cursor-pointer"
               aria-label="Previous testimonial"
             >
               <svg
@@ -395,7 +381,7 @@ const ClientsReview = () => {
             </button>
             <button
               onClick={next}
-              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95"
+              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-400 flex items-center justify-center hover:bg-cyan-300 transition-colors active:scale-95 cursor-pointer"
               aria-label="Next testimonial"
             >
               <svg
@@ -462,7 +448,7 @@ const ClientsReview = () => {
               rounded-full bg-cyan-400
               flex items-center justify-center
               hover:bg-cyan-300 hover:scale-105
-              transition-all active:scale-95
+              transition-all active:scale-95 cursor-pointer
             "
             aria-label="Previous testimonial"
           >
@@ -491,7 +477,7 @@ const ClientsReview = () => {
               rounded-full bg-cyan-400
               flex items-center justify-center
               hover:bg-cyan-300 hover:scale-105
-              transition-all active:scale-95
+              transition-all active:scale-95 cursor-pointer
             "
             aria-label="Next testimonial"
           >

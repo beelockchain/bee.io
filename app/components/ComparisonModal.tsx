@@ -87,7 +87,7 @@ export default function ComparisonModal({
     text-white hover:text-cyan-300
     text-lg sm:text-xl
     font-semibold
-    transition-all duration-300"
+    transition-all duration-300 cursor-pointer"
   aria-label="Close modal"
 >
   &times;

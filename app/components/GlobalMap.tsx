@@ -199,61 +199,86 @@ const GlobalMap: React.FC = () => {
         </div>
 
        {/* 🖥 Desktop cards OVER the map */}
-<div className="hidden md:block absolute  md:bottom-1 lg:bottom-20 left-4 right-4 z-10">
-  <div className="grid grid-cols-4 gap-4">
-    {locations.map((loc) => (
-      <div
-        key={loc.id}
-        className="bg-[#0b1220]/95 backdrop-blur rounded-xl px-4 py-4 border border-white/10 shadow-lg"
-      >
-        <div className="space-y-1">
-          <div className="flex items-center gap-2 font-medium">
-            <loc.Flag />
-            <span>{loc.country}</span>
-          </div>
+<div className="hidden md:block absolute md:bottom-1 lg:bottom-20 left-4 right-4 z-10">
+  {/* SINGLE CARD */}
+  <div className="
+    bg-white/5 
+    backdrop-blur-xl 
+    border border-white/10 
+    rounded-xl 
+    shadow-[0_8px_30px_rgba(0,0,0,0.3)] 
+    px-4 py-4
+  ">
+    
+    <div className="grid grid-cols-4 gap-6">
+      {locations.map((loc) => (
+        <div key={loc.id}>
+          <div className="space-y-1">
+            
+            {/* COUNTRY */}
+            <div className="flex items-center gap-2 font-medium text-white">
+              <loc.Flag />
+              <span>{loc.country}</span>
+            </div>
 
-          <div className="flex items-center gap-2 text-xs text-white/70">
-            <PhoneIcon />
-            <span>{loc.phone}</span>
-          </div>
+            {/* PHONE */}
+            <div className="flex items-center gap-2 text-xs text-white/70">
+              <PhoneIcon />
+              <span>{loc.phone}</span>
+            </div>
 
-          <div className="flex items-center gap-2 text-xs text-white/70">
-            <EmailIcon />
-            <span>{loc.email}</span>
+            {/* EMAIL */}
+            <div className="flex items-center gap-2 text-xs text-white/70">
+              <EmailIcon />
+              <span>{loc.email}</span>
+            </div>
+
           </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
+
   </div>
 </div>
+
+
+
         {/* 📱 Mobile cards (below map) */}
 <div className="block md:hidden mt-6 px-4">
-  <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-    {locations.map((loc) => (
-      <div
-        key={loc.id}
-        className="bg-[#0b1220]/95 backdrop-blur rounded-xl px-4 py-4 border border-white/10 shadow-lg"
-      >
-        <div className="space-y-1">
-          <div className="flex items-center gap-2 font-medium">
-            <loc.Flag />
-            <span>{loc.country}</span>
-          </div>
+  {/* SINGLE CARD */}
+  <div className="bg-[#0b1220]/95 backdrop-blur rounded-xl px-4 py-4 shadow-lg">
+    
+    <div className="grid grid-cols-2 gap-4">
+      {locations.map((loc) => (
+        <div key={loc.id}>
+          <div className="space-y-1">
+            
+            {/* COUNTRY */}
+            <div className="flex items-center gap-2 font-medium">
+              <loc.Flag />
+              <span>{loc.country}</span>
+            </div>
 
-          <div className="flex items-center gap-2 text-[9px] text-white/70">
-            <PhoneIcon />
-            <span>{loc.phone}</span>
-          </div>
+            {/* PHONE */}
+            <div className="flex items-center gap-2 text-[10px] text-white/70">
+              <PhoneIcon />
+              <span>{loc.phone}</span>
+            </div>
 
-          <div className="flex items-center gap-2 text-[9px] text-white/70">
-            <EmailIcon />
-            <span>{loc.email}</span>
+            {/* EMAIL */}
+            <div className="flex items-center gap-2 text-[10px] text-white/70">
+              <EmailIcon />
+              <span>{loc.email}</span>
+            </div>
+
           </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
+
   </div>
 </div>
+
 
       </div>
     </section>
