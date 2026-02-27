@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { FC } from "react";
 
@@ -128,7 +129,7 @@ const GlobalMap: React.FC = () => {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section className="bg-[#05070f] py-8 text-white">
+    <section className="bg-[#05070f] py-3 lg:py-2 xl:py-8 text-white">
       <h2 className="text-center text-[30px] md:text-[36px] lg:text-[40px]  font-semibold font-manrope">
         Global Presence
       </h2>

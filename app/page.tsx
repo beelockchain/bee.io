@@ -105,7 +105,6 @@ const Footer = dynamic(() => import("./components/footer"), {
 export default function Home() {
   return (
     <div className="bg-[#00020F] h-auto space-y-10">
-      <Topnav />
       <Hero />
       <Statictis />
       {/* <Teams /> */}
@@ -127,13 +126,7 @@ export default function Home() {
          <GlobalMap />
       {/* <TechnologiesSection /> */}
       {/* <AIProjectFinderSection />
-
       <Shortidea /> */}
-
-   
-    
-    
-      <Footer />
     </div>
   );
 }

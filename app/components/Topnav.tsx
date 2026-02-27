@@ -3,7 +3,8 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import GradientGlowButton from "./GradientGlowButton";
-
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 const Topnav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -16,6 +17,8 @@ const Topnav = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const pathname = usePathname();
+  const router = useRouter();
 
   type menuItems = {
     name: string;
@@ -25,14 +28,14 @@ const Topnav = () => {
   };
 
   const menuItems: menuItems[] = [
-      { name: "Home", href: "#" },
-    { name: "Services", href: "#services" },
-    { name: "Insights", href: "#insights" },
-    {
-      name: "EVO AI Finder",
-      href: "#evo",
-      image: "/assets/images/evo-menu-item.png"
-    },
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services" },
+  { name: "Insights", href: "/insights" },
+  {
+    name: "EVO AI Finder",
+    href: "/ai-finder",
+    image: "/assets/images/evo-menu-item.png"
+  },
   ];
 
   const serviceCategories = [
@@ -147,15 +150,31 @@ const Topnav = () => {
     }
   ];
 
+  // ✅ FIX 1: Sync activeMenu with current pathname automatically
+  useEffect(() => {
+    if (pathname === "/") {
+      setActiveMenu("Home");
+    } else if (pathname === "/ai-finder") {
+      setActiveMenu("EVO AI Finder");
+    } else if (pathname?.startsWith("/services")) {
+      setActiveMenu("Services");
+    } else {
+      setActiveMenu(null);
+    }
+  }, [pathname]);
+
   const currentServices = serviceCategories[activeServiceCategory]?.services || [];
 
-  const handleMenuClick = (itemName: string) => {
-    setActiveMenu(itemName);
+  const handleMenuClick = (itemName: string, href: string) => {
     if (itemName === "Services") {
       setServicesOpen(true);
-      setActiveServiceCategory(0); // Reset to first category
+      setActiveServiceCategory(0);
     } else {
       setServicesOpen(false);
+      // Navigate programmatically for page routes
+      if (href.startsWith("/")) {
+        router.push(href);
+      }
     }
   };
 
@@ -271,13 +290,15 @@ useEffect(() => {
       <div className="flex justify-center px-2 md:px-0 lg:px-0 xl:px-0 py-4 lg:py-4 xl:py-4  border-1 border-[#1e3854]">
         <div className="w-full max-w-[1400px] px-4 lg:px-6 xl:px-10 flex justify-between items-center gap-4 lg:gap-8">
 
-          {/* PART 1: LOGO */}
+          {/* PART 1: LOGO - ✅ FIX 2: Wrapped in Link to navigate home */}
           <div className="flex-shrink-0">
-            <img
-              src="/assets/images/Group 10.svg"
-              alt="Logo"
-              className="w-20 sm:w-20 md:w-32 lg:w-26 xl:w-36"
-            />
+            <Link href="/" aria-label="Go to homepage">
+              <img
+                src="/assets/images/Group 10.svg"
+                alt="Logo"
+                className="w-20 sm:w-20 md:w-32 lg:w-26 xl:w-36 cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* PART 2: MENU ITEMS (DESKTOP ONLY) */}
@@ -287,9 +308,10 @@ useEffect(() => {
             className="hidden lg:flex items-stretch bg-[#1C1E25] rounded-full px-0 py-0 border border-[#252528] 
                           absolute left-1/2 -translate-x-1/2">
             {menuItems.map((item) => (
+              // ✅ FIX 3: Use Link for page routes, button only for anchor/dropdown items
               <button
                 key={item.name}
-                onClick={() => handleMenuClick(item.name)}
+                onClick={() => handleMenuClick(item.name, item.href)}
                 onMouseEnter={() => handleMenuHover(item.name)}
                 className={` cursor-pointer font-Poppins
                   relative px-5 py-2.5 rounded-full text-sm md:text-sm lg:text-[10px] xl:text-sm font-medium transition-all duration-300
@@ -316,7 +338,6 @@ useEffect(() => {
                     )}
                   </>
                 )}
-
                 {activeMenu === item.name && (
                   <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-6 h-[2px] rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.9)]" />
                 )}
@@ -534,11 +555,13 @@ useEffect(() => {
               <button
                 key={item.name}
                 onClick={() => {
-                  setActiveMenu(item.name);
                   if (item.name === "Services") {
                     handleMobileServicesClick();
                   } else {
                     setMobileServicesOpen(false);
+                    if (item.href.startsWith("/")) {
+                      router.push(item.href);
+                    }
                   }
                 }}
                 className={`
@@ -705,7 +728,7 @@ useEffect(() => {
           {/* Close Button */}
           <button
             onClick={() => setSideMenuOpen(false)}
-            className="absolute top-5 right-8 text-white hover:text-cyan-300 transition-colors"
+            className="absolute cursor-pointer top-5 right-8 text-white hover:text-cyan-300 transition-colors"
             aria-label="Close menu"
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

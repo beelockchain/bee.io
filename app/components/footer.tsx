@@ -151,7 +151,7 @@ const socials = [
 <footer className="relative w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
 
   {/* ================= DESKTOP / TABLET ================= */}
-  <div className="hidden md:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] md:min-h-[800px]  lg:min-h-[800px]">
+  <div className="hidden md:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] md:min-h-[800px]  lg:min-h-[800px] xl:min-h-[800px]">
 
     {/* BACKGROUND TEXT */}
     <img
