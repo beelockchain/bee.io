@@ -222,7 +222,7 @@ useEffect(() => {
               
               {/* TITLE + ARROW CLOSE */}
               <div className="flex items-center gap-2 mb-2">
-                <h3 className="text-2xl font-semibold">{card.title}</h3>
+                <h3 className="text-3xl font-semibold">{card.title}</h3>
 
                 <div className="arrow-active">
                   <Image
@@ -234,7 +234,7 @@ useEffect(() => {
                 </div>
               </div>
 
-              <p className="text-sm text-gray-300 mb-5">
+              <p className="text-[16px] md:text-[16px] lg:text-[16px] text-gray-300 mb-5">
                 {card.subcontent}
               </p>
 
@@ -243,7 +243,7 @@ useEffect(() => {
                   <Link
                     key={idx}
                     href={link.href}
-                    className="block text-[#1BFFE1] hover:translate-x-1 transition"
+                    className="block text-[#1BFFE1] hover:translate-x-1 transition md:text-[16px] lg:text-[16px]"
                   >
                     • {link.label}
                   </Link>

@@ -151,7 +151,7 @@ const socials = [
 <footer className="relative w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
 
   {/* ================= DESKTOP / TABLET ================= */}
-  <div className="hidden sm:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] sm:min-h-[700px]  md:min-h-[800px]  lg:min-h-[800px]">
+  <div className="hidden sm:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] sm:min-h-[700px]  md:min-h-[650px]  lg:min-h-[730px]">
 
     {/* BACKGROUND TEXT */}
     <img
@@ -285,7 +285,6 @@ const socials = [
 
 
     {/* HEIGHT SPACER — THIS IS THE FIX */}
-    <div className="absolute bottom-0 h-[200px] w-full" />
 
   </div>
 

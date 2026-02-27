@@ -128,7 +128,7 @@ const GlobalMap: React.FC = () => {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section className="bg-[#05070f] py-5 text-white">
+    <section className="bg-[#05070f] text-white">
       <h2 className="text-center text-[30px] md:text-[36px] lg:text-[40px]  font-semibold font-manrope">
         Global Presence
       </h2>

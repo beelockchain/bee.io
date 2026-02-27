@@ -10,35 +10,21 @@ const testimonials = [
     name: "John Martin",
     role: "Chief Technology Officer",
     content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
+      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn’t have asked for a better blockchain development partner",
     avatar: "/assets/images/testi-img.png",
   },
   {
     name: "Sophia Williams",
     role: "Product Head",
     content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
+      "We approached Beelockchain while planning our gaming software development, and they guided us through the entire process with EVO AI, turning our game concept into reality. The team’s attention to detail and innovative approach made our project a success.",
     avatar: "/assets/images/testi-img.png",
   },
   {
     name: "David Chen",
     role: "Founder & CEO",
     content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
-    avatar: "/assets/images/testi-img.png",
-  },
-  {
-    name: "Emma Rodriguez",
-    role: "VP of Engineering",
-    content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
-    avatar: "/assets/images/testi-img.png",
-  },
-  {
-    name: "Michael Zhang",
-    role: "Innovation Director",
-    content:
-      "Beelockchain guided us with EVO AI from idea to development of our blockchain network. Their team delivered secure, scalable, and industry-specific solutions while providing expert guidance at every stage. We couldn't have asked for a better blockchain development partner.",
+      "After evaluating several development companies, we chose Beelockchain for their AI-centric expertise. Leveraging EVO AI, they successfully took our crypto trading bot from concept to deployment. The team demonstrated professionalism, deep technical knowledge, and responsiveness throughout the project",
     avatar: "/assets/images/testi-img.png",
   },
 ];
