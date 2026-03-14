@@ -92,7 +92,7 @@ export default function AiFinderPage() {
             cssSelector: [
               "h1",
               ".ai-project-finder-intro",
-              ".faq-section",
+              ".faq-section"
             ],
           },
         }),

@@ -111,7 +111,7 @@ const openChat = () => {
       <div className="w-full flex-1 flex flex-col justify-center items-center px-4 mt-[65%] sm:mt-[75%] md:mt-[20%] lg:mt-[16%] xl:mt-[11%]  sm:px-6 md:px-10">
 
 
-      <h1 className="
+      <h2 className="
         text-white font-manrope font-bold text-center
         px-1 max-w-xl md:max-w-xl lg:max-w-3xl xl:max-w-3xl
         text-[27px] sm:text-3xl md:text-3xl lg:text-4xl xl:text-[45px]
@@ -123,7 +123,7 @@ const openChat = () => {
         tracking-tighter mb-2
       ">
         World's First AI-Centered Blockchain Development Company
-      </h1>
+      </h2>
 
 
         <p className="text-white/90 font-poppins  lg:font xl:font-semibold text-center mb-5 max-w-xl md:max-w-xl lg:max-w-2xl xl:max-w-4xl text-[12px] sm:text-base md:text-[12px] lg:text-[12px] xl:text-[15px]  px-4">

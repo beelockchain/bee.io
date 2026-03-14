@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useRef, useEffect } from 'react';
 
 const RewardsSection: React.FC = () => {
@@ -8,27 +9,27 @@ const RewardsSection: React.FC = () => {
   const awards = [
     {
       id: 1,
-      src: '/assets/images/awardbee-1.png',
+      src: '/assets/images/beelock-reward1.png',
       alt: 'Clutch Top Company 2023',
     },
     {
       id: 2,
-      src: '/assets/images/awardbee-2.png',
+      src: '/assets/images/beelock-reward2.png',
       alt: 'GoodFirms Top Company',
     },
     {
       id: 3,
-      src: '/assets/images/awardbee-3.png',
+      src: '/assets/images/beelock-reward3.png',
       alt: 'Clutch Global 2023',
     },
     {
       id: 4,
-      src: '/assets/images/awardbee-4.png',
+      src: '/assets/images/beelock-reward4.png',
       alt: 'Top Mobile App Development',
     },
     {
       id: 5,
-      src: '/assets/images/awardbee-5.png',
+      src: '/assets/images/beelock-reward5.png',
       alt: 'GoodFirms Verified',
     },
   ];
