@@ -39,84 +39,84 @@ const Topnav = () => {
   ];
 
   const serviceCategories = [
-    { 
-      name: "Blockchain", 
+    {
+      name: "Blockchain",
       icon: "/assets/images/bee-submenu-icon.png",
       services: [
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development"
+        { name: "Blockchain Development Company", href: "/blockchain-development-company" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
       ]
     },
-    { 
-      name: "Blockchain", 
+    {
+      name: "Blockchain",
       icon: "/assets/images/bee-submenu-icon.png",
       services: [
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development"
+        { name: "Blockchain Development Company", href: "/blockchain-development-company" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
       ]
     },
-    { 
-      name: "Blockchain", 
+    {
+      name: "Blockchain",
       icon: "/assets/images/bee-submenu-icon.png",
       services: [
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development"
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
       ]
     },
-    { 
-      name: "Blockchain", 
+    {
+      name: "Blockchain",
       icon: "/assets/images/bee-submenu-icon.png",
       services: [
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development"
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
       ]
     },
-    { 
-      name: "Blockchain", 
+    {
+      name: "Blockchain",
       icon: "/assets/images/bee-submenu-icon.png",
       services: [
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development",
-        "Web3 App Development"
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
+        { name: "Web3 App Development", href: "#" },
       ]
     }
   ];
@@ -488,24 +488,27 @@ useEffect(() => {
                 <div className="flex-1">
                   <div className="grid grid-cols-2 ">
                     {currentServices.map((service, index) => (
-                      <div
+                      <a
                         key={index}
+                        href={service.href}
+                        target={service.href !== "#" ? "_blank" : undefined}
+                        rel={service.href !== "#" ? "noopener noreferrer" : undefined}
                         className="group relative xl:w-80 xl:px-10 py-4 hover:bg-[#053933] hover:border-cyan-500/30 transition-all duration-200 cursor-pointer"
                       >
                         <div className="flex items-center justify-center">
-                         <span
-                          className="
-                            lg:text-[12px] xl:text-[15px]
-                            text-gray-300
-                            group-hover:text-transparent group-hover:bg-clip-text
-                            group-hover:bg-[linear-gradient(90deg,#00E6C3_0%,#00E6C3_70%,#FFFFFF_80%,#FFFFFF_100%)]
-                            transition-all duration-300 font-Poppins
-                          "
-                        >
-                            {service}
+                          <span
+                            className="
+                              lg:text-[12px] xl:text-[14px]
+                              text-gray-300
+                              group-hover:text-transparent group-hover:bg-clip-text
+                              group-hover:bg-[linear-gradient(90deg,#00E6C3_0%,#00E6C3_70%,#FFFFFF_80%,#FFFFFF_100%)]
+                              transition-all duration-300 font-Poppins
+                            "
+                          >
+                            {service.name}
                           </span>
                         </div>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -656,10 +659,13 @@ useEffect(() => {
                     <div className="bg-[#00020F] overflow-hidden border-x border-b border-[#444444]">
 
                       {category.services.slice(0, 5).map((service, serviceIndex) => (
-                        <button
+                        <a
                           key={serviceIndex}
+                          href={service.href}
+                          target={service.href !== "#" ? "_blank" : undefined}
+                          rel={service.href !== "#" ? "noopener noreferrer" : undefined}
                           className="
-                            w-full px-8 py-3 text-center text-sm
+                            block w-full px-8 py-3 text-center text-sm
                             text-[#fff]
                             hover:text-transparent
                             hover:bg-[#1a2b3a]
@@ -668,8 +674,8 @@ useEffect(() => {
                             transition-all duration-200 font-Poppins
                           "
                         >
-                          {service}
-                        </button>
+                          {service.name}
+                        </a>
                       ))}
 
                     </div>

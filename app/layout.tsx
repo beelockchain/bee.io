@@ -22,7 +22,7 @@ const manrope = Manrope({
 
 /* ✅ META DATA */
 export const metadata: Metadata = {
-  title: "Beelockchain Development Company & Game Development Company",
+  title: "AI-Powered Custom Blockchain & Game Development Company",
    icons: {
     icon: [
       { url: "/assets/images/favicon.png" },
@@ -56,6 +56,7 @@ export const metadata: Metadata = {
     robots:
       "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
   },
+    authors: [{ name: "Beelockchainio" }],
   openGraph: {
     type: "website",
     siteName: "Beelockchain",

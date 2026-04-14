@@ -100,7 +100,7 @@ const ProcessSection = () => {
           ].map((item) => (
             <div
               key={item.step}
-              className="relative rounded-2xl  xl:p-6 lg:p-6 p-2 overflow-hidden
+              className="relative rounded-2xl  xl:p-6 lg:p-6 p-5 overflow-hidden
      
               border border-white/10
               shadow-[0_20px_60px_rgba(0,180,180,0.15)]
@@ -120,7 +120,7 @@ const ProcessSection = () => {
               </div>
 
               <h3 className="xl:text-lg lg:text-lg md:text-[10px] font-semibold mb-2 font-manrope">{item.title}</h3>
-              <p className="xl:text-lg lg:text-lg md:text-[9px] text-white/70 leading-relaxed font-poppins">
+              <p className="text-[14px] md:text-[9px] lg:text-lg xl:text-lg  text-white/70 leading-relaxed font-poppins">
                 {item.desc}
               </p>
             </div>

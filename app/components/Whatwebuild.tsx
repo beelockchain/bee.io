@@ -6,8 +6,8 @@ const Whatwebuild = () => {
             backgroundSize: "cover",
             backgroundPosition: "top center",
         }}>
-            <h1 className="text-4xl mt-14 font-bold text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_28%,#FFFFFF_60%)]">
-                What We Build</h1>
+            <h2 className="text-4xl mt-14 font-bold text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_28%,#FFFFFF_60%)]">
+                What We Build</h2>
             <div className="w-full flex justify-center bg-[#00020F] py-10">
                 <div className="relative w-[74%] max-w-7xl rounded-[28px] overflow-hidden
                 bg-gradient-to-br from-[#0B0F1C] via-[#070A14] to-[#05070F]

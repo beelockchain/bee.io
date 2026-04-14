@@ -5,7 +5,7 @@ const ContactSection: React.FC = () => {
     <section className="w-full bg-[#00020f] sm:px-5 md:px-5 md:py-16 lg:py-10 xl:py-20">
       <div className="max-w-7xl mx-auto">
         {/* Desktop View - Gradient Box with Rounded Corners */}
-        <div className="hidden sm:block md:block bg-gradient-to-r  rounded-[15px] px-12 py-10 sm:py-5  md:py-5  lg:px-16 lg:py-8 xl:px-10 xl:py-6  relative overflow-hidden"
+        <div className="hidden sm:block md:block bg-linear-to-r  rounded-[15px] px-12 py-10 sm:py-5  md:py-5  lg:px-16 lg:py-8 xl:px-10 xl:py-6  relative overflow-hidden"
             style={{
                 background: `
                 linear-gradient(
@@ -24,7 +24,7 @@ const ContactSection: React.FC = () => {
                 We'd Love To Hear From You
               </h2>
               <p className="text-white font-manrope xl:max-w-xl text-base sm:text-[12px] md:text-[11px] lg:text-[14px] xl:text-[15px] opacity-90 leading-relaxed">
-                Share your requirements with Bealoclchain and connect with our technical experts to explore the best solution for your project.
+                Share your requirements with Beelockchain and connect with our technical experts to explore the best solution for your project.
               </p>
             </div>
             <div className="ml-8">
@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => {
             We'd Love To Hear From You
           </h2>
           <p className="text-white text-[12px]  text-center opacity-90 leading-relaxed mb-8 font-manrope">
-            Share your requirements with Bealoclchain and connect with our technical experts to explore the best solution for your project.
+            Share your requirements with Beelockchain and connect with our technical experts to explore the best solution for your project.
           </p>
           <button className="bg-[#0a0e1a] font-manrope text-white px-8 py-3 rounded-full font-medium text-[13px] hover:bg-[#151b2b] transition-colors duration-300 w-full max-w-xs mx-auto block">
             Get Free Consultation

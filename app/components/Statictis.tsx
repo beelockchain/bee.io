@@ -7,12 +7,13 @@ const Statictis = () => {
       {/* ================= TOP TEXT ================= */}
       <div className="w-full max-w-[1000px]">
         <div className="inline-flex items-center rounded-xl bg-gradient-to-r from-[#0B0F1C] via-[#111827] to-[#0B0F1C]">
-          <NavLabel label="Your Trusted Partner" className="text-sm md:text-[15px]" />
+          <NavLabel label="Core Identity" className="text-sm md:text-[15px]" />
         </div>
 
         {/* DESKTOP + TABLET */}
         <div className="hidden md:flex flex-col mt-6 gap-2">
           <div className="flex items-center flex-wrap gap-2">
+            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-gray-600 bg-clip-text text-transparent h-auto">Who We Are</h2>
             <h3 className="text-white text-lg lg:text-xl">
               Beelockchain is a pioneering{" "}
               <span className="text-[#1BFFE1] ml-1 mr-1">
