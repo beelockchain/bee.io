@@ -53,6 +53,18 @@ const PHASE_COLORS: PhaseColor[] = [
     dot: "#F43F5E",
     grid: "rgba(244,63,94,0.08)",
   },
+  {
+    chip: "from-purple-500 to-purple-600",
+    wire: "rgba(168,85,247,0.55)",
+    dot: "#A855F7",
+    grid: "rgba(168,85,247,0.08)",
+  },
+  {
+    chip: "from-blue-500 to-blue-600",
+    wire: "rgba(59,130,246,0.55)",
+    dot: "#3B82F6",
+    grid: "rgba(59,130,246,0.08)",
+  },
 ];
 
 const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title }) => {
@@ -63,16 +75,22 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
   const stepRefs = useRef<(HTMLDivElement | null)[][]>([]);
   const [paths, setPaths] = useState<PathData[]>([]);
 
-  // Normalize phases safely
+  // FIXED: Accept ALL phases from API, don't filter by name
   const phases = useMemo(() => {
-    if (!blueprint?.phases?.length) return [];
+    if (!blueprint?.phases?.length) {
+      console.warn("⚠️ No phases in blueprint:", blueprint);
+      return [];
+    }
 
-    const allowed = new Set(["Discovery", "Architecture", "Development", "Launch"]);
+    console.log("📊 Processing phases:", blueprint.phases);
 
+    // Take up to 6 phases, clamp steps to 6 each
     return blueprint.phases
-      .filter((p) => allowed.has((p.title || "").trim()))
-      .slice(0, 4)
-      .map((p) => ({ ...p, steps: clampSteps(p.steps, 6) }));
+      .slice(0, 6)
+      .map((p) => ({
+        ...p,
+        steps: clampSteps(p.steps, 6),
+      }));
   }, [blueprint]);
 
   const heading = title || blueprint?.title || "Blueprint";
@@ -164,12 +182,24 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
 
   /* -------------------- SAFE EARLY RETURN -------------------- */
 
-  if (!phases.length) return null;
+  if (!phases.length) {
+    console.error("❌ No phases to display!");
+    return (
+      <div className="w-full bg-white rounded-xl p-4 sm:p-6">
+        <div className="text-center py-8">
+          <p className="text-red-600 font-bold">Error: No phases found in blueprint</p>
+          <p className="text-sm text-gray-600 mt-2">Check console for details</p>
+        </div>
+      </div>
+    );
+  }
+
+  console.log("✅ Rendering", phases.length, "phases");
 
   /* -------------------- JSX -------------------- */
 
   return (
-    <div className="w-full bg-white rounded-xl p-4 sm:p-6">
+    <div className="w-full bg-white rounded-xl p-2 sm:p-4">
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-4">
         <div>
@@ -222,7 +252,7 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
               <path
                 d={p.d}
                 fill="none"
-                stroke={PHASE_COLORS[Math.min(i, PHASE_COLORS.length - 1)].wire}
+                stroke={PHASE_COLORS[i % PHASE_COLORS.length].wire}
                 style={{ filter: "drop-shadow(0 0 6px rgba(0,0,0,0.15))" }}
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -235,7 +265,7 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
                   cx={pt.x}
                   cy={pt.y}
                   r="4"
-                  fill={PHASE_COLORS[Math.min(i, PHASE_COLORS.length - 1)].dot}
+                  fill={PHASE_COLORS[i % PHASE_COLORS.length].dot}
                   stroke="white"
                   strokeWidth="2"
                 />
@@ -246,23 +276,27 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
 
         {/* Nodes */}
         <div className="relative p-4 sm:p-6">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          <div className={`grid gap-4 ${
+            phases.length <= 2 ? 'grid-cols-1 md:grid-cols-2' :
+            phases.length === 3 ? 'grid-cols-1 lg:grid-cols-3' :
+            'grid-cols-1 lg:grid-cols-4'
+          }`}>
             {phases.map((phase: BlueprintPhase, pi: number) => (
-              <div key={phase.title} className="relative">
+              <div key={`${phase.title}-${pi}`} className="relative">
                 {/* PHASE CHIP */}
                 <div
                   ref={(el) => {phaseRefs.current[pi] = el}}
                   className={`rounded-2xl bg-gradient-to-br ${
-                    PHASE_COLORS[pi].chip
+                    PHASE_COLORS[pi % PHASE_COLORS.length].chip
                   } text-white shadow-lg px-4 py-3`}
                 >
                   <div className="flex items-center justify-between">
-                    <div className="font-bold text-white-900 text-sm">
+                    <div className="font-bold text-sm">
                       {pi + 1}. {phase.title}
                     </div>
                   </div>
-                  <div className="text-[11px] text-black-500 mt-1">
-                    {phase.steps?.length || 0} nodes
+                  <div className="text-[11px] opacity-90 mt-1">
+                    {phase.steps?.length || 0} steps
                   </div>
                 </div>
 
@@ -282,7 +316,7 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
                         <div className="mt-1.5 h-2.5 w-2.5 rounded-full bg-gray-300 flex-shrink-0" />
                         <div>
                           <div className="text-[10px] font-semibold text-gray-500">
-                            NODE {si + 1}
+                            STEP {si + 1}
                           </div>
                           <div className="text-sm text-gray-800 leading-snug">{step}</div>
                         </div>
@@ -290,9 +324,6 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
                     </div>
                   ))}
                 </div>
-
-                {/* force rewire after render of this column */}
-                <div className="h-0" />
               </div>
             ))}
           </div>
@@ -300,7 +331,7 @@ const BlueprintDiagram: React.FC<BlueprintDiagramProps> = ({ blueprint, title })
       </div>
 
       <div className="mt-4 text-[11px] text-gray-400">
-        Evo AI
+        Evo AI Blueprint Generator
       </div>
     </div>
   );

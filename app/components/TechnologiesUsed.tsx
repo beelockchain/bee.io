@@ -1,113 +1,125 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { technologies } from "../data/technologiesIcons";
 
-/* ================= DESKTOP GRID CONFIG ================= */
-const TILE = 112; // w-28
-const GAP = 2;
-const COLUMNS = 10;
-const GRID_WIDTH = COLUMNS * TILE + (COLUMNS - 1) * GAP;
+/*
+  DESKTOP : 12 icons per row × 3 rows = 36 total
+  MOBILE  : 3 columns, same bordered card
+  Tiles are separated by 1-px rgba(255,255,255,0.06) lines (right + bottom)
+  Entire grid: rounded-2xl, border rgba(255,255,255,0.08)
+*/
+
+const CATEGORIES = [
+  { key: "blockchain",     color: "#22d3ee", text: "Blockchain" },
+  { key: "program",        color: "#fde047", text: "Programm" },
+  { key: "smart-contract", color: "#3b82f6", text: "Smart Contract" },
+  { key: "backend",        color: "#f97316", text: "Web3 & Backend" },
+  { key: "ai",             color: "#f43f5e", text: "AI Technology" },
+];
+
+const DESKTOP_COLS = 12;
+const MOBILE_COLS  = 3;
 
 export default function TechnologiesSection() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [activeId, setActiveId] = useState<number | null>(null);
+
+  const toggle = (key: string) =>
+    setActiveCategory(prev => (prev === key ? null : key));
 
   return (
-    <section className="w-full bg-[#05060f] h-auto md:h-auto lg:h-auto">
-      <div className="max-w-[1400px] mx-auto px-6">
+    <section style={{ background: "#05060f" }} className="w-full py-16 sm:py-20 lg:py-24">
+      <div className="max-w-[1320px] mx-auto px-5 sm:px-8">
 
-        {/* TITLE */}
-        <h2 className=" font-manrope text-center text-[36px] sm:text-[44px] lg:text-[56px] leading-tight font-bold text-neutral-100 mb-14 font-manrope">
-          Technologies & Tools  
+        {/* ── HEADING ── */}
+        <h2
+          className="
+            font-manrope font-bold text-white leading-tight
+            text-left lg:text-center
+            text-[28px] sm:text-[36px] lg:text-[52px]
+            mb-3
+          "
+        >
+          Our Core Technologies &amp; Framework
         </h2>
 
-        {/* ================= DESKTOP LEGEND ================= */}
-        <div className="hidden lg:flex justify-center mb-14">
-          <div className="flex items-center gap-20 flex-wrap">
-            <Legend color="bg-cyan-400" text="Blockchain" active={activeCategory === "blockchain"} onClick={() => setActiveCategory(p => p === "blockchain" ? null : "blockchain")} />
-            <Legend color="bg-yellow-300" text="Program" active={activeCategory === "program"} onClick={() => setActiveCategory(p => p === "program" ? null : "program")} />
-            <Legend color="bg-blue-500" text="Smart Contract" active={activeCategory === "smart-contract"} onClick={() => setActiveCategory(p => p === "smart-contract" ? null : "smart-contract")} />
-            <Legend color="bg-orange-500" text="Web3 & Backend" active={activeCategory === "backend"} onClick={() => setActiveCategory(p => p === "backend" ? null : "backend")} />
-            <Legend color="bg-rose-500" text="AI Technology" active={activeCategory === "ai"} onClick={() => setActiveCategory(p => p === "ai" ? null : "ai")} />
-          </div>
-        </div>
+        {/* ── SUBTITLE ── */}
+        <p
+          className="
+            font-poppins text-white/50 leading-relaxed
+            text-left lg:text-center
+            text-[13px] sm:text-[14px] lg:text-[15px]
+            max-w-[480px] lg:max-w-[500px] lg:mx-auto
+            mb-8 lg:mb-12
+          "
+        >
+          Our core technologies, frameworks, and expertise deliver reliable custom blockchain
+          development services for businesses adapting to a fast-changing digital space.
+        </p>
 
-        {/* ================= DESKTOP GRID ================= */}
-        <div className="hidden lg:block relative h-[500px]">
-          {technologies.map((tech, index) => {
-            const isCategoryActive = activeCategory === null || tech.category === activeCategory;
-            const isIconActive = tech.id === activeId;
-
-            const col = index % COLUMNS;
-            const row = Math.floor(index / COLUMNS);
-
-            const left = `calc(50% - ${GRID_WIDTH / 2}px + ${col * (TILE + GAP)}px)`;
-            const top = row * (TILE + GAP);
-
+        {/* ── LEGEND ── */}
+        <div className="flex flex-wrap gap-x-7 gap-y-3 lg:justify-center mb-8 lg:mb-10">
+          {CATEGORIES.map(({ key, color, text }) => {
+            const isActive = activeCategory === key;
             return (
               <button
-                key={tech.id}
-                onClick={() => setActiveId(tech.id)}
-                className={`
-                  absolute w-28 h-28 overflow-hidden
-                  transition-all duration-300
-                  ${isCategoryActive ? "opacity-100 scale-100" : "opacity-30 scale-[0.95]"}
-                  ${isIconActive ? "outline outline-1 outline-cyan-400" : ""}
-                  hover:scale-105 hover:opacity-100
-                `}
-                style={{ left, top, backgroundColor: tech.bg }}
+                key={key}
+                onClick={() => toggle(key)}
+                className="flex items-center gap-2.5 cursor-pointer select-none"
               >
-                <div className="absolute top-[20px] left-1/2 -translate-x-1/2">
-                  <img src={tech.icon} alt={tech.label} className="w-8 h-8 object-contain" />
-                </div>
-
-                <div className="absolute top-[68px] w-full text-center text-white/50 text-xs leading-4 font-poppins">
-                  {tech.label}
-                </div>
+                <span
+                  className="w-[13px] h-[13px] rounded-sm flex-shrink-0"
+                  style={{ backgroundColor: color }}
+                />
+                <span
+                  className="font-manrope text-[13px] transition-colors duration-200"
+                  style={{ color: isActive ? color : "rgba(255,255,255,0.45)" }}
+                >
+                  {text}
+                </span>
               </button>
             );
           })}
         </div>
 
-        {/* ================= MOBILE & TABLET ================= */}
-        <div className="lg:hidden space-y-12">
-          {[
-            { key: "blockchain", color: "bg-cyan-400" },
-            { key: "program", color: "bg-yellow-300" },
-            { key: "smart-contract", color: "bg-blue-500" },
-            { key: "backend", color: "bg-orange-500" },
-            { key: "ai", color: "bg-rose-500" },
-          ].map(({ key, color }) => (
-            <div key={key}>
-              {/* CATEGORY HEADER */}
-              <div className="flex items-center gap-3 mb-4">
-                <div className={`w-2 h-2 rounded-full ${color}`} />
-                <h3 className="text-white/70 text-sm font-medium capitalize">
-                  {key.replace("-", " ")}
-                </h3>
-              </div>
+        {/* ── GRID CARD ── */}
+        <div
+          className="rounded-2xl overflow-hidden w-full"
+          style={{ border: "1px solid rgba(255,255,255,0.08)" }}
+        >
+          {/* Desktop 12-col */}
+          <div
+            className="hidden lg:grid"
+            style={{ gridTemplateColumns: `repeat(${DESKTOP_COLS}, 1fr)` }}
+          >
+            {technologies.map((tech, i) => (
+              <Tile
+                key={tech.id}
+                tech={tech}
+                index={i}
+                cols={DESKTOP_COLS}
+                total={technologies.length}
+                dimmed={activeCategory !== null && tech.category !== activeCategory}
+              />
+            ))}
+          </div>
 
-              {/* ICON GRID */}
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
-                {technologies
-                  .filter((tech) => tech.category === key)
-                  .map((tech) => (
-                    <div
-                      key={tech.id}
-                      className="h-24 rounded-md flex flex-col items-center justify-center"
-                      style={{ backgroundColor: tech.bg }}
-                    >
-                      <img src={tech.icon} alt={tech.label} className="w-7 h-7 object-contain mb-2" />
-                      <span className="text-[11px] text-white/60 text-center leading-tight px-1 font-poppins">
-                        {tech.label}
-                      </span>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          ))}
+          {/* Mobile 3-col */}
+          <div
+            className="grid lg:hidden"
+            style={{ gridTemplateColumns: `repeat(${MOBILE_COLS}, 1fr)` }}
+          >
+            {technologies.map((tech, i) => (
+              <Tile
+                key={tech.id}
+                tech={tech}
+                index={i}
+                cols={MOBILE_COLS}
+                total={technologies.length}
+                dimmed={activeCategory !== null && tech.category !== activeCategory}
+              />
+            ))}
+          </div>
         </div>
 
       </div>
@@ -115,25 +127,63 @@ export default function TechnologiesSection() {
   );
 }
 
-/* ================= LEGEND ================= */
+/* ─────────────────── TILE ─────────────────── */
+type TechItem = {
+  id: number;
+  icon: string;
+  label: string;
+  bg: string;
+  category: string;
+};
 
-function Legend({
-  color,
-  text,
-  active = false,
-  onClick,
+function Tile({
+  tech,
+  index,
+  cols,
+  total,
+  dimmed,
 }: {
-  color: string;
-  text: string;
-  active?: boolean;
-  onClick: () => void;
+  tech: TechItem;
+  index: number;
+  cols: number;
+  total: number;
+  dimmed: boolean;
 }) {
+  const col       = index % cols;
+  const row       = Math.floor(index / cols);
+  const totalRows = Math.ceil(total / cols);
+  const isLastCol = col === cols - 1;
+  const isLastRow = row === totalRows - 1;
+
   return (
-    <button onClick={onClick} className="flex items-center gap-4 select-none cursor-pointer">
-      <div className={`w-5 h-5 rounded-sm ${color}`} />
-      <span className={`text-sm transition-colors font-manrope ${active ? "text-cyan-400" : "text-white/50"}`}>
-        {text}
+    <div
+      className="flex flex-col items-center justify-center transition-opacity duration-300"
+      style={{
+        backgroundColor: tech.bg,
+        aspectRatio: "1 / 1",
+        opacity: dimmed ? 0.2 : 1,
+        borderRight:  isLastCol ? "none" : "1px solid rgba(255,255,255,0.06)",
+        borderBottom: isLastRow ? "none" : "1px solid rgba(255,255,255,0.06)",
+      }}
+    >
+      <img
+        src={tech.icon}
+        alt={tech.label}
+        style={{ width: 32, height: 32, objectFit: "contain", marginBottom: 8 }}
+      />
+      <span
+        style={{
+          fontFamily: "Poppins, sans-serif",
+          fontSize: 10,
+          color: "rgba(255,255,255,0.45)",
+          textAlign: "center",
+          lineHeight: 1.3,
+          paddingLeft: 4,
+          paddingRight: 4,
+        }}
+      >
+        {tech.label}
       </span>
-    </button>
+    </div>
   );
 }

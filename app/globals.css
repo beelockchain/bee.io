@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #00020f;
   --font-poppins: var(--font-poppins);
   --font-manrope: var(--font-manrope);
 }
@@ -22,7 +22,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #00020F;
   color: var(--foreground);
   font-family: var(--font-manrope), sans-serif;
 }
@@ -71,4 +71,75 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: #38bdf8 rgba(255, 255, 255, 0.06);
+}
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Base */
+.chat-glow {
+  position: relative;
+  border-radius: 9999px;
+  background: #2c2c2c;
+}
+
+/* Glow layers */
+.chat-glow::before,
+.chat-glow::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+
+  background: linear-gradient(
+    var(--rotate),
+    #00B8D7,
+    #ffffff,
+    #00B8D7
+  );
+
+  z-index: -1;
+
+  /* ❌ animation OFF by default */
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Blur glow */
+.chat-glow::after {
+  filter: blur(2px);
+}
+
+/* ✅ START animation ONLY on hover */
+.chat-glow:hover::before,
+.chat-glow:hover::after {
+  animation: spinGlow 4s linear infinite;
+  opacity: 1;
+}
+
+@keyframes spinGlow {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+.cube-wrapper {
+  perspective: 1000px;
+  perspective-origin: 100% 100%;
+}
+
+.cube-rotate {
+  transform-style: preserve-3d;
+  animation: rotateCube 6s linear infinite;
+}
+
+@keyframes rotateCube {
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
 }

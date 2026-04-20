@@ -9,7 +9,7 @@ interface MacBookFrameProps {
 export const MacBookFrame: React.FC<MacBookFrameProps> = ({ children }) => {
   return (
     <div
-      className="lg:min-h-screen w-full h-full bg-[#05070d] flex items-center justify-center p-2 sm:p-4 lg:p-8 overflow-x-hidden"
+      className="lg:min-h-screen w-full h-full bg-black flex items-center justify-center p-2 sm:p-4 lg:p-8 overflow-x-hidden"
       style={{ scrollbarGutter: "stable" }}
     >
       <div className="origin-center w-full">
@@ -23,20 +23,24 @@ export const MacBookFrame: React.FC<MacBookFrameProps> = ({ children }) => {
             {/* Inner bezel */}
             <div className="rounded-[10px] sm:rounded-[16px] lg:rounded-[20px] bg-black p-[2px] sm:p-[2px] lg:p-[3px] border border-white/10">
               {/* Screen */}
-              <div className="relative rounded-[8px] sm:rounded-[12px] lg:rounded-[16px] overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+              <div className="relative rounded-[8px] sm:rounded-[12px] lg:rounded-[16px] overflow-hidden bg-gradient-to-br bg-black">
                 {/* Top macOS menu bar - Fully Responsive */}
                 <div className="h-7 sm:h-8 md:h-9 lg:h-10 w-full flex items-center justify-between px-2 sm:px-3 md:px-4 lg:px-6 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px] text-white/70 bg-black/40 border-b border-white/10 backdrop-blur">
                   {/* Left side */}
-                  <div className="flex items-center gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3">
+                  <div className="flex items-center gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-6">
                     <img src='/assets/images/logo-ai-blu.svg' alt="Icon" className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 object-contain"/>
                     <span className="font-semibold text-white/80 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]">Finder</span>
                     <span className="text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]">File</span>
                     <span className="text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]">Edit</span>
                     <span className="hidden lg:inline text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px]">View</span>
+                    <span className="hidden lg:inline text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px]">Go</span>
+                    <span className="hidden lg:inline text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px]">Window</span>
+                    <span className="hidden lg:inline text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px]">Help</span>
                   </div>
                   
                   {/* Right side - Fully Responsive */}
-                  <div className="flex items-center gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3">
+                  <div className="flex items-center gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-5">
+                  <span className="hidden md:inline text-[9px] sm:text-[10px] md:text-[11px] lg:text-[12px]">Lunch.37m left</span>
                     {/* Wifi icon */}
                     <Wifi className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 opacity-100" />
                     

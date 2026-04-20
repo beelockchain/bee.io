@@ -35,8 +35,8 @@ const faqs = [
 
 
   return (
-    <section className="w-full bg-[#00020f] md:py-20 py-0">
-      <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 md:gap-[120px] text-white">
+    <section className="w-full bg-[#00020f] md:py-6 py-0">
+      <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 md:gap-[50px] text-white">
 
         {/* MOBILE TITLE */}
         <h3 className="md:hidden text-xl  text-center font-semibold text-white mb-6 mt-10 font-manrope">
@@ -45,22 +45,22 @@ const faqs = [
 
         {/* LEFT SIDE — Desktop only */}
         <div className="hidden md:flex md:w-[40%] flex-col gap-10">
-          <h2 className="text-[64px] font-bold leading-tight font-manrope">
+          <h2 className="text-[64px] md:text-[40px] lg:text-[40px]  font-bold leading-tight font-manrope">
             Frequently <br /> Asked <br /> Questions
           </h2>
 
-          <div className="flex flex-col items-start gap-2 font-poppins">
+          {/* <div className="flex flex-col items-start gap-2 font-poppins">
             <GradientGlowButton>
               Get started
             </GradientGlowButton>
             <p className="text-sm text-white/40 ml-4 font-pooppins">
               No card required.
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* RIGHT SIDE — FAQ */}
-        <div className="w-full md:w-[60%] flex flex-col gap-4">
+        <div className="w-full md:w-[80%] flex flex-col gap-4">
           {faqs.map((item, index) => {
             const isOpen = openIndex === index;
 

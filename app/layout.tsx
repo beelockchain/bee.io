@@ -2,7 +2,8 @@ import "./globals.css";
 import { Poppins, Manrope } from "next/font/google";
 import type { Metadata } from "next";
 import Script from "next/script";
-
+import Topnav from "./components/Topnav";
+import Footer from "./components/footer";
 /* Fonts */
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ const manrope = Manrope({
 
 /* ✅ META DATA */
 export const metadata: Metadata = {
-  title: "Blockchain Development Company & Game Development Company",
+  title: "AI-Powered Custom Blockchain & Game Development Company",
    icons: {
     icon: [
       { url: "/assets/images/favicon.png" },
@@ -55,6 +56,7 @@ export const metadata: Metadata = {
     robots:
       "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
   },
+    authors: [{ name: "Beelockchainio" }],
   openGraph: {
     type: "website",
     siteName: "Beelockchain",
@@ -94,7 +96,9 @@ export default function RootLayout({ children}: { children: React.ReactNode;}) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${manrope.variable} antialiased`}>
-        {children}
+          <Topnav />
+           {children}
+          <Footer />
           {/* Product Schema */}
         <Script
           id="product-schema"
@@ -128,6 +132,26 @@ export default function RootLayout({ children}: { children: React.ReactNode;}) {
             }),
           }}
         />
+        {/* tawk.to Script */}\
+        
+         <Script id="tawkto-script" strategy="afterInteractive">
+        {`
+          var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+          (function(){
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src='https://embed.tawk.to/695b988fe013bc197da990e7/1je6snt4o';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+          })();
+
+          Tawk_API.onLoad = function(){
+            Tawk_API.hideWidget(); // hide default bubble
+          };
+        `}
+      </Script>
       </body>
     </html>
   );

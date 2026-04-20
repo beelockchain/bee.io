@@ -35,7 +35,7 @@ const NavLabel = ({
         {/* LABEL BODY */}
         <div
           className="
-            relative flex items-center w-[150px]
+            relative flex items-center w-[170px]
             pl-2 pr-[11px] py-2 rounded-lg
             border border-[#0B2A44]
             overflow-hidden
